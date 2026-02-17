@@ -1,0 +1,1087 @@
+{
+  "session_details": {
+    "id": "YMNMpz2bkdBp",
+    "user_id": 2,
+    "title": "fill-in-the-blank",
+    "filename": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+    "model": "sonar",
+    "created_at": "2025-12-16T13:56:19.000Z",
+    "total_questions": 50,
+    "confidence_stats": {
+      "max": 100,
+      "min": 85,
+      "avg": 95.66
+    },
+    "question_type_distribution": {
+      "essay": 0,
+      "fill-in-the-blank": 50,
+      "true-false": 0,
+      "multiple-choice": 0
+    },
+    "efficiency_stats": {
+      "fastest": 22.67,
+      "slowest": 36.76,
+      "avg": 28.552000000000007
+    },
+    "logs": [
+      {
+        "id": 111,
+        "duration": 22.78,
+        "pages": "47-48",
+        "input_tokens": 1936,
+        "output_tokens": 1467,
+        "total_tokens": 3403,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:56:19.000Z",
+        "template_id": 20,
+        "template_text": "Generate exactly 10 fill in the blank questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- question (sentence with blank \"____\")\n- answer (specific word/phrase filling the blank)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Ibukota ____ adalah Jakarta.\",\n  \"answer\": \"Jakarta\",\n  \"explanation\": \"Pusat pemerintahan...\",\n  \"source_text\": \"Pusat pemerintahan Indonesia terletak di Jakarta\",\n  \"keywords\": [\n    \"ibukota\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"15 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1096,
+            "log_id": 111,
+            "question": "Reformasi merupakan perubahan yang ____ dan menyeluruh untuk perbaikan.",
+            "options": [],
+            "answer": "radikal",
+            "explanation": "Reformasi didefinisikan sebagai perubahan radikal dan menyeluruh yang bertujuan untuk perbaikan dalam berbagai bidang kehidupan.",
+            "source_text": "Reformasi merupakan perubahan yang radikal",
+            "keywords": [
+              "reformasi",
+              "radikal",
+              "perubahan"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1097,
+            "log_id": 111,
+            "question": "Pemilu tahun ____ dengan hasil Golkar sebagai pemenang mutlak.",
+            "options": [],
+            "answer": "1997",
+            "explanation": "Pemilu 1997 dimenangkan mutlak oleh Golkar, yang memperkuat dukungan terhadap Soeharto.",
+            "source_text": "Pemilu 1997, dengan hasil Golkar",
+            "keywords": [
+              "Pemilu",
+              "1997",
+              "Golkar"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1098,
+            "log_id": 111,
+            "question": "Peristiwa 27 Juli 1996 terjadi di gedung DPP ____.",
+            "options": [],
+            "answer": "PDI",
+            "explanation": "Peristiwa tersebut melibatkan kerusuhan dan perusakan gedung DPP PDI, menyebabkan korban jiwa dan harta.",
+            "source_text": "peristiwa 27 Juli 1996, yaitu adanya",
+            "keywords": [
+              "27 Juli",
+              "1996",
+              "PDI"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "12 detik"
+          },
+          {
+            "id": 1099,
+            "log_id": 111,
+            "question": "Tragedi Trisakti terjadi pada tanggal ____ Mei 1998.",
+            "options": [],
+            "answer": "12",
+            "explanation": "Pada 12 Mei 1998, aksi mahasiswa Trisakti berubah menjadi bentrokan yang menewaskan 4 mahasiswa.",
+            "source_text": "tanggal 12 Mei 1998 aksi mahasiswa",
+            "keywords": [
+              "Trisakti",
+              "12 Mei",
+              "1998"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "12 detik"
+          },
+          {
+            "id": 1100,
+            "log_id": 111,
+            "question": "Krisis moneter Asia memengaruhi Indonesia sejak tahun ____.",
+            "options": [],
+            "answer": "1997",
+            "explanation": "Sejak 1997, Indonesia terkena imbas krisis moneter yang melemahkan kurs rupiah secara drastis.",
+            "source_text": "sejak 1997 Indonesia terkena imbas",
+            "keywords": [
+              "krisis moneter",
+              "1997",
+              "rupiah"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1101,
+            "log_id": 111,
+            "question": "Kerusuhan meletus di ____, Jawa Timur pada Oktober 1996.",
+            "options": [],
+            "answer": "Situbondo",
+            "explanation": "Kerusuhan sosial dan kekerasan politik terjadi di Situbondo sebagai bagian dari ketidakstabilan menjelang Pemilu.",
+            "source_text": "kerusuhan meletus di Situbondo, Jawa",
+            "keywords": [
+              "kerusuhan",
+              "Situbondo",
+              "1996"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1102,
+            "log_id": 111,
+            "question": "Pemerintah membentuk ____ untuk mengawasi bank bermasalah.",
+            "options": [],
+            "answer": "BPPN",
+            "explanation": "Badan Penyehatan Perbankan Nasional (BPPN) dibentuk setelah likuidasi 16 bank akibat krisis.",
+            "source_text": "membentuk Badan Penyehatan Perbankan Nasional",
+            "keywords": [
+              "BPPN",
+              "perbankan",
+              "krisis"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "18 detik"
+          },
+          {
+            "id": 1103,
+            "log_id": 111,
+            "question": "Nepotisme tinggi dalam DPR/MPR mendukung pencalonan kembali ____ sebagai presiden.",
+            "options": [],
+            "answer": "Soeharto",
+            "explanation": "Komposisi DPR/MPR yang penuh nepotisme memungkinkan Soeharto terpilih kembali, memicu protes mahasiswa.",
+            "source_text": "Pencalonan kembali Soeharto menjadi presiden",
+            "keywords": [
+              "nepotisme",
+              "Soeharto",
+              "DPR/MPR"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1104,
+            "log_id": 111,
+            "question": "Kenaikan harga ____ memicu aksi anti Soeharto makin meluas.",
+            "options": [],
+            "answer": "BBM",
+            "explanation": "Pengumuman kenaikan BBM dan ongkos angkutan memperburuk situasi, mendorong demonstrasi besar-besaran.",
+            "source_text": "kenaikan harga BBM dan ongkos",
+            "keywords": [
+              "BBM",
+              "demonstrasi",
+              "Soeharto"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1105,
+            "log_id": 111,
+            "question": "Krisis kepercayaan dunia terhadap kepemimpinan Soeharto menurun akibat pelemahan ____ per dolar.",
+            "options": [],
+            "answer": "Rp10.000",
+            "explanation": "Nilai rupiah mencapai Rp10.000 per dolar pada April 1998, menyebabkan hilangnya kepercayaan internasional dan aksi massa.",
+            "source_text": "Rp10.000 perdolar. Hal ini menyebabkan",
+            "keywords": [
+              "krisis",
+              "rupiah",
+              "kepercayaan"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "25 detik"
+          }
+        ]
+      },
+      {
+        "id": 112,
+        "duration": 33.91,
+        "pages": "49-50",
+        "input_tokens": 1869,
+        "output_tokens": 1644,
+        "total_tokens": 3513,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:58:24.000Z",
+        "template_id": 20,
+        "template_text": "Generate exactly 10 fill in the blank questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- question (sentence with blank \"____\")\n- answer (specific word/phrase filling the blank)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Ibukota ____ adalah Jakarta.\",\n  \"answer\": \"Jakarta\",\n  \"explanation\": \"Pusat pemerintahan...\",\n  \"source_text\": \"Pusat pemerintahan Indonesia terletak di Jakarta\",\n  \"keywords\": [\n    \"ibukota\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"15 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1106,
+            "log_id": 112,
+            "question": "Tujuan reformasi politik adalah tercapainya ____.",
+            "options": [],
+            "answer": "demokratisasi",
+            "explanation": "Reformasi politik bertujuan menciptakan sistem politik yang lebih demokratis.",
+            "source_text": "Reformasi politik bertujuan tercapainya demokratisasi",
+            "keywords": [
+              "reformasi",
+              "politik",
+              "demokratisasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1107,
+            "log_id": 112,
+            "question": "Reformasi ekonomi bertujuan meningkatkan tercapainya ____.",
+            "options": [],
+            "answer": "masyarakat",
+            "explanation": "Reformasi ekonomi diarahkan agar kesejahteraan masyarakat dapat ditingkatkan.",
+            "source_text": "Reformasi ekonomi bertujuan meningkatkan tercapainya masyarakat",
+            "keywords": [
+              "reformasi",
+              "ekonomi",
+              "masyarakat"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1108,
+            "log_id": 112,
+            "question": "Reformasi hukum bertujuan tercapainya keadilan bagi ____.",
+            "options": [],
+            "answer": "seluruh rakyat Indonesia",
+            "explanation": "Reformasi hukum bertujuan menjamin keadilan yang adil bagi seluruh rakyat Indonesia.",
+            "source_text": "Reformasi hukum bertujuan tercapainya keadilan bagi seluruh rakyat Indonesia",
+            "keywords": [
+              "reformasi",
+              "hukum",
+              "keadilan"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1109,
+            "log_id": 112,
+            "question": "Reformasi sosial bertujuan terwujudkan ____ bangsa Indonesia.",
+            "options": [],
+            "answer": "integrasi",
+            "explanation": "Reformasi sosial bertujuan untuk menyatukan dan mempererat persatuan bangsa Indonesia.",
+            "source_text": "Reformasi sosial bertujuan terwujudkan integrasi bangsa Indonesia",
+            "keywords": [
+              "reformasi",
+              "sosial",
+              "integrasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1110,
+            "log_id": 112,
+            "question": "Salah satu faktor politik pendorong reformasi adalah adanya ____ korupsi, kolusi, dan nepotisme.",
+            "options": [],
+            "answer": "KKN",
+            "explanation": "KKN merupakan singkatan dari Korupsi, Kolusi, dan Nepotisme, yang menjadi penyebab utama rakyat meminta reformasi.",
+            "source_text": "Adanya KKN Korupsi, Kolusi, dan Nepotisme dalam kehidupan pemerintahan",
+            "keywords": [
+              "KKN",
+              "korupsi",
+              "faktor politik"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1111,
+            "log_id": 112,
+            "question": "Nepotisme dalam pemerintahan berarti mengajak ____ dalam kekuasaan.",
+            "options": [],
+            "answer": "keluarga",
+            "explanation": "Nepotisme adalah praktik mengajak atau memberi jabatan kepada keluarga dalam pemerintahan.",
+            "source_text": "Nepotisme berarti mengajak keluarga dalam kekuasaan",
+            "keywords": [
+              "nepotisme",
+              "kekuasaan",
+              "keluarga"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1112,
+            "log_id": 112,
+            "question": "Kronisme dalam pemerintahan berarti mengajak ____ dalam kekuasaan.",
+            "options": [],
+            "answer": "teman-teman",
+            "explanation": "Kronisme adalah praktik mengajak atau memberi jabatan kepada teman-teman dalam pemerintahan.",
+            "source_text": "Kronisme adalah mengajak teman-teman dalam kekuasaan",
+            "keywords": [
+              "kronisme",
+              "kekuasaan",
+              "teman"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1113,
+            "log_id": 112,
+            "question": "Substansi agenda reformasi politik mencakup pemberdayaan DPR, MPR, dan DPRD agar lembaga perwakilan rakyat benar-benar melaksanakan fungsi perwakilannya sebagai aspek kedaulatan rakyat. Hal ini menunjukkan pentingnya ____.",
+            "options": [],
+            "answer": "kedaulatan rakyat",
+            "explanation": "Pemberdayaan lembaga perwakilan rakyat menunjukkan pentingnya kedaulatan rakyat dalam sistem politik demokrasi.",
+            "source_text": "Pemberdayaan DPR, MPR, DPRD maksudnya agar lembaga perwakilan rakyat benar-benar melaksanakan fungsi perwakilannya sebagai aspek kedaulatan rakyat",
+            "keywords": [
+              "kedaulatan rakyat",
+              "reformasi politik",
+              "perwakilan"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1114,
+            "log_id": 112,
+            "question": "Pergantian pimpinan di Indonesia sering disertai ____ dan keributan.",
+            "options": [],
+            "answer": "kekerasan",
+            "explanation": "Pengalaman suksesi di Indonesia menunjukkan bahwa pergantian pimpinan seringkali diiringi dengan kekerasan dan keributan.",
+            "source_text": "Pergantian pimpinan disertai kekerasan dan keributan",
+            "keywords": [
+              "pergantian pimpinan",
+              "kekerasan",
+              "keributan"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1115,
+            "log_id": 112,
+            "question": "Tidak adanya ____ dalam negara menyebabkan kecenderungan otoriter.",
+            "options": [],
+            "answer": "che k and balance",
+            "explanation": "Kecenderungan otoriter terjadi karena tidak adanya chek and balance atau keseimbangan dalam sistem negara.",
+            "source_text": "Tidak adanya Chek and Balance yaitu tidak ada keseimbangan dalam negara yang disebabkan kecenderungan otoriter",
+            "keywords": [
+              "che k and balance",
+              "otoriter",
+              "keseimbangan"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "20 detik"
+          }
+        ]
+      },
+      {
+        "id": 113,
+        "duration": 22.67,
+        "pages": "51-54",
+        "input_tokens": 3711,
+        "output_tokens": 1706,
+        "total_tokens": 5417,
+        "question_count": 10,
+        "created_at": "2025-12-16T14:00:17.000Z",
+        "template_id": 20,
+        "template_text": "Generate exactly 10 fill in the blank questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- question (sentence with blank \"____\")\n- answer (specific word/phrase filling the blank)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Ibukota ____ adalah Jakarta.\",\n  \"answer\": \"Jakarta\",\n  \"explanation\": \"Pusat pemerintahan...\",\n  \"source_text\": \"Pusat pemerintahan Indonesia terletak di Jakarta\",\n  \"keywords\": [\n    \"ibukota\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"15 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1116,
+            "log_id": 113,
+            "question": "Indonesia merupakan negara yang berdasarkan pada sistem ____.",
+            "options": [],
+            "answer": "demokrasi",
+            "explanation": "Indonesia memilih sistem demokrasi sebagai dasar sistem pemerintahannya.",
+            "source_text": "Indonesia merupakan negara yang berdasarkan pada sistem demokrasi",
+            "keywords": [
+              "sistem",
+              "demokrasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1117,
+            "log_id": 113,
+            "question": "Salah satu agenda reformasi bidang ekonomi adalah menghapuskan ____.",
+            "options": [],
+            "answer": "monopoli",
+            "explanation": "Reformasi ekonomi bertujuan menghilangkan monopoli agar perekonomian lebih sehat.",
+            "source_text": "Penghapusan monopoli dan oligopoli",
+            "keywords": [
+              "agenda",
+              "ekonomi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1118,
+            "log_id": 113,
+            "question": "Pemilihan umum tahun 1999 diikuti oleh sebanyak ____ partai politik.",
+            "options": [],
+            "answer": "48",
+            "explanation": "Dari seratus lebih partai yang mendaftar, hanya 48 yang dinyatakan memenuhi persyaratan.",
+            "source_text": "Dari seratus lebih partai politik yang terdaftar, hanya 48 partai politik yang dinyatakan memenuhi persyaratan",
+            "keywords": [
+              "pemilu",
+              "partai politik"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1119,
+            "log_id": 113,
+            "question": "Salah satu hambatan pelaksanaan reformasi politik adalah ____ yang tidak diiringi pergantian rezim.",
+            "options": [],
+            "answer": "pergantian kepemimpinan nasional",
+            "explanation": "Pergantian kepemimpinan nasional dari Soeharto ke B.J. Habibie tidak diiringi pergantian rezim yang berarti.",
+            "source_text": "Hambatan kultural mengingat pergantian kepemimpinan nasional dari Soeharto ke B.J. Habibie tidak diiringi pergantian rezim yang berarti",
+            "keywords": [
+              "hambatan",
+              "reformasi politik"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1120,
+            "log_id": 113,
+            "question": "DPR mengeluarkan teguran keras kepada presiden dalam bentuk ____ terkait kasus Buloggate.",
+            "options": [],
+            "answer": "memorandum I sampai II",
+            "explanation": "Kasus Buloggate menyebabkan DPR mengeluarkan teguran berupa memorandum I dan II.",
+            "source_text": "Kasus Buloggate menyebabkan lembaga DPR mengeluarkan teguran keras kepada presiden dalam bentuk memorandum I sampai II",
+            "keywords": [
+              "teguran",
+              "Buloggate"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1121,
+            "log_id": 113,
+            "question": "Ketetapan MPR No. IIIMPR2001 berisi tentang penggantian ____ sebagai presiden.",
+            "options": [],
+            "answer": "K.H. Abdurrahman Wahid",
+            "explanation": "MPR mengeluarkan ketetapan untuk memberhentikan K.H. Abdurrahman Wahid sebagai presiden.",
+            "source_text": "Keputusan menetapkan Megawati Sukarnoputri sebagai presiden dituangkan dalam Tap. MPR No. IIIMPR2001",
+            "keywords": [
+              "ketetapan",
+              "presiden"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1122,
+            "log_id": 113,
+            "question": "Kabinet yang dibentuk oleh Presiden Abdurrahman Wahid disebut ____.",
+            "options": [],
+            "answer": "Kabinet Persatuan Nasional",
+            "explanation": "Presiden Abdurrahman Wahid membentuk kabinet yang diberi nama Kabinet Persatuan Nasional.",
+            "source_text": "Presiden Abdurrahman Wahid dalam menjalankan pemerintahan didampingi Wapres Megawati Sukarnoputri. Sidang Umum MPR setelah berhasil menetapkan Presiden dan Wakil Presiden RI juga berhasil membuat sembilan ketetapan dan untuk kali pertama melakukan amandemen... terhadap UUD 1945. Presiden Abdurrahman Wahid menjalankan pemerintahan dengan membentuk kabinet yang disebut Kabinet Persatuan Nasional",
+            "keywords": [
+              "kabinet",
+              "Presiden Abdurrahman Wahid"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1123,
+            "log_id": 113,
+            "question": "Dekret Presiden 23 Juli 2001 berisi upaya menyelamatkan ____ dari hambatan orde baru.",
+            "options": [],
+            "answer": "gerakan reformasi total",
+            "explanation": "Dekret Presiden pada 23 Juli 2001 bertujuan menyelamatkan gerakan reformasi total dari hambatan orde baru.",
+            "source_text": "menyelamatkan gerakan reformasi total dari hambatan unsur-unsur orde baru dengan membekukan Partai Golkar sambil menunggu keputusan Mahkamah Agung",
+            "keywords": [
+              "Dekret Presiden",
+              "reformasi"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1124,
+            "log_id": 113,
+            "question": "Salah satu dampak krisis ekonomi yang berlarut-larut adalah ____ jumlah penduduk miskin.",
+            "options": [],
+            "answer": "bertambahnya",
+            "explanation": "Krisis ekonomi menyebabkan bertambahnya jumlah penduduk yang hidup dalam kemiskinan.",
+            "source_text": "3 Hambatan struktural berkaitan dengan krisis ekonomi yang berlarut-larut yang berdampak bertambah banyak rakyat yang hidup dalam kemiskinan",
+            "keywords": [
+              "krisis ekonomi",
+              "kemiskinan"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1125,
+            "log_id": 113,
+            "question": "Agenda reformasi bidang hukum difokuskan pada integrasi ____.",
+            "options": [],
+            "answer": "nasional",
+            "explanation": "Agenda reformasi bidang hukum difokuskan pada integrasi nasional untuk menegakkan keadilan dan HAM.",
+            "source_text": "Agenda reformasi bidang hukum difokuskan pada integrasi nasional",
+            "keywords": [
+              "reformasi hukum",
+              "integrasi"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "25 detik"
+          }
+        ]
+      },
+      {
+        "id": 114,
+        "duration": 36.76,
+        "pages": "55-57",
+        "input_tokens": 2676,
+        "output_tokens": 1453,
+        "total_tokens": 4129,
+        "question_count": 10,
+        "created_at": "2025-12-16T14:02:24.000Z",
+        "template_id": 20,
+        "template_text": "Generate exactly 10 fill in the blank questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- question (sentence with blank \"____\")\n- answer (specific word/phrase filling the blank)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Ibukota ____ adalah Jakarta.\",\n  \"answer\": \"Jakarta\",\n  \"explanation\": \"Pusat pemerintahan...\",\n  \"source_text\": \"Pusat pemerintahan Indonesia terletak di Jakarta\",\n  \"keywords\": [\n    \"ibukota\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"15 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1126,
+            "log_id": 114,
+            "question": "Ibukota ____ adalah Jakarta.",
+            "options": [],
+            "answer": "Indonesia",
+            "explanation": "Pusat pemerintahan Indonesia terletak di Jakarta, sehingga Jakarta menjadi ibukota negara.",
+            "source_text": "Pusat pemerintahan Indonesia terletak di Jakarta",
+            "keywords": [
+              "ibukota",
+              "Indonesia",
+              "Jakarta"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1127,
+            "log_id": 114,
+            "question": "Partai Kebangsaan Merdeka disingkat ____.",
+            "options": [],
+            "answer": "PKM",
+            "explanation": "PKM adalah singkatan resmi dari Partai Kebangsaan Merdeka yang tercantum dalam dokumen.",
+            "source_text": "PKM Partai Kebangsaan Merdeka",
+            "keywords": [
+              "PKM",
+              "Partai Kebangsaan Merdeka"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1128,
+            "log_id": 114,
+            "question": "Partai Amanat Nasional disingkat ____.",
+            "options": [],
+            "answer": "PAN",
+            "explanation": "PAN adalah singkatan resmi dari Partai Amanat Nasional menurut dokumen.",
+            "source_text": "PAN Partai Amanat Nasional",
+            "keywords": [
+              "PAN",
+              "Partai Amanat Nasional"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1129,
+            "log_id": 114,
+            "question": "Partai Syarikat Islam Indonesia berdiri tahun ____.",
+            "options": [],
+            "answer": "1905",
+            "explanation": "Dokumen menyebutkan bahwa Partai Syarikat Islam Indonesia didirikan pada tahun 1905.",
+            "source_text": "PSII Partai Syarikat Islam Indonesia 1905",
+            "keywords": [
+              "PSII",
+              "1905"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1130,
+            "log_id": 114,
+            "question": "Pada tahun 1999, jajak pendapat di Timor Timur dilakukan dengan bantuan ____.",
+            "options": [],
+            "answer": "PBB",
+            "explanation": "Misi PBB atau UNAMET yang bertugas melakukan jajak pendapat di Timor Timur.",
+            "source_text": "Misi ini bertugas melakukan jajak pendapat",
+            "keywords": [
+              "jajak pendapat",
+              "Timor Timur",
+              "PBB"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1131,
+            "log_id": 114,
+            "question": "Nama Irian Jaya diganti menjadi ____ pada masa Presiden Abdurrahman Wahid.",
+            "options": [],
+            "answer": "Papua",
+            "explanation": "Perubahan nama Irian Jaya menjadi Papua dilakukan untuk memberi semangat pada penduduk Irian Jaya.",
+            "source_text": "nama Irian Jaya diganti menjadi Papua",
+            "keywords": [
+              "Irian Jaya",
+              "Papua",
+              "Presiden Abdurrahman Wahid"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "99%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1132,
+            "log_id": 114,
+            "question": "Otonomi khusus diberikan kepada Aceh pada masa kepemimpinan Presiden ____.",
+            "options": [],
+            "answer": "Megawati Sukarnoputri",
+            "explanation": "Aceh mendapat otonomi khusus pada masa pemerintahan Presiden Megawati Sukarnoputri.",
+            "source_text": "Pada masa pemerintahan Presiden Megawati Sukarnoputri",
+            "keywords": [
+              "Aceh",
+              "otonomi khusus",
+              "Megawati Sukarnoputri"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1133,
+            "log_id": 114,
+            "question": "Keinginan rakyat Papua untuk merdeka dipimpin oleh ____.",
+            "options": [],
+            "answer": "Theys H. Eluoy",
+            "explanation": "Theys H. Eluoy adalah tokoh yang memimpin Gerakan Papua Merdeka.",
+            "source_text": "terutama yang dipimpin oleh Theys H. Eluoy",
+            "keywords": [
+              "Papua",
+              "Theys H. Eluoy",
+              "Gerakan Papua Merdeka"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1134,
+            "log_id": 114,
+            "question": "Pemberian otonomi khusus pada Aceh tidak sepenuhnya menyelesaikan tuntutan dari ____.",
+            "options": [],
+            "answer": "Gerakan Aceh Merdeka",
+            "explanation": "Kelompok Gerakan Aceh Merdeka tetap menuntut kemerdekaan Aceh meskipun telah diberikan otonomi khusus.",
+            "source_text": "Kelompok Gerakan Aceh Merdeka GAM tetap pada tuntutannya",
+            "keywords": [
+              "Gerakan Aceh Merdeka",
+              "Aceh",
+              "otonomi khusus"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1135,
+            "log_id": 114,
+            "question": "Teror bom di Legian, Kuta, Bali menewaskan ____ orang asing.",
+            "options": [],
+            "answer": "ratusan",
+            "explanation": "Bom di Legian, Kuta, Bali menyebabkan ratusan orang asing tewas.",
+            "source_text": "menewaskan ratusan orang asing",
+            "keywords": [
+              "bom",
+              "Legian",
+              "Kuta",
+              "Bali"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "25 detik"
+          }
+        ]
+      },
+      {
+        "id": 115,
+        "duration": 26.64,
+        "pages": "58-61",
+        "input_tokens": 3422,
+        "output_tokens": 1842,
+        "total_tokens": 5264,
+        "question_count": 10,
+        "created_at": "2025-12-16T14:04:22.000Z",
+        "template_id": 20,
+        "template_text": "Generate exactly 10 fill in the blank questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- question (sentence with blank \"____\")\n- answer (specific word/phrase filling the blank)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Ibukota ____ adalah Jakarta.\",\n  \"answer\": \"Jakarta\",\n  \"explanation\": \"Pusat pemerintahan...\",\n  \"source_text\": \"Pusat pemerintahan Indonesia terletak di Jakarta\",\n  \"keywords\": [\n    \"ibukota\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"15 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1136,
+            "log_id": 115,
+            "question": "Salah satu penyebab terjadinya reformasi adalah pemerintahan yang penuh ____.",
+            "options": [],
+            "answer": "KKN",
+            "explanation": "KKN (Korupsi, Kolusi, dan Nepotisme) menjadi salah satu alasan utama masyarakat menuntut reformasi pada masa Orde Baru.",
+            "source_text": "Salah satu penyebab terjadinya reformasi adalah pemerintahan yang penuh KKN",
+            "keywords": [
+              "reformasi",
+              "KKN",
+              "penyebab"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "10 detik"
+          },
+          {
+            "id": 1137,
+            "log_id": 115,
+            "question": "Presiden pertama pada era reformasi setelah lengsernya Soeharto adalah ____.",
+            "options": [],
+            "answer": "B.J. Habibie",
+            "explanation": "B.J. Habibie menjadi presiden menggantikan Soeharto setelah turun pada masa awal reformasi.",
+            "source_text": "selama masa tiga bulan kekuasaan pemerintah B.J. Habibie",
+            "keywords": [
+              "presiden",
+              "Habibie",
+              "era reformasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1138,
+            "log_id": 115,
+            "question": "Konflik di Kalimantan Barat melibatkan etnik Melayu, Dayak, dan ____.",
+            "options": [],
+            "answer": "Madura",
+            "explanation": "Konflik sosial di Kalimantan Barat melibatkan tiga etnik utama, yaitu Melayu, Dayak, dan Madura.",
+            "source_text": "Konflik sosial yang terjadi di Kalimantan Barat melibatkan etnik Melayu, Dayak, dan Madura",
+            "keywords": [
+              "Kalimantan Barat",
+              "etnik",
+              "konflik"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1139,
+            "log_id": 115,
+            "question": "Pada masa reformasi, nilai rupiah terhadap dolar Amerika Serikat sempat mencapai lebih dari ____.",
+            "options": [],
+            "answer": "Rp10.000,00",
+            "explanation": "Nilai rupiah pada masa reformasi sangat lemah, bahkan sempat mencapai di atas Rp10.000,00 per dolar Amerika Serikat.",
+            "source_text": "Nilai rupiah terhadap mata uang asing masih tetap lemah di atas Rp10.000,00 per dolar Amerika Serikat",
+            "keywords": [
+              "nilai rupiah",
+              "dolar",
+              "ekonomi"
+            ],
+            "difficulty": "LOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "97%",
+            "duration": "15 detik"
+          },
+          {
+            "id": 1140,
+            "log_id": 115,
+            "question": "Kejadian awal konflik di Poso, Sulawesi Tengah bermula dari perkelahian antara Roy Luntu Bisalembah Kristen dan ____.",
+            "options": [],
+            "answer": "Ahmad Ridwan Islam",
+            "explanation": "Konflik di Poso bermula dari perkelahian dua individu yang berbeda agama, yaitu Roy Luntu Bisalembah Kristen dan Ahmad Ridwan Islam.",
+            "source_text": "Kejadian bermula dipicu oleh perkelahian antara Roy Luntu Bisalembah Kristen yang kebetulan sedang mabuk dengan Ahmad Ridwan Islam",
+            "keywords": [
+              "Poso",
+              "konflik",
+              "agama"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1141,
+            "log_id": 115,
+            "question": "Salah satu usaha pemerintah meredakan konflik di Kalimantan Barat adalah membentuk ____.",
+            "options": [],
+            "answer": "Forum Komunikasi Masyarakat Kalimantan Barat",
+            "explanation": "Pemerintah membentuk Forum Komunikasi Masyarakat Kalimantan Barat untuk menyelesaikan permasalahan konflik secara damai.",
+            "source_text": "Pemerintah berusaha men- damaikan konflik tersebut dengan mengajak tokoh masyarakat dari masing-masing etnis yang ada untuk membentuk Forum Komunikasi Masyarakat Kalimantan Barat",
+            "keywords": [
+              "Kalimantan Barat",
+              "forum",
+              "konflik"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1142,
+            "log_id": 115,
+            "question": "Pada masa awal pemerintahan Presiden B.J. Habibie, antrian panjang masyarakat terlihat di berbagai tempat untuk membeli ____.",
+            "options": [],
+            "answer": "beras dan minyak goreng",
+            "explanation": "Kondisi ekonomi yang buruk menyebabkan masyarakat antri panjang untuk mendapatkan beras dan minyak goreng.",
+            "source_text": "Antrian panjang masyarakat membeli beras dan minyak goreng mulai terlihat di berbagai tempat",
+            "keywords": [
+              "Habibie",
+              "ekonomi",
+              "antrian"
+            ],
+            "difficulty": "MOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1143,
+            "log_id": 115,
+            "question": "Pemerintah Indonesia pada masa reformasi menjalin kerja sama dengan ____ dan ____ untuk memulihkan ekonomi nasional.",
+            "options": [],
+            "answer": "Bank Dunia World Bank, Dana Moneter Internasional IMF",
+            "explanation": "Pemerintah bekerja sama dengan Bank Dunia dan Dana Moneter Internasional untuk mengatasi krisis ekonomi, meski kebijakannya justru memperburuk situasi.",
+            "source_text": "Pemerintah Indonesia pun sebenarnya berusaha memulihkan keadaan ekonomi nasional dengan menjalin kerja sama dengan Bank Dunia World Bank dan Dana Moneter Internasional IMF",
+            "keywords": [
+              "ekonomi",
+              "Bank Dunia",
+              "IMF"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1144,
+            "log_id": 115,
+            "question": "Konflik di Maluku yang awalnya antaragama berkembang menjadi gerakan ____.",
+            "options": [],
+            "answer": "separatis",
+            "explanation": "Konflik di Maluku awalnya berupa konflik antaragama, tetapi berkembang menjadi gerakan separatis yang ingin mendirikan Republik Maluku Selatan.",
+            "source_text": "Namun, anehnya konflik yang semula antaragama berkembang menjadi gerakan separatis",
+            "keywords": [
+              "Maluku",
+              "konflik",
+              "separatis"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1145,
+            "log_id": 115,
+            "question": "Partisipasi dari setiap warga negara sangat diharapkan untuk mewujudkan masyarakat adil dan makmur sesuai ____.",
+            "options": [],
+            "answer": "Pembukaan UUD 1945",
+            "explanation": "Pemerintah mengajak partisipasi warga negara untuk mewujudkan masyarakat adil dan makmur seperti yang diamanatkan dalam Pembukaan UUD 1945.",
+            "source_text": "Partisipasi dari setiap warga negara sangat diharapkan untuk dapat segera memulihkan keadaan mewujudkan masyarakat adil dan makmur sesuai Pembukaan UUD 1945",
+            "keywords": [
+              "partisipasi",
+              "UUD 1945",
+              "adil makmur"
+            ],
+            "difficulty": "HOTS",
+            "type": "fill-in-the-blank",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          }
+        ]
+      }
+    ]
+  }
+}

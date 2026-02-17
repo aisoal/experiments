@@ -1,0 +1,1279 @@
+{
+  "session_details": {
+    "id": "qKiMe3Jx4fiT",
+    "user_id": 2,
+    "title": "true-false",
+    "filename": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+    "model": "gpt-5.2",
+    "created_at": "2025-12-16T16:43:50.000Z",
+    "total_questions": 50,
+    "confidence_stats": {
+      "max": 96,
+      "min": 86,
+      "avg": 91.62
+    },
+    "question_type_distribution": {
+      "essay": 0,
+      "fill-in-the-blank": 0,
+      "true-false": 50,
+      "multiple-choice": 0
+    },
+    "efficiency_stats": {
+      "fastest": 25.36,
+      "slowest": 38.04,
+      "avg": 33.176
+    },
+    "logs": [
+      {
+        "id": 146,
+        "duration": 37.77,
+        "pages": "73-78",
+        "input_tokens": 5665,
+        "output_tokens": 2071,
+        "total_tokens": 7736,
+        "question_count": 10,
+        "created_at": "2025-12-16T16:43:50.000Z",
+        "template_id": 21,
+        "template_text": "Generate exactly 10 true false questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options ([\"Benar\", \"Salah\"])\n- answer (MUST be \"Benar\" or \"Salah\")\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Matahari terbit dari barat.\",\n  \"options\": [\n    \"Benar\",\n    \"Salah\"\n  ],\n  \"answer\": \"Salah\",\n  \"explanation\": \"Karena rotasi bumi...\",\n  \"source_text\": \"Rotasi bumi menyebabkan matahari tampak terbit\",\n  \"keywords\": [\n    \"matahari\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"20 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: Generate ~50% True and ~50% False. Do NOT make all answers \"Benar\".\n- \"Salah\" answers must be plausible but factually incorrect based on text.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1446,
+            "log_id": 146,
+            "question": "Konferensi Atlantik diselenggarakan pada tanggal 14 Agustus 1941.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebutkan secara eksplisit tanggal pelaksanaan Konferensi Atlantik adalah 14 Agustus 1941.",
+            "source_text": "Konferensi Atlantik diselenggarakan pada tanggal 14",
+            "keywords": [
+              "Konferensi Atlantik",
+              "1941",
+              "Roosevelt",
+              "Churchill"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1447,
+            "log_id": 146,
+            "question": "Konferensi Casablanca diselenggarakan pada bulan Oktober 1943.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dalam teks, Konferensi Casablanca disebut berlangsung pada bulan Januari 1943, sedangkan Oktober 1943 merujuk pada Konferensi Moskow.",
+            "source_text": "Konferensi Casablanca diselenggarakan pada bulan Januari",
+            "keywords": [
+              "Konferensi Casablanca",
+              "Januari 1943",
+              "Sekutu",
+              "Eropa"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1448,
+            "log_id": 146,
+            "question": "Konferensi Postdam ditentukan dalam pertemuan pada 2 Agustus 1945.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyatakan Konferensi Postdam (Potsdam) bertanggal 2 Agustus 1945 saat membahas perjanjian Sekutu dengan Jerman.",
+            "source_text": "Konferensi Postdam 2 Agustus 1945",
+            "keywords": [
+              "Konferensi Postdam",
+              "2 Agustus 1945",
+              "Sekutu",
+              "Jerman"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1449,
+            "log_id": 146,
+            "question": "Dekolonisasi adalah istilah untuk praktik imperialisme dan kolonialisme di wilayah Eropa.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyebut dekolonisasi terkait praktik imperialisme dan kolonialisme di wilayah Asia dan Afrika, bukan Eropa.",
+            "source_text": "Dekolonisasi adalah istilah yang dipakai bangsa-bangsa",
+            "keywords": [
+              "dekolonisasi",
+              "imperialisme",
+              "kolonialisme",
+              "Asia Afrika"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1450,
+            "log_id": 146,
+            "question": "Piagam Atlantik menegaskan bahwa setiap bangsa berhak menentukan nasibnya sendiri.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyatakan Piagam Atlantik memuat penegasan hak menentukan nasib sendiri (self determination) sebagai landasan universal perjuangan kemerdekaan.",
+            "source_text": "Berakhirnya Perang Dunia II 19391945 melahirkan",
+            "keywords": [
+              "Piagam Atlantik",
+              "self determination",
+              "HAM",
+              "kemerdekaan"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1451,
+            "log_id": 146,
+            "question": "Setelah Perang Dunia I, pemerintah kolonial Belanda membentuk Volksraad pada bulan Mei 1918.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menjelaskan pembentukan Dewan Rakyat (Volksraad) oleh pemerintah kolonial Belanda pada bulan Mei 1918 sebagai bagian dari pendekatan terhadap organisasi pergerakan.",
+            "source_text": "Pada bulan Mei 1918, pemerintah kolonial",
+            "keywords": [
+              "Volksraad",
+              "Mei 1918",
+              "Belanda",
+              "Perang Dunia I"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1452,
+            "log_id": 146,
+            "question": "Jepang menyerah kepada Sekutu pada pertengahan Agustus 1944 sehingga Indonesia memproklamasikan kemerdekaan 17 Agustus 1945.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyebut Jepang menyerah pada pertengahan Agustus 1945 (bukan 1944), dan peristiwa itu dimanfaatkan untuk mendorong kemerdekaan Indonesia pada 17 Agustus 1945.",
+            "source_text": "Akhirnya, pada pertengahan bulan Agustus",
+            "keywords": [
+              "Jepang menyerah",
+              "Agustus 1945",
+              "Sekutu",
+              "Proklamasi"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1453,
+            "log_id": 146,
+            "question": "Jika Piagam Atlantik menolak pengambilan wilayah negara lain, maka piagam itu dapat dipandang memperkuat legitimasi gerakan anti-kolonial di Asia-Afrika.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks mengaitkan Piagam Atlantik dengan larangan mengambil wilayah negara lain dan hak menentukan nasib sendiri, lalu menyebutnya sebagai landasan universal perjuangan kemerdekaan negeri-negeri terjajah.",
+            "source_text": "Piagam Atlantik Atlantic Charter yang terdapat beberapa",
+            "keywords": [
+              "Piagam Atlantik",
+              "anti-kolonial",
+              "legitimasi",
+              "Asia Afrika"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1454,
+            "log_id": 146,
+            "question": "Karena Inggris membentuk Persemakmuran, teks menyimpulkan bahwa hubungan tersebut pasti bukan neokolonialisme.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks justru menyatakan beberapa negara masih menganggap hubungan itu sebagai bentuk neokolonialisme atau kolonialisme baru, sehingga tidak disimpulkan pasti bukan neokolonialisme.",
+            "source_text": "Namun, beberapa negara masih meng- anggap bahwa",
+            "keywords": [
+              "Persemakmuran",
+              "neokolonialisme",
+              "Inggris",
+              "bekas jajahan"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "91%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1455,
+            "log_id": 146,
+            "question": "Pernyataan bahwa Proklamasi Indonesia menjadi ilham bagi bangsa lain (misalnya India) mendukung penilaian bahwa kemerdekaan Indonesia berpengaruh terhadap gelombang dekolonisasi di Asia-Afrika.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut Proklamasi Kemerdekaan Indonesia mendorong semangat bangsa-bangsa Asia-Afrika untuk merdeka dan menyatakan kemerdekaan Indonesia menjadi ilham bagi bangsa lain, seperti India.",
+            "source_text": "Proklamasi Kemerdekaan Indonesia merupakan peristiwa penting",
+            "keywords": [
+              "Proklamasi 1945",
+              "ilham",
+              "dekolonisasi",
+              "Asia Afrika"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "50 detik"
+          }
+        ]
+      },
+      {
+        "id": 147,
+        "duration": 25.36,
+        "pages": "79-82",
+        "input_tokens": 3564,
+        "output_tokens": 2002,
+        "total_tokens": 5566,
+        "question_count": 10,
+        "created_at": "2025-12-16T16:45:47.000Z",
+        "template_id": 21,
+        "template_text": "Generate exactly 10 true false questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options ([\"Benar\", \"Salah\"])\n- answer (MUST be \"Benar\" or \"Salah\")\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Matahari terbit dari barat.\",\n  \"options\": [\n    \"Benar\",\n    \"Salah\"\n  ],\n  \"answer\": \"Salah\",\n  \"explanation\": \"Karena rotasi bumi...\",\n  \"source_text\": \"Rotasi bumi menyebabkan matahari tampak terbit\",\n  \"keywords\": [\n    \"matahari\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"20 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: Generate ~50% True and ~50% False. Do NOT make all answers \"Benar\".\n- \"Salah\" answers must be plausible but factually incorrect based on text.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1456,
+            "log_id": 147,
+            "question": "Lembaga IGGI didirikan pada tahun 1967.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Dokumen menyatakan secara eksplisit bahwa IGGI didirikan pada tahun 1967.",
+            "source_text": "Lembaga IGGI didirikan pada tahun",
+            "keywords": [
+              "IGGI",
+              "1967",
+              "Belanda",
+              "ekonomi"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1457,
+            "log_id": 147,
+            "question": "Dana Moneter Internasional (IMF) disebut sebagai lembaga ekonomi dunia yang dibentuk negara-negara Barat.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks mencantumkan IMF bersama Bank Dunia dan ADB sebagai lembaga ekonomi dunia yang dibentuk negara-negara Barat untuk membantu negara-negara yang baru merdeka.",
+            "source_text": "Dana Moneter Internasional International Monetary FundIMF",
+            "keywords": [
+              "IMF",
+              "Barat",
+              "lembaga ekonomi",
+              "negara baru merdeka"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1458,
+            "log_id": 147,
+            "question": "Politik luar negeri Indonesia adalah memihak pada salah satu blok yang ada di dunia.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dokumen menjelaskan politik luar negeri Indonesia bersifat bebas aktif, yang berarti tidak memihak pada salah satu blok.",
+            "source_text": "Politik luar negeri Indonesia adalah bebas",
+            "keywords": [
+              "bebas aktif",
+              "politik luar negeri",
+              "Blok Barat",
+              "Blok Timur"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1459,
+            "log_id": 147,
+            "question": "Konferensi Asia Afrika diselenggarakan di Bandung pada tanggal 18–24 April 1955.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebutkan pelaksanaan KAA di Bandung pada 18–24 April 1955.",
+            "source_text": "Konferensi Asia Afrika diselenggarakan di Bandung",
+            "keywords": [
+              "KAA",
+              "Bandung",
+              "April 1955",
+              "Gedung Merdeka"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1460,
+            "log_id": 147,
+            "question": "Indonesia memilih politik luar negeri bebas aktif karena setelah Perang Dunia II muncul dua kekuatan adidaya yang saling berhadapan.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Dokumen menyatakan alasan pemilihan politik luar negeri bebas aktif berkaitan dengan munculnya dua kekuatan adidaya baru (Amerika Serikat dan Uni Soviet) setelah Perang Dunia II.",
+            "source_text": "Negara Indonesia memilih sifat politik luar",
+            "keywords": [
+              "bebas aktif",
+              "Perang Dunia II",
+              "Amerika Serikat",
+              "Uni Soviet"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1461,
+            "log_id": 147,
+            "question": "Konferensi Kolombo memutuskan bahwa Konferensi Asia Afrika akan diadakan tanpa melibatkan Indonesia sebagai penyelenggara.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dokumen menyebutkan Konferensi Kolombo secara aklamasi memutuskan akan mengadakan KAA dan pemerintah Indonesia ditunjuk sebagai penyelenggaranya.",
+            "source_text": "Konferensi Kolombo secara aklamasi memutuskan",
+            "keywords": [
+              "Konferensi Kolombo",
+              "KAA",
+              "penyelenggara",
+              "Indonesia"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "91%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1462,
+            "log_id": 147,
+            "question": "Salah satu keputusan Konferensi Bogor adalah memberi dukungan terhadap tuntutan Indonesia mengenai Irian Barat.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Pada bagian keputusan Konferensi Bogor, dokumen mencantumkan pemberian dukungan terhadap tuntutan Indonesia mengenai Irian Barat.",
+            "source_text": "Konferensi Bogor memutuskan hal-hal sebagai",
+            "keywords": [
+              "Konferensi Bogor",
+              "Irian Barat",
+              "dukungan",
+              "KAA"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "89%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1463,
+            "log_id": 147,
+            "question": "Jika tujuan KAA adalah memberantas diskriminasi ras dan kolonialisme, maka KAA tidak relevan untuk mendorong kerja sama sosial-ekonomi-budaya antarnegara Asia-Afrika.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dokumen mencantumkan beberapa tujuan KAA sekaligus, termasuk memajukan kerja sama bangsa-bangsa Asia-Afrika dalam bidang sosial, ekonomi, dan kebudayaan, sehingga KAA justru relevan untuk kerja sama tersebut.",
+            "source_text": "Tujuan diadakannya Konferensi Asia Afrika",
+            "keywords": [
+              "tujuan KAA",
+              "kerja sama",
+              "kolonialisme",
+              "diskriminasi ras"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "86%",
+            "duration": "50 detik"
+          },
+          {
+            "id": 1464,
+            "log_id": 147,
+            "question": "Karena politik luar negeri Indonesia bebas aktif berarti tidak ada unsur ikatan tertentu, maka Indonesia dapat bersahabat dengan negara mana pun selama tidak terikat pada salah satu blok.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menjelaskan 'bebas' berarti tidak memihak pada salah satu blok dan berhak bersahabat dengan negara mana pun asal tanpa unsur ikatan tertentu.",
+            "source_text": "Bebas, artinya bangsa Indonesia tidak",
+            "keywords": [
+              "bebas aktif",
+              "bersahabat",
+              "tanpa ikatan",
+              "blok"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "87%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1465,
+            "log_id": 147,
+            "question": "Berdasarkan latar belakang KAA, faktor Perang Dingin bukan bagian pertimbangan penyelenggaraan Konferensi Asia Afrika.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dalam daftar latar belakang dan dasar pertimbangan KAA, dokumen secara jelas mencantumkan adanya Perang Dingin antara Blok Barat dan Blok Timur.",
+            "source_text": "Latar belakang dan dasar pertimbangan diadakan",
+            "keywords": [
+              "latar belakang KAA",
+              "Perang Dingin",
+              "Blok Barat",
+              "Blok Timur"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "88%",
+            "duration": "45 detik"
+          }
+        ]
+      },
+      {
+        "id": 148,
+        "duration": 33.27,
+        "pages": "83-86",
+        "input_tokens": 3744,
+        "output_tokens": 1986,
+        "total_tokens": 5730,
+        "question_count": 10,
+        "created_at": "2025-12-16T16:47:52.000Z",
+        "template_id": 21,
+        "template_text": "Generate exactly 10 true false questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options ([\"Benar\", \"Salah\"])\n- answer (MUST be \"Benar\" or \"Salah\")\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Matahari terbit dari barat.\",\n  \"options\": [\n    \"Benar\",\n    \"Salah\"\n  ],\n  \"answer\": \"Salah\",\n  \"explanation\": \"Karena rotasi bumi...\",\n  \"source_text\": \"Rotasi bumi menyebabkan matahari tampak terbit\",\n  \"keywords\": [\n    \"matahari\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"20 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: Generate ~50% True and ~50% False. Do NOT make all answers \"Benar\".\n- \"Salah\" answers must be plausible but factually incorrect based on text.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1466,
+            "log_id": 148,
+            "question": "Konferensi Asia Afrika membicarakan kerja sama ekonomi dan kebudayaan.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Dalam teks disebutkan bahwa Konferensi Asia Afrika membicarakan kepentingan bersama negara-negara Asia dan Afrika, terutama kerja sama ekonomi dan kebudayaan.",
+            "source_text": "Konferensi Asia Afrika membicarakan hal-hal",
+            "keywords": [
+              "Konferensi Asia Afrika",
+              "kerja sama ekonomi",
+              "kebudayaan"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1467,
+            "log_id": 148,
+            "question": "Kerja sama ekonomi Asia-Afrika dilakukan dengan saling memberikan bantuan teknik dan tenaga ahli.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyatakan kerja sama ekonomi dilakukan melalui bantuan teknik dan tenaga ahli antarbangsa Asia-Afrika.",
+            "source_text": "Kerja sama ekonomi dalam lingkungan bangsa-bangsa",
+            "keywords": [
+              "kerja sama ekonomi",
+              "bantuan teknik",
+              "tenaga ahli"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1468,
+            "log_id": 148,
+            "question": "Kesepuluh prinsip Konferensi Asia Afrika dikenal sebagai Trisila Bandung.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyebut kesepuluh prinsip itu dikenal sebagai Dasasila Bandung atau Bandung Declaration, bukan Trisila Bandung.",
+            "source_text": "Kesepuluh prinsip yang dinyatakan dalam",
+            "keywords": [
+              "Dasasila Bandung",
+              "Bandung Declaration",
+              "prinsip KAA"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1469,
+            "log_id": 148,
+            "question": "GNB atau Non Alignment merupakan gerakan yang tidak memihak terhadap Blok Barat dan Blok Timur.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Pada bagian pengertian dijelaskan bahwa GNB/Non Alignment adalah gerakan yang netral atau tidak memihak Blok Barat maupun Blok Timur.",
+            "source_text": "GNB atau Non Alignment NAM merupakan",
+            "keywords": [
+              "Gerakan Non Blok",
+              "Non Alignment",
+              "Blok Barat"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "91%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1470,
+            "log_id": 148,
+            "question": "Salah satu keputusan Konferensi Asia Afrika adalah menentang diskriminasi ras dan kolonialisme dalam segala bentuk.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Dalam daftar keputusan penting, konferensi secara tegas memuat penentangan terhadap diskriminasi ras dan kolonialisme dalam segala bentuk.",
+            "source_text": "Konferensi setelah membicarakan beberapa masalah",
+            "keywords": [
+              "KAA",
+              "diskriminasi ras",
+              "kolonialisme"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1471,
+            "log_id": 148,
+            "question": "Menurut teks, Perang Dunia II tidak mengubah peta politik dunia.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyatakan peta politik dunia ikut berubah setelah Perang Dunia II, sehingga pernyataan bahwa tidak berubah bertentangan dengan isi bacaan.",
+            "source_text": "Peta politik dunia pun ikut",
+            "keywords": [
+              "Perang Dunia II",
+              "peta politik dunia",
+              "perubahan"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1472,
+            "log_id": 148,
+            "question": "Salah satu latar belakang berdirinya Gerakan Non Blok adalah munculnya dua blok adidaya yang saling memperebutkan pengaruh.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Pada faktor latar belakang, teks menyebut munculnya Blok Barat di bawah Amerika Serikat dan Blok Timur di bawah Uni Soviet yang saling memperebutkan pengaruh di dunia.",
+            "source_text": "Dengan demikian faktor-faktor yang melatarbelakangi",
+            "keywords": [
+              "latar belakang GNB",
+              "Blok Barat",
+              "Blok Timur"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1473,
+            "log_id": 148,
+            "question": "Jika tujuan GNB adalah meredakan ketegangan dunia, maka GNB mendorong negara anggotanya bergabung ke salah satu blok militer agar lebih aman.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menegaskan GNB tidak memihak dan tidak bergabung ke dalam blok dunia yang saling bertentangan, sehingga dorongan untuk bergabung ke salah satu blok bertolak belakang dengan asasnya.",
+            "source_text": "GNB bukanlah suatu blok tersendiri",
+            "keywords": [
+              "asas GNB",
+              "netralitas",
+              "ketegangan dunia"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "87%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1474,
+            "log_id": 148,
+            "question": "Pengaruh Konferensi Asia Afrika terhadap dunia antara lain menjadi penengah dua blok sehingga mengurangi ketegangan akibat Perang Dingin.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut KAA mampu menjadi penengah dua blok yang berseteru sehingga dapat mengurangi ketegangan (détente) akibat Perang Dingin dan mencegah perang terbuka.",
+            "source_text": "Konferensi Asia Afrika mampu menjadi penengah",
+            "keywords": [
+              "pengaruh KAA",
+              "Perang Dingin",
+              "détente"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "88%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1475,
+            "log_id": 148,
+            "question": "Karena KAA mendukung perlucutan senjata, konferensi menyerukan agar percobaan senjata nuklir terus dilanjutkan untuk menjaga keseimbangan kekuatan.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyatakan konferensi mendukung perlucutan senjata dan menyerukan agar percobaan senjata nuklir dihentikan, sehingga pernyataan bahwa harus dilanjutkan tidak sesuai isi bacaan.",
+            "source_text": "Demi perdamaian dunia, konferensi mendukung",
+            "keywords": [
+              "perlucutan senjata",
+              "senjata nuklir",
+              "perdamaian dunia"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "89%",
+            "duration": "50 detik"
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "duration": 31.44,
+        "pages": "87-92",
+        "input_tokens": 5134,
+        "output_tokens": 1950,
+        "total_tokens": 7084,
+        "question_count": 10,
+        "created_at": "2025-12-16T16:49:55.000Z",
+        "template_id": 21,
+        "template_text": "Generate exactly 10 true false questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options ([\"Benar\", \"Salah\"])\n- answer (MUST be \"Benar\" or \"Salah\")\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Matahari terbit dari barat.\",\n  \"options\": [\n    \"Benar\",\n    \"Salah\"\n  ],\n  \"answer\": \"Salah\",\n  \"explanation\": \"Karena rotasi bumi...\",\n  \"source_text\": \"Rotasi bumi menyebabkan matahari tampak terbit\",\n  \"keywords\": [\n    \"matahari\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"20 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: Generate ~50% True and ~50% False. Do NOT make all answers \"Benar\".\n- \"Salah\" answers must be plausible but factually incorrect based on text.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1476,
+            "log_id": 149,
+            "question": "Pada waktu berdirinya, Gerakan Non Blok hanya beranggota 25 negara.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyatakan secara eksplisit bahwa saat berdiri GNB hanya beranggotakan 25 negara.",
+            "source_text": "Pada waktu berdirinya, GNB hanya",
+            "keywords": [
+              "GNB",
+              "keanggotaan",
+              "25 negara"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1477,
+            "log_id": 149,
+            "question": "Salah satu syarat menjadi anggota GNB adalah menjadi anggota pakta militer Amerika Serikat atau Uni Soviet.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyebutkan syaratnya justru tidak menjadi anggota salah satu pakta militer Amerika Serikat atau Uni Soviet.",
+            "source_text": "Adapun syarat menjadi anggota GNB",
+            "keywords": [
+              "syarat anggota",
+              "pakta militer",
+              "Amerika Serikat",
+              "Uni Soviet"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1478,
+            "log_id": 149,
+            "question": "Di dalam Gerakan Non Blok tidak terdapat struktur organisasi yang mengurus kegiatan di berbagai bidang.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyatakan bahwa GNB bukan merupakan lembaga sehingga tidak memiliki struktur organisasi yang mengurus berbagai bidang.",
+            "source_text": "Di dalam Gerakan Non Blok tidak",
+            "keywords": [
+              "struktur organisasi",
+              "GNB",
+              "lembaga"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1479,
+            "log_id": 149,
+            "question": "Dialog Utara–Selatan adalah pertemuan yang membahas kerja sama saling menguntungkan antara negara maju (industri Utara) dan negara berkembang (Selatan).",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Definisi Dialog Utara–Selatan dalam teks menyebutkan tujuan kerja sama yang saling menguntungkan antara kelompok Utara (negara industri maju) dan Selatan (negara berkembang).",
+            "source_text": "Dialog UtaraSelatan adalah pertemuan yang",
+            "keywords": [
+              "Dialog Utara–Selatan",
+              "negara maju",
+              "negara berkembang",
+              "TEBD"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1480,
+            "log_id": 149,
+            "question": "Ketua Gerakan Non Blok dijabat oleh kepala pemerintahan negara yang menjadi tuan rumah KTT Gerakan Non Blok.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menjelaskan mekanisme kepemimpinan GNB: ketua dijabat oleh kepala pemerintahan negara tuan rumah KTT.",
+            "source_text": "Ketua Gerakan Non Blok dijabat",
+            "keywords": [
+              "ketua GNB",
+              "KTT",
+              "tuan rumah"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1481,
+            "log_id": 149,
+            "question": "Kelompok 77 dibentuk di Jenewa, Swiss pada tahun 1964 dan beranggotakan negara-negara di Asia, Amerika Latin dan Karibia, serta Afrika.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut tempat, tahun pembentukan, dan kawasan anggota Kelompok 77 secara langsung.",
+            "source_text": "Kelompok 77 dibentuk di Jenewa,",
+            "keywords": [
+              "Kelompok 77",
+              "Jenewa",
+              "1964",
+              "negara berkembang"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1482,
+            "log_id": 149,
+            "question": "KTT VII Gerakan Non Blok tetap diselenggarakan di Bagdad pada akhir tahun 1982 meskipun terjadi perang Irak–Iran.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyatakan KTT VII semula diputuskan di Bagdad, tetapi karena perang Irak–Iran maka dialihkan ke New Delhi, India.",
+            "source_text": "Oleh karena terjadi perang Irak-Iran,maka",
+            "keywords": [
+              "KTT VII",
+              "Bagdad",
+              "New Delhi",
+              "Irak–Iran"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "40 detik"
+          },
+          {
+            "id": 1483,
+            "log_id": 149,
+            "question": "Karena GNB mengandalkan perjuangan pada kekuatan moral, maka keberadaan struktur organisasi formal yang rinci dianggap bukan unsur utama gerakan ini.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menegaskan tidak adanya struktur organisasi yang mengurus berbagai bidang dan menjelaskan bahwa GNB mengandalkan perjuangan pada kekuatan moral, sehingga struktur formal rinci bukan fokus utama.",
+            "source_text": "Gerakan Non Blok mengandalkan perjuangan pada",
+            "keywords": [
+              "kekuatan moral",
+              "struktur organisasi",
+              "GNB"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "50 detik"
+          },
+          {
+            "id": 1484,
+            "log_id": 149,
+            "question": "Pokok-pokok Pesan Jakarta menyatakan bahwa GNB menolak kerja sama Selatan–Selatan dan hanya mendorong kerja sama Utara–Selatan.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks Pesan Jakarta justru menyebut upaya meningkatkan kerja sama Selatan–Selatan dan mendorong kerja sama yang konkret dan praktis di berbagai bidang.",
+            "source_text": "Untuk meningkatkan kerja sama SelatanSelatan,",
+            "keywords": [
+              "Pesan Jakarta",
+              "Kerja sama Selatan–Selatan",
+              "GNB",
+              "ekonomi"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "91%",
+            "duration": "55 detik"
+          },
+          {
+            "id": 1485,
+            "log_id": 149,
+            "question": "Pernyataan bahwa tidak ada negara yang boleh memaksakan konsep demokrasi dan HAM sebagai syarat bantuan dapat dipandang sebagai upaya GNB menjaga kedaulatan negara penerima bantuan.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut larangan memaksakan konsep demokrasi dan HAM serta menjadikannya syarat bantuan; ini dapat ditafsirkan sebagai penegasan prinsip kedaulatan dan nonintervensi.",
+            "source_text": "Tidak ada negara yang boleh menggunakan",
+            "keywords": [
+              "kedaulatan",
+              "nonintervensi",
+              "HAM",
+              "bantuan"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          }
+        ]
+      },
+      {
+        "id": 150,
+        "duration": 38.04,
+        "pages": "93-95",
+        "input_tokens": 2889,
+        "output_tokens": 1863,
+        "total_tokens": 4752,
+        "question_count": 10,
+        "created_at": "2025-12-16T16:52:04.000Z",
+        "template_id": 21,
+        "template_text": "Generate exactly 10 true false questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options ([\"Benar\", \"Salah\"])\n- answer (MUST be \"Benar\" or \"Salah\")\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Matahari terbit dari barat.\",\n  \"options\": [\n    \"Benar\",\n    \"Salah\"\n  ],\n  \"answer\": \"Salah\",\n  \"explanation\": \"Karena rotasi bumi...\",\n  \"source_text\": \"Rotasi bumi menyebabkan matahari tampak terbit\",\n  \"keywords\": [\n    \"matahari\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"20 detik\",\n  \"confidence\": \"99%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: Generate ~50% True and ~50% False. Do NOT make all answers \"Benar\".\n- \"Salah\" answers must be plausible but factually incorrect based on text.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1486,
+            "log_id": 150,
+            "question": "Terusan Suez menghubungkan Laut Tengah dan Laut Merah.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Pada teks dijelaskan bahwa Terusan Suez adalah terusan yang menghubungkan Laut Tengah dan Laut Merah.",
+            "source_text": "Terusan Suez merupakan terusan yang menghubungkan",
+            "keywords": [
+              "Terusan Suez",
+              "Laut Tengah",
+              "Laut Merah"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1487,
+            "log_id": 150,
+            "question": "Terusan Suez terletak di wilayah Turki.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyebutkan Terusan Suez terletak di wilayah Mesir, bukan Turki.",
+            "source_text": "Terusan Suez merupakan terusan yang menghubungkan",
+            "keywords": [
+              "Terusan Suez",
+              "Mesir",
+              "letak"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1488,
+            "log_id": 150,
+            "question": "Penggalian Terusan Suez dilaksanakan pada abad ke-19.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks secara eksplisit menyatakan bahwa penggalian Terusan Suez dilaksanakan pada abad ke-19.",
+            "source_text": "Penggalian Terusan Suez dilaksanakan pada abad",
+            "keywords": [
+              "penggalian",
+              "abad ke-19",
+              "Terusan Suez"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "20 detik"
+          },
+          {
+            "id": 1489,
+            "log_id": 150,
+            "question": "Terusan Suez dibangun pada tahun 1959–1969.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Dalam teks disebutkan Terusan Suez dibangun tahun 1859–1869, sehingga pernyataan 1959–1969 tidak sesuai.",
+            "source_text": "Terusan Suez dibangun tahun 1859-1869",
+            "keywords": [
+              "pembangunan",
+              "1859-1869",
+              "Terusan Suez"
+            ],
+            "difficulty": "LOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "25 detik"
+          },
+          {
+            "id": 1490,
+            "log_id": 150,
+            "question": "Konferensi Istambul tahun 1888 menetapkan Terusan Suez berstatus internasional.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebutkan bahwa Konferensi Istambul Turki pada 29 Oktober 1888 menetapkan status Terusan Suez sebagai internasional.",
+            "source_text": "Konferensi menetapkan Terusan Suez berstatus internasional",
+            "keywords": [
+              "Konferensi Istambul",
+              "1888",
+              "status internasional"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1491,
+            "log_id": 150,
+            "question": "Konferensi London tentang Terusan Suez tahun 1956 dihadiri Mesir.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyatakan konferensi di London dihadiri 20 negara, tetapi Mesir tidak hadir.",
+            "source_text": "Konferensi itu dihadiri oleh 20 negara",
+            "keywords": [
+              "Konferensi London",
+              "1956",
+              "Mesir"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1492,
+            "log_id": 150,
+            "question": "Nasionalisasi Terusan Suez oleh Gamal Abdul Nasser memicu reaksi Inggris dan Prancis.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menjelaskan tindakan nasionalisasi dianggap pelanggaran serius dan segera mendapat reaksi dari Inggris dan Prancis.",
+            "source_text": "Tindakan Gamal Abdul Nasser ini tentu",
+            "keywords": [
+              "nasionalisasi",
+              "Gamal Abdul Nasser",
+              "Inggris",
+              "Prancis"
+            ],
+            "difficulty": "MOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "91%",
+            "duration": "35 detik"
+          },
+          {
+            "id": 1493,
+            "log_id": 150,
+            "question": "Pembentukan UNEF menunjukkan PBB memilih pendekatan menjaga perdamaian dibanding memperluas perang di Mesir.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut Dewan Keamanan PBB diminta membentuk pasukan penjaga perdamaian di Mesir, yang menunjukkan orientasi penyelesaian konflik melalui penjagaan perdamaian.",
+            "source_text": "Dewan Keamanan PBB harus segera membentuk",
+            "keywords": [
+              "PBB",
+              "UNEF",
+              "penjaga perdamaian",
+              "Krisis Suez"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "88%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1494,
+            "log_id": 150,
+            "question": "Pengiriman Pasukan Garuda ke Mesir dilakukan karena Indonesia mendukung kolonialisme di Timur Tengah.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Salah",
+            "explanation": "Teks menyatakan pengiriman pasukan dilakukan sebagai partisipasi aktif membantu mengatasi Krisis Suez, menunjukkan solidaritas sesama negara baru merdeka dan melaksanakan keputusan Konferensi Asia Afrika, bukan mendukung kolonialisme.",
+            "source_text": "Pengiriman pasukan penjaga perdamaian oleh bangsa",
+            "keywords": [
+              "Pasukan Garuda",
+              "solidaritas",
+              "Konferensi Asia Afrika",
+              "Krisis Suez"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "50 detik"
+          },
+          {
+            "id": 1495,
+            "log_id": 150,
+            "question": "Jika Mesir menerima pembentukan badan internasional untuk menangani Terusan Suez, maka ketegangan kawasan kemungkinan tidak memuncak kembali.",
+            "options": [
+              "Benar",
+              "Salah"
+            ],
+            "answer": "Benar",
+            "explanation": "Teks menyebut ketegangan memuncak kembali akibat Nasser menolak hasil Konferensi London dan tetap menasionalisasi Terusan Suez, sehingga secara logis penerimaan badan internasional berpotensi mengurangi pemuncakan ketegangan.",
+            "source_text": "Namun, Gamal Abdul Nasser tetap teguh",
+            "keywords": [
+              "Konferensi London",
+              "ketegangan",
+              "nasionalisasi",
+              "Terusan Suez"
+            ],
+            "difficulty": "HOTS",
+            "type": "true-false",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "86%",
+            "duration": "55 detik"
+          }
+        ]
+      }
+    ]
+  }
+}

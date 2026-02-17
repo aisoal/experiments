@@ -1,0 +1,1349 @@
+{
+  "session_details": {
+    "id": "wxlEk94Gw6RE",
+    "user_id": 2,
+    "title": "multiple-choice",
+    "filename": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+    "model": "gemini-3.0-pro",
+    "created_at": "2025-12-16T13:02:44.000Z",
+    "total_questions": 50,
+    "confidence_stats": {
+      "max": 100,
+      "min": 85,
+      "avg": 92.9
+    },
+    "question_type_distribution": {
+      "essay": 0,
+      "fill-in-the-blank": 0,
+      "true-false": 0,
+      "multiple-choice": 50
+    },
+    "efficiency_stats": {
+      "fastest": 46.01,
+      "slowest": 68.37,
+      "avg": 58.462000000000025
+    },
+    "logs": [
+      {
+        "id": 101,
+        "duration": 59.84,
+        "pages": "11-14",
+        "input_tokens": 3423,
+        "output_tokens": 2709,
+        "total_tokens": 6132,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:02:45.000Z",
+        "template_id": 19,
+        "template_text": "Generate exactly 10 multiple choice questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options (array of 4 strings, RAW text only, NO prefixes like \"A.\" or \"1.\")\n- answer (MUST be exactly one of the string values in options)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Siapa penemu mesin uap?\",\n  \"options\": [\n    \"Thomas Alva Edison\",\n    \"James Watt\",\n    \"Alexander Graham Bell\",\n    \"Nikola Tesla\"\n  ],\n  \"answer\": \"James Watt\",\n  \"explanation\": \"James Watt menyempurnakan...\",\n  \"source_text\": \"Mesin uap yang efisien dikembangkan oleh James Watt\",\n  \"keywords\": [\n    \"mesin uap\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"45 detik\",\n  \"confidence\": \"95%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: The 'options' array must contain ONLY the answer text. Do NOT include prefixes like \"A.\", \"B.\", \"a.\", \"b.\", \"1.\", \"2.\" inside the strings.\n- Distribute correct answers evenly across positions 0-3.\n- Do NOT bias towards the first option.\n- Incorrect options must be plausible.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 996,
+            "log_id": 101,
+            "question": "Siapa yang diserahi tugas memimpin Sidang Kabinet Dwikora setelah Presiden Soekarno meninggalkan istana menuju Bogor pada 11 Maret 1966?",
+            "options": [
+              "Dr. Subandrio",
+              "Dr. J. Laimena",
+              "Chaerul Saleh",
+              "Letnan Jenderal Soeharto"
+            ],
+            "answer": "Dr. J. Laimena",
+            "explanation": "Ketika situasi dianggap tidak aman karena adanya pasukan tak dikenal, Presiden Soekarno menyerahkan pimpinan sidang kepada Wakil Perdana Menteri II, Dr. J. Laimena.",
+            "source_text": "Presiden Soekarno menyerahkan pimpinan sidang kepada Waperdam II",
+            "keywords": [
+              "Sidang Kabinet",
+              "Dr. J. Laimena",
+              "11 Maret 1966"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 997,
+            "log_id": 101,
+            "question": "Siapa saja tiga perwira tinggi yang merumuskan Surat Perintah 11 Maret bersama Brigjen Subur?",
+            "options": [
+              "Basuki Rakhmat, M. Yusuf, Amir Machmud",
+              "Soeharto, Sarwo Edhie, Nasution",
+              "Ahmad Yani, D.I. Panjaitan, S. Parman",
+              "M. Yusuf, Amir Machmud, Sutowo"
+            ],
+            "answer": "Basuki Rakhmat, M. Yusuf, Amir Machmud",
+            "explanation": "Naskah Supersemar dirumuskan oleh tiga perwira tinggi: Mayjen Basuki Rakhmat, Brigjen M. Yusuf, dan Brigjen Amir Machmud.",
+            "source_text": "yang merumuskan surat perintah tersebut adalah ketiga perwira tinggi",
+            "keywords": [
+              "Supersemar",
+              "Perwira Tinggi",
+              "Basuki Rakhmat"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 998,
+            "log_id": 101,
+            "question": "Ketetapan MPRS nomor berapakah yang mengatur tentang pembubaran PKI dan pernyataan sebagai organisasi terlarang?",
+            "options": [
+              "Tap MPRS No. IX/MPRS/1966",
+              "Tap MPRS No. X/MPRS/1966",
+              "Tap MPRS No. XXV/MPRS/1966",
+              "Tap MPRS No. XX/MPRS/1966"
+            ],
+            "answer": "Tap MPRS No. XXV/MPRS/1966",
+            "explanation": "Tap MPRS No. XXV/MPRS/1966 secara khusus menetapkan pembubaran PKI dan menyatakan PKI serta ormasnya sebagai organisasi terlarang.",
+            "source_text": "Ketetapan MPRS No. XXV/MPRS/1966 tentang Pembubaran PKI",
+            "keywords": [
+              "Tap MPRS",
+              "Pembubaran PKI",
+              "XXV/MPRS/1966"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 999,
+            "log_id": 101,
+            "question": "Tanggal berapakah surat keputusan pembubaran dan larangan PKI beserta ormas-ormasnya dikeluarkan pertama kali sebagai tindak lanjut Supersemar?",
+            "options": [
+              "11 Maret 1966",
+              "12 Maret 1966",
+              "18 Maret 1966",
+              "27 Maret 1966"
+            ],
+            "answer": "12 Maret 1966",
+            "explanation": "Sehari setelah menerima Supersemar, yaitu pada tanggal 12 Maret 1966, Letjen Soeharto mengeluarkan keputusan pembubaran PKI.",
+            "source_text": "Tanggal 12 Maret 1966, dikeluarkanlah surat keputusan yang berisi",
+            "keywords": [
+              "Pembubaran PKI",
+              "12 Maret 1966",
+              "Keputusan Presiden"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1000,
+            "log_id": 101,
+            "question": "Apa dampak politik langsung dari pidato 'Jasmerah' yang disampaikan Presiden Soekarno pada 17 Agustus 1966?",
+            "options": [
+              "Penyatuan visi antara pemerintah dan rakyat",
+              "Timbulnya pertentangan politik dan bentrokan fisik",
+              "Dukungan penuh dari seluruh fraksi di DPRGR",
+              "Pembubaran kabinet Dwikora secara damai"
+            ],
+            "answer": "Timbulnya pertentangan politik dan bentrokan fisik",
+            "explanation": "Pidato tersebut memicu reaksi keras dari berbagai kalangan yang berujung pada pertentangan politik dan bentrokan fisik di beberapa tempat.",
+            "source_text": "menjadi bahan pertentangan politik, yang di beberapa tempat menyebabkan",
+            "keywords": [
+              "Jasmerah",
+              "Pidato Soekarno",
+              "Dampak Politik"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1001,
+            "log_id": 101,
+            "question": "Apa alasan utama Presiden Soekarno mendadak meninggalkan Sidang Kabinet Dwikora menuju Istana Bogor?",
+            "options": [
+              "Adanya demonstrasi besar-besaran mahasiswa",
+              "Laporan ajudan mengenai pasukan tak dikenal",
+              "Desakan dari ketiga perwira tinggi AD",
+              "Sakit mendadak saat memimpin sidang"
+            ],
+            "answer": "Laporan ajudan mengenai pasukan tak dikenal",
+            "explanation": "Presiden meninggalkan sidang setelah ajudan melaporkan adanya pasukan liar (tak dikenal) di sekitar istana demi keamanan.",
+            "source_text": "ajudan presiden melaporkan bahwa di sekitar istana terdapat pasukan",
+            "keywords": [
+              "Pasukan tak dikenal",
+              "Istana Bogor",
+              "Sidang Kabinet"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1002,
+            "log_id": 101,
+            "question": "Bagaimana langkah pembersihan lembaga legislatif DPRGR yang dilakukan oleh pemerintah Orde Baru untuk membedakannya dari eksekutif?",
+            "options": [
+              "Mengganti seluruh anggota DPRGR dengan tentara",
+              "Memisahkan jabatan pimpinan DPRGR dengan jabatan menteri",
+              "Membubarkan DPRGR dan membentuk MPR baru",
+              "Menjadikan pimpinan DPRGR sebagai wakil presiden"
+            ],
+            "answer": "Memisahkan jabatan pimpinan DPRGR dengan jabatan menteri",
+            "explanation": "Pemerintah memisahkan jabatan pimpinan DPRGR dari eksekutif sehingga pimpinan DPRGR tidak lagi berstatus sebagai menteri.",
+            "source_text": "Memisahkan jabatan pimpinan DPRGR dengan jabatan eksekutif",
+            "keywords": [
+              "DPRGR",
+              "Legislatif",
+              "Pemisahan Jabatan"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1003,
+            "log_id": 101,
+            "question": "Berdasarkan bagian 'Fenomena', apa ironi yang terjadi dalam peran negara pada masa awal Orde Baru meskipun tujuannya melaksanakan Pancasila secara murni?",
+            "options": [
+              "Negara menjadi lemah karena terlalu demokratis",
+              "Peran negara sangat besar dan mendominasi masyarakat",
+              "Ekonomi negara hancur karena fokus pada politik",
+              "Negara mengabaikan bahaya laten komunis"
+            ],
+            "answer": "Peran negara sangat besar dan mendominasi masyarakat",
+            "explanation": "Teks menyebutkan bahwa kehati-hatian terhadap bahaya komunis justru menyebabkan peran negara menjadi sangat besar dan mendominasi kehidupan masyarakat.",
+            "source_text": "peran negara sangat besar dan mendominasi kehidupan masyarakat",
+            "keywords": [
+              "Peran Negara",
+              "Dominasi",
+              "Fenomena Orde Baru"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1004,
+            "log_id": 101,
+            "question": "Mengapa pembersihan MPRS dari unsur G 30 S/PKI dianggap krusial secara konstitusional menurut teks?",
+            "options": [
+              "Karena MPRS berkedudukan lebih tinggi dari lembaga kepresidenan",
+              "Agar MPRS dapat segera mengangkat presiden seumur hidup",
+              "Supaya MPRS bisa mengambil alih komando angkatan darat",
+              "Karena MPRS merupakan satu-satunya lembaga negara yang sah"
+            ],
+            "answer": "Karena MPRS berkedudukan lebih tinggi dari lembaga kepresidenan",
+            "explanation": "Pembersihan MPRS penting karena menurut UUD 1945, lembaga ini memiliki kedudukan lebih tinggi daripada kepresidenan, sehingga harus bersih dari unsur terlarang.",
+            "source_text": "MPRS mempunyai kedudukan yang lebih tinggi daripada lembaga kepresidenan",
+            "keywords": [
+              "MPRS",
+              "Hierarki Konstitusi",
+              "Pembersihan Lembaga"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1005,
+            "log_id": 101,
+            "question": "Apa makna strategis dari berakhirnya Sidang Umum IV MPRS bagi kelangsungan pemerintahan Orde Baru?",
+            "options": [
+              "Tercapainya seluruh tuntutan Tritura termasuk ekonomi",
+              "Landasan awal Orde Baru berhasil ditegakkan secara formal",
+              "Presiden Soekarno resmi mengundurkan diri dari jabatan",
+              "Militer mengambil alih kekuasaan secara total tanpa sipil"
+            ],
+            "answer": "Landasan awal Orde Baru berhasil ditegakkan secara formal",
+            "explanation": "Teks menyimpulkan bahwa dengan berakhirnya sidang tersebut, landasan awal Orde Baru telah berhasil ditegakkan dan dua dari tiga tuntutan Tritura terpenuhi.",
+            "source_text": "berarti landasan awal Orde Baru berhasil ditegakkan",
+            "keywords": [
+              "Sidang Umum IV MPRS",
+              "Landasan Orde Baru",
+              "Strategi Politik"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "duration": 62.33,
+        "pages": "15-21",
+        "input_tokens": 6049,
+        "output_tokens": 2757,
+        "total_tokens": 8806,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:05:40.000Z",
+        "template_id": 19,
+        "template_text": "Generate exactly 10 multiple choice questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options (array of 4 strings, RAW text only, NO prefixes like \"A.\" or \"1.\")\n- answer (MUST be exactly one of the string values in options)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Siapa penemu mesin uap?\",\n  \"options\": [\n    \"Thomas Alva Edison\",\n    \"James Watt\",\n    \"Alexander Graham Bell\",\n    \"Nikola Tesla\"\n  ],\n  \"answer\": \"James Watt\",\n  \"explanation\": \"James Watt menyempurnakan...\",\n  \"source_text\": \"Mesin uap yang efisien dikembangkan oleh James Watt\",\n  \"keywords\": [\n    \"mesin uap\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"45 detik\",\n  \"confidence\": \"95%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: The 'options' array must contain ONLY the answer text. Do NOT include prefixes like \"A.\", \"B.\", \"a.\", \"b.\", \"1.\", \"2.\" inside the strings.\n- Distribute correct answers evenly across positions 0-3.\n- Do NOT bias towards the first option.\n- Incorrect options must be plausible.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1006,
+            "log_id": 102,
+            "question": "Berdasarkan teks, Ketetapan MPRS nomor berapakah yang menetapkan pembubaran PKI dan ormas-ormasnya sebagai organisasi terlarang?",
+            "options": [
+              "Ketetapan MPRS No. IX/MPRS/1966",
+              "Ketetapan MPRS No. XI/MPRS/1966",
+              "Ketetapan MPRS No. XXV/MPRS/1966",
+              "Ketetapan MPRS No. XXXIII/MPRS/1967"
+            ],
+            "answer": "Ketetapan MPRS No. XXV/MPRS/1966",
+            "explanation": "Teks secara eksplisit menyebutkan bahwa pembubaran PKI serta pernyataannya sebagai organisasi terlarang ditetapkan oleh MPRS dengan Ketetapan MPRS No. XXV/MPRS/1966.",
+            "source_text": "Pembubaran PKI serta pernyataan PKI dan ormas-ormasnya",
+            "keywords": [
+              "Ketetapan MPRS",
+              "Pembubaran PKI",
+              "Orde Baru"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1007,
+            "log_id": 102,
+            "question": "Apa nama program kerja yang dicanangkan oleh Kabinet Ampera yang terdiri dari empat poin utama?",
+            "options": [
+              "Dwidarma",
+              "Caturkarya",
+              "Pancakarya",
+              "Trisakti"
+            ],
+            "answer": "Caturkarya",
+            "explanation": "Dokumen menyatakan bahwa program yang dicanangkan Kabinet Ampera disebut Caturkarya Kabinet Ampera, yang mencakup perbaikan sandang pangan hingga politik luar negeri.",
+            "source_text": "Program yang dicanangkan Kabinet Ampera disebut Caturkarya",
+            "keywords": [
+              "Kabinet Ampera",
+              "Caturkarya",
+              "Program Kerja"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1008,
+            "log_id": 102,
+            "question": "Pada tahun berapakah bangsa Indonesia berhasil mencapai swasembada beras menurut catatan sejarah dalam teks?",
+            "options": [
+              "1969",
+              "1974",
+              "1984",
+              "1993"
+            ],
+            "answer": "1984",
+            "explanation": "Teks menyebutkan 'Akhirnya, pada tahun 1984 bangsa Indonesia berhasil mencapai swasembada beras', yang merupakan titik balik dari posisi sebagai pengimpor beras.",
+            "source_text": "Akhirnya, pada tahun 1984 bangsa Indonesia berhasil",
+            "keywords": [
+              "Swasembada Beras",
+              "Pertanian",
+              "1984"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1009,
+            "log_id": 102,
+            "question": "Siapakah tokoh yang memimpin Presidium Kabinet dalam struktur Kabinet Ampera?",
+            "options": [
+              "Presiden Soekarno",
+              "Jenderal Soeharto",
+              "Jenderal Nasution",
+              "Adam Malik"
+            ],
+            "answer": "Jenderal Soeharto",
+            "explanation": "Teks menjelaskan bahwa meskipun Kabinet Ampera dipimpin oleh Presiden Soekarno, pelaksanaannya dilakukan oleh Presidium Kabinet yang dipimpin oleh Jenderal Soeharto.",
+            "source_text": "Presidium Kabinet dipimpin oleh Jenderal Soeharto",
+            "keywords": [
+              "Presidium Kabinet",
+              "Soeharto",
+              "Kabinet Ampera"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "100%",
+            "duration": "40 detik"
+          },
+          {
+            "id": 1010,
+            "log_id": 102,
+            "question": "Mengapa terjadi dualisme kepemimpinan pada masa awal Kabinet Ampera?",
+            "options": [
+              "Karena Soekarno menjadi presiden sedangkan Soeharto memimpin presidium kabinet",
+              "Karena terdapat dua partai politik besar yang saling bersaing di parlemen",
+              "Karena adanya dua panglima angkatan bersenjata yang memiliki kekuasaan setara",
+              "Karena DPRGR memiliki kekuasaan yang lebih tinggi daripada lembaga eksekutif"
+            ],
+            "answer": "Karena Soekarno menjadi presiden sedangkan Soeharto memimpin presidium kabinet",
+            "explanation": "Teks menjelaskan dualisme terjadi karena Kabinet Ampera dipimpin Presiden Soekarno, namun pelaksanaannya dilakukan Presidium Kabinet yang dipimpin Jenderal Soeharto.",
+            "source_text": "Jadi, di sini terdapat dualisme kepemimpinan dalam",
+            "keywords": [
+              "Dualisme Kepemimpinan",
+              "Soekarno",
+              "Soeharto"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1011,
+            "log_id": 102,
+            "question": "Apa alasan utama pimpinan DPRGR tidak lagi diberi kedudukan sebagai menteri pada masa pelurusan lembaga pasca-Supersemar?",
+            "options": [
+              "Agar presiden memiliki kekuasaan mutlak dalam kabinet",
+              "Karena menteri harus berasal dari kalangan militer profesional",
+              "Untuk memisahkan fungsi lembaga legislatif dan eksekutif secara tegas",
+              "Karena jumlah anggota DPRGR terlalu banyak untuk menjadi menteri"
+            ],
+            "answer": "Untuk memisahkan fungsi lembaga legislatif dan eksekutif secara tegas",
+            "explanation": "Teks menyatakan pimpinan DPRGR tidak diberi kedudukan menteri sebab DPRGR adalah lembaga legislatif, sedangkan menteri adalah jabatan eksekutif.",
+            "source_text": "Pimpinan DPRGR tidak diberi kedudukan sebagai menteri",
+            "keywords": [
+              "DPRGR",
+              "Legislatif",
+              "Eksekutif"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1012,
+            "log_id": 102,
+            "question": "Mengapa pemerintah Orde Baru memberikan prioritas sangat tinggi pada pembangunan sektor pertanian dalam Repelita I?",
+            "options": [
+              "Untuk menyaingi negara-negara industri maju di Eropa",
+              "Karena sektor pertanian adalah satu-satunya sektor yang bebas pajak",
+              "Agar Indonesia dapat segera mengekspor mesin-mesin pertanian",
+              "Karena mayoritas penduduk bekerja di sektor ini dan pertanian menunjang pangan"
+            ],
+            "answer": "Karena mayoritas penduduk bekerja di sektor ini dan pertanian menunjang pangan",
+            "explanation": "Prioritas diberikan karena pertanian menjadi kunci pemenuhan pangan rakyat, sumber kehidupan sebagian besar masyarakat, dan Indonesia bercorak agraris.",
+            "source_text": "Sektor pertanian harus dibangun lebih dahulu",
+            "keywords": [
+              "Repelita I",
+              "Pertanian",
+              "Prioritas Pembangunan"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1013,
+            "log_id": 102,
+            "question": "Berdasarkan data ekonomi dalam teks, bagaimana evaluasi keberhasilan pengendalian inflasi pada akhir Repelita I dibandingkan kondisi sebelumnya?",
+            "options": [
+              "Gagal karena inflasi tetap di atas 100% akibat krisis global",
+              "Berhasil menurunkan inflasi dari angka sangat tinggi menjadi 47,8%",
+              "Stagnan karena kebijakan ekonomi tidak berjalan efektif",
+              "Meningkat tajam karena besarnya pengeluaran untuk infrastruktur"
+            ],
+            "answer": "Berhasil menurunkan inflasi dari angka sangat tinggi menjadi 47,8%",
+            "explanation": "Teks menunjukkan keberhasilan stabilisasi ekonomi dimana tingkat inflasi dapat ditekan menjadi 47,8% pada akhir Repelita I, jauh menurun dari kondisi krisis sebelumnya.",
+            "source_text": "Tingkat inflasi dapat ditekan menjadi 47,8",
+            "keywords": [
+              "Inflasi",
+              "Evaluasi Ekonomi",
+              "Repelita I"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "90 detik"
+          },
+          {
+            "id": 1014,
+            "log_id": 102,
+            "question": "Analisislah perubahan struktur ekonomi Indonesia dari tahun 1969 hingga akhir masa pembangunan yang disebutkan dalam teks. Apa indikator utama keberhasilan transformasi tersebut?",
+            "options": [
+              "Peningkatan impor beras yang signifikan untuk cadangan nasional",
+              "Dominasi mutlak sektor pertambangan menggantikan pertanian",
+              "Pergeseran dari dominasi pertanian ke keseimbangan dengan sektor industri dan jasa",
+              "Penurunan pendapatan per kapita akibat industrialisasi dini"
+            ],
+            "answer": "Pergeseran dari dominasi pertanian ke keseimbangan dengan sektor industri dan jasa",
+            "explanation": "Teks menjelaskan perubahan struktur ekonomi dari titik berat pertanian menjadi lebih berimbang, ditandai penurunan persentase pertanian dalam PDB dan naiknya peran industri/jasa.",
+            "source_text": "Dari titik berat pada sektor pertanian menjadi",
+            "keywords": [
+              "Struktur Ekonomi",
+              "Transformasi",
+              "PDB"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "90 detik"
+          },
+          {
+            "id": 1015,
+            "log_id": 102,
+            "question": "Selain indikator ekonomi makro, aspek sosial manakah yang menunjukkan dampak positif paling signifikan dari strategi pembangunan Orde Baru menurut teks?",
+            "options": [
+              "Penurunan angka harapan hidup akibat kerja keras",
+              "Kenaikan drastis angka kematian bayi di pedesaan",
+              "Penurunan jumlah penduduk miskin dan peningkatan harapan hidup",
+              "Peningkatan laju pertumbuhan penduduk yang tidak terkendali"
+            ],
+            "answer": "Penurunan jumlah penduduk miskin dan peningkatan harapan hidup",
+            "explanation": "Teks menyoroti keberhasilan sosial berupa penurunan drastis penduduk miskin (60% ke 15%) dan naiknya harapan hidup (50 ke 61 tahun) sebagai prestasi pembangunan.",
+            "source_text": "Hanya sedikit negara yang berhasil menurunkan jumlah",
+            "keywords": [
+              "Dampak Sosial",
+              "Kemiskinan",
+              "Harapan Hidup"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "90 detik"
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "duration": 46.01,
+        "pages": "22-27",
+        "input_tokens": 4870,
+        "output_tokens": 2676,
+        "total_tokens": 7546,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:08:00.000Z",
+        "template_id": 19,
+        "template_text": "Generate exactly 10 multiple choice questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options (array of 4 strings, RAW text only, NO prefixes like \"A.\" or \"1.\")\n- answer (MUST be exactly one of the string values in options)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Siapa penemu mesin uap?\",\n  \"options\": [\n    \"Thomas Alva Edison\",\n    \"James Watt\",\n    \"Alexander Graham Bell\",\n    \"Nikola Tesla\"\n  ],\n  \"answer\": \"James Watt\",\n  \"explanation\": \"James Watt menyempurnakan...\",\n  \"source_text\": \"Mesin uap yang efisien dikembangkan oleh James Watt\",\n  \"keywords\": [\n    \"mesin uap\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"45 detik\",\n  \"confidence\": \"95%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: The 'options' array must contain ONLY the answer text. Do NOT include prefixes like \"A.\", \"B.\", \"a.\", \"b.\", \"1.\", \"2.\" inside the strings.\n- Distribute correct answers evenly across positions 0-3.\n- Do NOT bias towards the first option.\n- Incorrect options must be plausible.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1016,
+            "log_id": 103,
+            "question": "Pada tanggal berapakah Indonesia secara resmi kembali menjadi anggota Perserikatan Bangsa-Bangsa (PBB)?",
+            "options": [
+              "17 Agustus 1966",
+              "28 September 1966",
+              "7 Januari 1965",
+              "11 Agustus 1966"
+            ],
+            "answer": "28 September 1966",
+            "explanation": "Indonesia kembali menjadi anggota PBB pada tanggal 28 September 1966 setelah sempat keluar pada tahun 1965.",
+            "source_text": "Indonesia kembali menjadi anggota PBB pada tanggal",
+            "keywords": [
+              "PBB",
+              "anggota",
+              "Indonesia"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1017,
+            "log_id": 103,
+            "question": "Siapakah Perdana Menteri Jepang yang berkunjung ke Indonesia saat peristiwa Malari terjadi pada Januari 1974?",
+            "options": [
+              "Kakuei Tanaka",
+              "Eisaku Sato",
+              "Takeo Miki",
+              "Masayoshi Ohira"
+            ],
+            "answer": "Kakuei Tanaka",
+            "explanation": "Peristiwa Malari terjadi bertepatan dengan kunjungan kenegaraan Perdana Menteri Jepang Kakuei Tanaka di Jakarta.",
+            "source_text": "kunjungan kenegaraan Perdana Menteri Jepang Kakuei Tanaka",
+            "keywords": [
+              "Malari",
+              "Jepang",
+              "Kakuei Tanaka"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1018,
+            "log_id": 103,
+            "question": "Apa nama naskah persetujuan yang menandai normalisasi hubungan antara Indonesia dan Malaysia pada tahun 1966?",
+            "options": [
+              "Deklarasi Bangkok",
+              "Jakarta Accord",
+              "Persetujuan New York",
+              "Manila Agreement"
+            ],
+            "answer": "Jakarta Accord",
+            "explanation": "Normalisasi hubungan Indonesia–Malaysia berhasil dicapai dengan ditandatanganinya Jakarta Accord pada tanggal 11 Agustus 1966.",
+            "source_text": "Normalisasi hubungan Indonesia–Malaysia tersebut berhasil dicapai dengan",
+            "keywords": [
+              "Malaysia",
+              "Jakarta Accord",
+              "normalisasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1019,
+            "log_id": 103,
+            "question": "Siapakah menteri luar negeri Indonesia yang turut menandatangani Deklarasi Bangkok pembentukan ASEAN?",
+            "options": [
+              "Ali Alatas",
+              "Mochtar Kusumaatmadja",
+              "Adam Malik",
+              "Ruslan Abdulgani"
+            ],
+            "answer": "Adam Malik",
+            "explanation": "Adam Malik adalah menteri luar negeri Indonesia yang menjadi salah satu pemrakarsa dan penandatangan Deklarasi Bangkok.",
+            "source_text": "Adam Malik dari Indonesia, Thanat Khoman dari",
+            "keywords": [
+              "ASEAN",
+              "Adam Malik",
+              "menteri luar negeri"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1020,
+            "log_id": 103,
+            "question": "Mengapa Indonesia memutuskan untuk keluar dari keanggotaan PBB pada tanggal 7 Januari 1965?",
+            "options": [
+              "Karena PBB menolak memberikan bantuan ekonomi kepada Indonesia",
+              "Sebagai protes atas diterimanya Malaysia sebagai anggota tidak tetap Dewan Keamanan PBB",
+              "Karena Indonesia ingin membentuk organisasi tandingan PBB",
+              "Akibat sanksi ekonomi yang dijatuhkan PBB kepada Indonesia"
+            ],
+            "answer": "Sebagai protes atas diterimanya Malaysia sebagai anggota tidak tetap Dewan Keamanan PBB",
+            "explanation": "Indonesia keluar dari PBB sebagai bentuk protes karena Federasi Malaysia diterima menjadi anggota tidak tetap Dewan Keamanan PBB saat sedang berkonfrontasi.",
+            "source_text": "sebagai protes atas diterimanya Federasi Malaysia sebagai",
+            "keywords": [
+              "keluar PBB",
+              "protes",
+              "Malaysia"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1021,
+            "log_id": 103,
+            "question": "Apa tujuan utama pemerintah melakukan devaluasi rupiah sebesar 45% pada 12 September 1986?",
+            "options": [
+              "Meningkatkan impor barang mewah dari luar negeri",
+              "Menurunkan daya saing barang ekspor Indonesia",
+              "Membuat barang ekspor nonmigas Indonesia lebih murah dan berdaya saing di pasar internasional",
+              "Meningkatkan ketergantungan pada penerimaan sektor migas"
+            ],
+            "answer": "Membuat barang ekspor nonmigas Indonesia lebih murah dan berdaya saing di pasar internasional",
+            "explanation": "Devaluasi bertujuan agar barang Indonesia menjadi lebih murah bila dibeli dengan dolar AS, sehingga daya saing ekspor nonmigas meningkat.",
+            "source_text": "barang (komoditas) Indonesia akan lebih murah 45%",
+            "keywords": [
+              "devaluasi",
+              "ekspor nonmigas",
+              "daya saing"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1022,
+            "log_id": 103,
+            "question": "Bagaimana perubahan struktur lapangan kerja yang terjadi di Indonesia selama periode 1971 hingga 1988?",
+            "options": [
+              "Tenaga kerja berpindah dari sektor industri ke sektor pertanian",
+              "Pertumbuhan tenaga kerja di sektor pertanian lebih tinggi daripada sektor lainnya",
+              "Tenaga kerja beralih dari sektor pertanian ke sektor usaha lainnya karena adanya lapangan kerja baru",
+              "Tidak terjadi perubahan signifikan dalam struktur tenaga kerja"
+            ],
+            "answer": "Tenaga kerja beralih dari sektor pertanian ke sektor usaha lainnya karena adanya lapangan kerja baru",
+            "explanation": "Dokumen menyebutkan bahwa lebih banyak tenaga kerja beralih dari lapangan usaha sektor pertanian ke sektor usaha lainnya.",
+            "source_text": "beralih dari lapangan usaha sektor pertanian ke",
+            "keywords": [
+              "tenaga kerja",
+              "pertanian",
+              "struktur"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1023,
+            "log_id": 103,
+            "question": "Berdasarkan prinsip ekonomi yang dijelaskan dalam teks, apa dampak logis dari kebijakan devaluasi 1986 terhadap barang-barang impor?",
+            "options": [
+              "Harga barang impor menjadi lebih murah sehingga volume impor meningkat drastis",
+              "Harga barang impor meningkat secara signifikan dalam rupiah, yang diharapkan dapat mengurangi volume impor",
+              "Barang impor tidak terpengaruh oleh nilai tukar mata uang",
+              "Importir akan lebih mudah membeli barang dari luar negeri karena rupiah menguat"
+            ],
+            "answer": "Harga barang impor meningkat secara signifikan dalam rupiah, yang diharapkan dapat mengurangi volume impor",
+            "explanation": "Devaluasi menyebabkan harga barang impor naik 45% jika dibeli dengan rupiah, yang secara teoritis akan mengurangi impor dan menyehatkan neraca pembayaran.",
+            "source_text": "barang-barang impor akan meningkat harganya 45% jika",
+            "keywords": [
+              "impor",
+              "dampak devaluasi",
+              "harga"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1024,
+            "log_id": 103,
+            "question": "Jika dianalisis, mengapa peristiwa Malari pada Januari 1974 secara khusus menargetkan produk-produk buatan Jepang?",
+            "options": [
+              "Karena produk Jepang memiliki kualitas yang sangat rendah dibanding produk lokal",
+              "Sebagai manifestasi ketidakpuasan terhadap dominasi modal asing yang dianggap merugikan pengusaha pribumi",
+              "Karena Jepang menolak memberikan bantuan pinjaman kepada pemerintah Indonesia",
+              "Hanya kebetulan semata tanpa ada kaitan dengan kunjungan Perdana Menteri Jepang"
+            ],
+            "answer": "Sebagai manifestasi ketidakpuasan terhadap dominasi modal asing yang dianggap merugikan pengusaha pribumi",
+            "explanation": "Kerusuhan terjadi saat kunjungan PM Jepang dan ditandai pembakaran produk Jepang, mencerminkan sentimen anti-dominasi modal asing (Jepang) saat itu.",
+            "source_text": "pembakaran-pembakaran barang-barang buatan Jepang, terutama kendaraan bermotor",
+            "keywords": [
+              "Malari",
+              "Jepang",
+              "dominasi asing"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1025,
+            "log_id": 103,
+            "question": "Apa perbedaan mendasar antara kebijakan politik luar negeri Indonesia pada masa Orde Lama (akhir kekuasaan Soekarno) dengan masa awal Orde Baru terkait hubungan regional?",
+            "options": [
+              "Orde Lama cenderung bersahabat dengan negara tetangga, sedangkan Orde Baru konfrontatif",
+              "Orde Lama menjalankan politik konfrontasi (Ganyang Malaysia), sedangkan Orde Baru mengutamakan kerjasama damai dan stabilitas regional",
+              "Kedua orde sama-sama menolak keberadaan organisasi regional seperti ASEAN",
+              "Orde Baru lebih fokus pada hubungan dengan Blok Timur dibandingkan negara tetangga"
+            ],
+            "answer": "Orde Lama menjalankan politik konfrontasi (Ganyang Malaysia), sedangkan Orde Baru mengutamakan kerjasama damai dan stabilitas regional",
+            "explanation": "Orde Baru mengoreksi kebijakan konfrontasi Orde Lama dengan memulihkan hubungan dengan Malaysia dan memprakarsai ASEAN untuk stabilitas.",
+            "source_text": "politik luar negeri Indonesia dikembalikan lagi pada",
+            "keywords": [
+              "Orde Baru",
+              "konfrontasi",
+              "politik luar negeri"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "duration": 68.37,
+        "pages": "28-33",
+        "input_tokens": 5027,
+        "output_tokens": 2577,
+        "total_tokens": 7604,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:10:59.000Z",
+        "template_id": 19,
+        "template_text": "Generate exactly 10 multiple choice questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options (array of 4 strings, RAW text only, NO prefixes like \"A.\" or \"1.\")\n- answer (MUST be exactly one of the string values in options)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Siapa penemu mesin uap?\",\n  \"options\": [\n    \"Thomas Alva Edison\",\n    \"James Watt\",\n    \"Alexander Graham Bell\",\n    \"Nikola Tesla\"\n  ],\n  \"answer\": \"James Watt\",\n  \"explanation\": \"James Watt menyempurnakan...\",\n  \"source_text\": \"Mesin uap yang efisien dikembangkan oleh James Watt\",\n  \"keywords\": [\n    \"mesin uap\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"45 detik\",\n  \"confidence\": \"95%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: The 'options' array must contain ONLY the answer text. Do NOT include prefixes like \"A.\", \"B.\", \"a.\", \"b.\", \"1.\", \"2.\" inside the strings.\n- Distribute correct answers evenly across positions 0-3.\n- Do NOT bias towards the first option.\n- Incorrect options must be plausible.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1026,
+            "log_id": 104,
+            "question": "Siapakah pejabat yang secara ex-officio menjabat sebagai Ketua Inter-Governmental Group on Indonesia (IGGI)?",
+            "options": [
+              "Menteri Keuangan Republik Indonesia",
+              "Presiden Bank Dunia",
+              "Menteri Kerja Sama Pembangunan Kerajaan Belanda",
+              "Perdana Menteri Kerajaan Belanda"
+            ],
+            "answer": "Menteri Kerja Sama Pembangunan Kerajaan Belanda",
+            "explanation": "Berdasarkan teks, Ketua IGGI dijabat oleh Menteri Kerja Sama Pembangunan Kerajaan Belanda dan IGGI berpusat di Den Haag.",
+            "source_text": "Ketua IGGI dijabat oleh Menteri Kerja Sama",
+            "keywords": [
+              "IGGI",
+              "Ketua",
+              "Belanda"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1027,
+            "log_id": 104,
+            "question": "Kapan sidang pertama Consultative Group on Indonesia (CGI) dilaksanakan?",
+            "options": [
+              "25 Maret 1992",
+              "16 Juli 1992",
+              "14 November 1994",
+              "16 Juli 1967"
+            ],
+            "answer": "16 Juli 1992",
+            "explanation": "Teks menyatakan bahwa CGI mengadakan sidang pertama kali di Paris, Prancis tanggal 16 Juli 1992.",
+            "source_text": "CGI mengadakan sidang pertama kali di Paris",
+            "keywords": [
+              "CGI",
+              "Sidang pertama",
+              "1992"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1028,
+            "log_id": 104,
+            "question": "Di kota manakah Indonesia berhasil menyelenggarakan pertemuan APEC pada tahun 1994?",
+            "options": [
+              "Seattle",
+              "Canberra",
+              "Tokyo",
+              "Bogor"
+            ],
+            "answer": "Bogor",
+            "explanation": "Indonesia sebagai Ketua APEC berhasil menyelenggarakan pertemuan APEC di Bogor pada tanggal 14–15 November 1994.",
+            "source_text": "Indonesia berhasil menyelenggarakan pertemuan APEC di Bogor",
+            "keywords": [
+              "APEC",
+              "Bogor",
+              "1994"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1029,
+            "log_id": 104,
+            "question": "Siapa di antara tokoh ekonomi berikut yang TIDAK disebutkan sebagai bagian dari kelompok lulusan Berkeley dalam teks?",
+            "options": [
+              "Prof. Dr. Wijoyo Nitisastro",
+              "Dr. Boediono",
+              "Prof. Dr. Emil Salim",
+              "Drs. Frans Seda"
+            ],
+            "answer": "Dr. Boediono",
+            "explanation": "Nama-nama yang disebutkan dalam teks adalah Wijoyo Nitisastro, Ali Wardana, Sumitro Joyohadikusumo, Radius Prawiro, Moh. Sadli, Emil Salim, Frans Seda, dan Subroto. Boediono tidak disebutkan.",
+            "source_text": "Melalui pemikiran Prof. Dr. Wijoyo Nitisastro",
+            "keywords": [
+              "Ekonom",
+              "Berkeley",
+              "Orde Baru"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1030,
+            "log_id": 104,
+            "question": "Apa alasan utama pemerintah Indonesia membubarkan IGGI pada tahun 1992?",
+            "options": [
+              "Bunga pinjaman yang ditawarkan terlalu tinggi",
+              "Belanda terlalu mencampuri urusan politik domestik Indonesia",
+              "Indonesia sudah tidak membutuhkan bantuan luar negeri",
+              "Negara-negara donor mengalami krisis ekonomi"
+            ],
+            "answer": "Belanda terlalu mencampuri urusan politik domestik Indonesia",
+            "explanation": "IGGI bubar sebab Indonesia menolak bantuan Belanda yang dianggap terlalu banyak mengaitkan pinjaman luar negerinya dengan masalah politik di Indonesia.",
+            "source_text": "IGGI bubar sebab Indonesia menolak bantuan Belanda",
+            "keywords": [
+              "IGGI",
+              "Bubar",
+              "Politik"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1031,
+            "log_id": 104,
+            "question": "Apa tujuan politik utama pembentukan organisasi profesi seperti Korpri dan PGRI pada masa Orde Baru menurut teks?",
+            "options": [
+              "Meningkatkan profesionalisme dan kesejahteraan anggota",
+              "Menciptakan wadah diskusi yang demokratis",
+              "Melanggengkan kekuasaan pemerintah melalui mobilisasi pemilih",
+              "Membentuk kekuatan penyeimbang bagi partai politik"
+            ],
+            "answer": "Melanggengkan kekuasaan pemerintah melalui mobilisasi pemilih",
+            "explanation": "Teks menyebutkan bahwa arah pembentukan organisasi tersebut hanya ditujukan untuk melanggengkan kekuasaan pemerintah, di mana anggotanya diarahkan memilih Golkar.",
+            "source_text": "arah pembentukannya hanya ditujukan untuk melanggengkan kekuasaan",
+            "keywords": [
+              "Organisasi",
+              "Korpri",
+              "Kekuasaan"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1032,
+            "log_id": 104,
+            "question": "Bagaimana peran konsep 'Dwifungsi ABRI' dimanfaatkan oleh pemerintah Orde Baru?",
+            "options": [
+              "Memfokuskan militer hanya pada pertahanan negara",
+              "Mengurangi jumlah personil militer di pemerintahan",
+              "Melegitimasi kekuasaan politik dan pemerintahan",
+              "Menghapus peran militer dalam lembaga legislatif"
+            ],
+            "answer": "Melegitimasi kekuasaan politik dan pemerintahan",
+            "explanation": "Teks menyatakan bahwa dengan memanfaatkan dwifungsi ABRI, Orde Baru telah berhasil melegitimasi kekuasaan dan ABRI menjadi kekuatan signifikan dalam politik.",
+            "source_text": "Orde Baru telah berhasil melegitimasi kekuasaan",
+            "keywords": [
+              "Dwifungsi ABRI",
+              "Legitimasi",
+              "Politik"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1033,
+            "log_id": 104,
+            "question": "Berdasarkan teks, apa indikasi bahwa sistem demokrasi pada masa Orde Baru bersifat semu?",
+            "options": [
+              "Adanya pergantian presiden yang teratur setiap lima tahun",
+              "Sistem pemerintahan yang sama dengan Demokrasi Terpimpin meski presiden berganti",
+              "Kebebasan penuh bagi partai oposisi untuk memenangkan pemilu",
+              "Tidak adanya campur tangan militer dalam urusan sipil"
+            ],
+            "answer": "Sistem pemerintahan yang sama dengan Demokrasi Terpimpin meski presiden berganti",
+            "explanation": "Teks menyebutkan bahwa secara semu pemerintahan Orde Baru mirip dengan Demokrasi Terpimpin, di mana hanya pejabat presiden yang ganti namun sistemnya tetap sama (terpusat).",
+            "source_text": "Hanya pejabat presidennya saja yang ganti",
+            "keywords": [
+              "Demokrasi semu",
+              "Sistem pemerintahan",
+              "Orde Baru"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1034,
+            "log_id": 104,
+            "question": "Apa konsekuensi logis dari prioritas pemerintah Orde Baru terhadap 'stabilitas' sebagai syarat pembangunan?",
+            "options": [
+              "Terbukanya ruang kebebasan berpendapat seluas-luasnya",
+              "Pengendalian ketat terhadap lawan politik dan aparatur negara",
+              "Berkurangnya peran negara dalam kehidupan masyarakat",
+              "Munculnya berbagai partai politik baru yang independen"
+            ],
+            "answer": "Pengendalian ketat terhadap lawan politik dan aparatur negara",
+            "explanation": "Pemerintah berusaha menciptakan stabilitas dengan mengendalikan lawan politik dan menuntut kepatuhan aparatur negara, yang menyebabkan peran negara makin membelenggu masyarakat.",
+            "source_text": "Stabilitas menjadi unsur penting dalam melaksanakan pembangunan",
+            "keywords": [
+              "Stabilitas",
+              "Pembangunan",
+              "Pengendalian"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1035,
+            "log_id": 104,
+            "question": "Apa implikasi strategis dari peralihan IGGI ke CGI bagi kedaulatan politik luar negeri Indonesia?",
+            "options": [
+              "Indonesia bersedia menerima syarat politik demi bantuan ekonomi",
+              "Indonesia menolak pengaitkan bantuan ekonomi dengan intervensi politik domestik",
+              "Indonesia memutus hubungan total dengan negara-negara Barat",
+              "Indonesia hanya mengandalkan bantuan dari negara-negara Asia"
+            ],
+            "answer": "Indonesia menolak pengaitkan bantuan ekonomi dengan intervensi politik domestik",
+            "explanation": "Keputusan membubarkan IGGI karena penolakan terhadap pengaitan bantuan dengan masalah politik menunjukkan ketegasan Indonesia menolak intervensi asing dalam urusan dalam negeri.",
+            "source_text": "menolak bantuan Belanda yang dianggap terlalu banyak",
+            "keywords": [
+              "IGGI",
+              "CGI",
+              "Kedaulatan"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          }
+        ]
+      },
+      {
+        "id": 105,
+        "duration": 55.76,
+        "pages": "34-41",
+        "input_tokens": 6300,
+        "output_tokens": 2316,
+        "total_tokens": 8616,
+        "question_count": 10,
+        "created_at": "2025-12-16T13:13:28.000Z",
+        "template_id": 19,
+        "template_text": "Generate exactly 10 multiple choice questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- options (array of 4 strings, RAW text only, NO prefixes like \"A.\" or \"1.\")\n- answer (MUST be exactly one of the string values in options)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Siapa penemu mesin uap?\",\n  \"options\": [\n    \"Thomas Alva Edison\",\n    \"James Watt\",\n    \"Alexander Graham Bell\",\n    \"Nikola Tesla\"\n  ],\n  \"answer\": \"James Watt\",\n  \"explanation\": \"James Watt menyempurnakan...\",\n  \"source_text\": \"Mesin uap yang efisien dikembangkan oleh James Watt\",\n  \"keywords\": [\n    \"mesin uap\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"45 detik\",\n  \"confidence\": \"95%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n- CRITICAL: The 'options' array must contain ONLY the answer text. Do NOT include prefixes like \"A.\", \"B.\", \"a.\", \"b.\", \"1.\", \"2.\" inside the strings.\n- Distribute correct answers evenly across positions 0-3.\n- Do NOT bias towards the first option.\n- Incorrect options must be plausible.\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1036,
+            "log_id": 105,
+            "question": "Istilah lain yang sering digunakan dalam dokumen untuk menyebut Revolusi Hijau adalah...",
+            "options": [
+              "Revolusi Industri",
+              "Revolusi Agraria",
+              "Revolusi Biru",
+              "Revolusi Pangan"
+            ],
+            "answer": "Revolusi Agraria",
+            "explanation": "Dalam teks disebutkan bahwa Revolusi Hijau sering disebut juga sebagai Revolusi Agraria karena mencakup bidang pertanian luas.",
+            "source_text": "Revolusi Hijau sering disebut juga Revolusi Agraria",
+            "keywords": [
+              "Revolusi Hijau",
+              "Revolusi Agraria",
+              "pertanian"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1037,
+            "log_id": 105,
+            "question": "Menurut teori Thomas Robert Malthus, peningkatan hasil pertanian atau pangan mengikuti pola deret apa?",
+            "options": [
+              "Deret ukur",
+              "Deret geometri",
+              "Deret hitung",
+              "Deret eksponensial"
+            ],
+            "answer": "Deret hitung",
+            "explanation": "Malthus berpendapat pertumbuhan penduduk mengikuti deret ukur, sedangkan hasil pertanian mengikuti deret hitung.",
+            "source_text": "sedangkan hasil pertanian mengikuti deret hitung",
+            "keywords": [
+              "Thomas Robert Malthus",
+              "deret hitung",
+              "pangan"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1038,
+            "log_id": 105,
+            "question": "Di negara manakah lokasi International Rice Research Institute (IRRI) didirikan?",
+            "options": [
+              "Meksiko",
+              "India",
+              "Thailand",
+              "Filipina"
+            ],
+            "answer": "Filipina",
+            "explanation": "Badan penelitian IRRI bertempat di Los Banos, Filipina, didirikan oleh Rockefeller Foundation dan Ford Foundation.",
+            "source_text": "yang bertempat di Los Banos, Filipina",
+            "keywords": [
+              "IRRI",
+              "Filipina",
+              "penelitian padi"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1039,
+            "log_id": 105,
+            "question": "Lembaga internasional yang memberikan penghargaan kepada Indonesia atas keberhasilan swasembada beras pada tahun 1988 adalah...",
+            "options": [
+              "WHO",
+              "UNESCO",
+              "FAO",
+              "ILO"
+            ],
+            "answer": "FAO",
+            "explanation": "Indonesia menerima penghargaan dari FAO (Food and Agriculture Organization) pada tahun 1988 karena keberhasilan swasembada pangan.",
+            "source_text": "adanya penghargan dari FAO pada tahun 1988",
+            "keywords": [
+              "FAO",
+              "swasembada beras",
+              "penghargaan"
+            ],
+            "difficulty": "LOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "30 detik"
+          },
+          {
+            "id": 1040,
+            "log_id": 105,
+            "question": "Apa alasan utama Thomas Robert Malthus menyatakan bahwa kemiskinan adalah masalah yang tidak bisa dihindari manusia?",
+            "options": [
+              "Kurangnya lahan pertanian produktif di Eropa",
+              "Ketidakseimbangan pertumbuhan penduduk dan pangan",
+              "Kegagalan teknologi pertanian tradisional",
+              "Mahalnya biaya produksi pertanian modern"
+            ],
+            "answer": "Ketidakseimbangan pertumbuhan penduduk dan pangan",
+            "explanation": "Kemiskinan terjadi karena pertumbuhan penduduk (deret ukur) jauh lebih cepat dibandingkan peningkatan produksi pangan (deret hitung).",
+            "source_text": "produksi pangan yang tidak seimbang",
+            "keywords": [
+              "Malthus",
+              "kemiskinan",
+              "pertumbuhan penduduk"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1041,
+            "log_id": 105,
+            "question": "Salah satu usaha meningkatkan produksi pertanian adalah ekstensifikasi. Apa definisi yang tepat untuk ekstensifikasi berdasarkan teks?",
+            "options": [
+              "Usaha meningkatkan produksi dengan membuka lahan baru",
+              "Usaha meningkatkan produksi dengan pancausaha tani",
+              "Usaha memulihkan lahan kritis",
+              "Usaha penganekaragaman jenis tanaman"
+            ],
+            "answer": "Usaha meningkatkan produksi dengan membuka lahan baru",
+            "explanation": "Ekstensifikasi pertanian dijelaskan sebagai usaha meningkatkan produksi pertanian dengan membuka lahan baru.",
+            "source_text": "membuka lahan baru termasuk usaha",
+            "keywords": [
+              "ekstensifikasi",
+              "lahan baru",
+              "produksi pertanian"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1042,
+            "log_id": 105,
+            "question": "Varietas padi unggul PB-8 merupakan hasil persilangan antara padi Peta dari Indonesia dengan varietas apa?",
+            "options": [
+              "IR-8 dari Filipina",
+              "Gandum hibrida dari Meksiko",
+              "Dee-Geowoogen dari Taiwan",
+              "Padi Bengawan dari Solo"
+            ],
+            "answer": "Dee-Geowoogen dari Taiwan",
+            "explanation": "Varietas baru PB-8 adalah hasil persilangan genetik antara varietas padi kerdil Dee-Geowoogen dari Taiwan dan padi Peta dari Indonesia.",
+            "source_text": "padi kerdil dari Taiwan yang bernama Dee-Geowoogen",
+            "keywords": [
+              "PB-8",
+              "persilangan",
+              "Dee-Geowoogen"
+            ],
+            "difficulty": "MOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "45 detik"
+          },
+          {
+            "id": 1043,
+            "log_id": 105,
+            "question": "Mengapa perubahan sistem panen akibat Revolusi Hijau dianggap memberikan dampak negatif bagi tenaga kerja pedesaan?",
+            "options": [
+              "Sistem upah mengurangi kesempatan kerja gotong royong",
+              "Hasil panen menurun drastis karena hama",
+              "Kualitas beras menurun akibat pupuk kimia",
+              "Petani menolak menjual hasil panen ke pasar"
+            ],
+            "answer": "Sistem upah mengurangi kesempatan kerja gotong royong",
+            "explanation": "Sistem panen bersama (bawon) digeser oleh sistem upah/tebasan yang menggunakan sedikit tenaga kerja, sehingga mengurangi lapangan kerja bagi buruh tani.",
+            "source_text": "Sistem panen secara bersama-sama pada masa sebelumnya",
+            "keywords": [
+              "dampak negatif",
+              "sistem panen",
+              "tenaga kerja"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1044,
+            "log_id": 105,
+            "question": "Berdasarkan fokus Pembangunan Lima Tahun (Pelita), apa perbedaan mendasar antara fokus Pelita I dan Pelita III?",
+            "options": [
+              "Pelita I mendukung sektor pertanian, Pelita III mengolah bahan baku",
+              "Pelita I fokus pada ekspor, Pelita III fokus pada impor",
+              "Pelita I membangun mesin berat, Pelita III industri ringan",
+              "Pelita I mengolah barang jadi, Pelita III bahan mentah"
+            ],
+            "answer": "Pelita I mendukung sektor pertanian, Pelita III mengolah bahan baku",
+            "explanation": "Pelita I fokus pada industri yang mendukung pertanian, sedangkan Pelita III fokus pada industri yang mengolah bahan baku menjadi barang jadi.",
+            "source_text": "Pelita III (1 April 1979–31 Maret 1984) sektor pertanian",
+            "keywords": [
+              "Pelita I",
+              "Pelita III",
+              "industri"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          },
+          {
+            "id": 1045,
+            "log_id": 105,
+            "question": "Analisis dampak lingkungan apa yang muncul akibat ketergantungan petani pada paket teknologi Revolusi Hijau?",
+            "options": [
+              "Meningkatnya populasi hewan predator alami",
+              "Ketergantungan pada zat kimia pembasmi hama",
+              "Berkurangnya penggunaan air irigasi",
+              "Tanah menjadi lebih subur secara alami"
+            ],
+            "answer": "Ketergantungan pada zat kimia pembasmi hama",
+            "explanation": "Revolusi Hijau menyebabkan ketergantungan tinggi pada pupuk dan zat kimia pembasmi hama yang berdampak pada biaya tinggi dan lingkungan.",
+            "source_text": "Ketergantungan pada pupuk kimia dan zat kimia",
+            "keywords": [
+              "dampak lingkungan",
+              "kimia",
+              "Revolusi Hijau"
+            ],
+            "difficulty": "HOTS",
+            "type": "multiple-choice",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "60 detik"
+          }
+        ]
+      }
+    ]
+  }
+}

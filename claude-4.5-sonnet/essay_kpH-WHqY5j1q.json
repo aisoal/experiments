@@ -1,0 +1,1127 @@
+{
+  "session_details": {
+    "id": "kpH-WHqY5j1q",
+    "user_id": 2,
+    "title": "essay",
+    "filename": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+    "model": "claude-4.5-sonnet",
+    "created_at": "2025-12-16T17:54:46.000Z",
+    "total_questions": 50,
+    "confidence_stats": {
+      "max": 98,
+      "min": 85,
+      "avg": 93.14
+    },
+    "question_type_distribution": {
+      "essay": 50,
+      "fill-in-the-blank": 0,
+      "true-false": 0,
+      "multiple-choice": 0
+    },
+    "efficiency_stats": {
+      "fastest": 90.44,
+      "slowest": 239.45,
+      "avg": 153.23800000000006
+    },
+    "logs": [
+      {
+        "id": 176,
+        "duration": 131.48,
+        "pages": "96-103",
+        "input_tokens": 6871,
+        "output_tokens": 3203,
+        "total_tokens": 10074,
+        "question_count": 10,
+        "created_at": "2025-12-16T17:54:47.000Z",
+        "template_id": 22,
+        "template_text": "Generate exactly 10 essay questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- answer (the comprehensive ideal answer)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Jelaskan dampak revolusi industri.\",\n  \"answer\": \"Revolusi industri menyebabkan...\",\n  \"explanation\": \"Dampak utamanya adalah...\",\n  \"source_text\": \"Revolusi industri mengubah tatanan ekonomi global\",\n  \"keywords\": [\n    \"revolusi industri\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"3 menit\",\n  \"confidence\": \"90%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1746,
+            "log_id": 176,
+            "question": "Sebutkan dua negara yang tampil sebagai negara adidaya setelah berakhirnya Perang Dunia II.",
+            "options": [],
+            "answer": "Dua negara yang tampil sebagai negara adidaya setelah berakhirnya Perang Dunia II adalah Amerika Serikat dan Uni Soviet.",
+            "explanation": "Setelah Perang Dunia II, Amerika Serikat dan Uni Soviet muncul sebagai dua negara adidaya yang sangat berpengaruh dalam percaturan politik dan keamanan dunia, menggantikan dominasi lama negara-negara Eropa Barat.",
+            "source_text": "Amerika Serikat dan Uni Soviet adalah dua",
+            "keywords": [
+              "Amerika Serikat",
+              "Uni Soviet",
+              "negara adidaya",
+              "Perang Dunia II"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1747,
+            "log_id": 176,
+            "question": "Apa nama organisasi internasional yang dibentuk setelah Perang Dunia II untuk menjaga keamanan dan ketertiban dunia?",
+            "options": [],
+            "answer": "Organisasi internasional yang dibentuk setelah Perang Dunia II untuk menjaga keamanan dan ketertiban dunia adalah Perserikatan Bangsa-Bangsa (PBB) atau United Nations (UN).",
+            "explanation": "Perserikatan Bangsa-Bangsa dibentuk sebagai penyempurnaan Liga Bangsa-Bangsa dengan tujuan mencegah terulangnya perang dunia dan menjamin keamanan serta ketertiban internasional.",
+            "source_text": "Berakhirnya Perang Dunia II menyebabkan lahirnya",
+            "keywords": [
+              "Perserikatan Bangsa-Bangsa",
+              "PBB",
+              "United Nations",
+              "keamanan dunia"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1748,
+            "log_id": 176,
+            "question": "Sebutkan dua sistem ekonomi utama yang muncul dalam perekonomian dunia setelah Perang Dunia II.",
+            "options": [],
+            "answer": "Dua sistem ekonomi utama yang muncul adalah sistem ekonomi kapitalis yang didominasi Amerika Serikat dan sistem ekonomi sosialis yang didominasi Uni Soviet.",
+            "explanation": "Akibat hancurnya perekonomian dunia setelah perang, terbentuk dua blok besar dengan sistem ekonomi yang berbeda, yaitu kapitalisme yang menekankan persaingan bebas dan sosialisme yang menekankan dominasi peran negara.",
+            "source_text": "Sistem ekonomi dunia setelah Perang Dunia",
+            "keywords": [
+              "sistem ekonomi kapitalis",
+              "sistem ekonomi sosialis",
+              "Amerika Serikat",
+              "Uni Soviet"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1749,
+            "log_id": 176,
+            "question": "Apa nama program bantuan ekonomi Amerika Serikat kepada negara-negara Eropa Barat setelah Perang Dunia II?",
+            "options": [],
+            "answer": "Nama program bantuan ekonomi Amerika Serikat kepada negara-negara Eropa Barat setelah Perang Dunia II adalah Marshall Plan.",
+            "explanation": "Marshall Plan merupakan program bantuan ekonomi yang ditawarkan Presiden Truman dan Menteri Luar Negeri Marshall untuk membantu pemulihan ekonomi Eropa Barat dan sekaligus memperluas pengaruh liberalisme.",
+            "source_text": "Program bantuan ekonomi Amerika Serikat tersebut",
+            "keywords": [
+              "Marshall Plan",
+              "bantuan ekonomi",
+              "Eropa Barat",
+              "Amerika Serikat"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1750,
+            "log_id": 176,
+            "question": "Jelaskan dua akibat politik yang timbul setelah berakhirnya Perang Dunia II.",
+            "options": [],
+            "answer": "Dua akibat politik setelah berakhirnya Perang Dunia II adalah: (1) tampilnya Amerika Serikat dan Uni Soviet sebagai negara adidaya yang memegang peranan besar di dunia internasional; (2) timbulnya politik memecah belah, di mana kedua negara tersebut membagi dan memengaruhi negara-negara penting seperti Korea, Vietnam, dan Jerman demi kepentingan blok masing-masing.",
+            "explanation": "Perubahan politik pascaperang tampak dari pergeseran kekuatan dari negara-negara Eropa Barat kepada Amerika Serikat dan Uni Soviet, serta praktik pembagian wilayah pengaruh yang memicu konflik dan ketegangan baru di berbagai kawasan.",
+            "source_text": "Perubahan politik yang tampak setelah berakhirnya",
+            "keywords": [
+              "Perang Dunia II",
+              "perubahan politik",
+              "negara adidaya",
+              "politik memecah belah"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1751,
+            "log_id": 176,
+            "question": "Analisislah bagaimana Marshall Plan dan Molotov Plan digunakan sebagai sarana perluasan pengaruh ideologi masing-masing negara adidaya.",
+            "options": [],
+            "answer": "Marshall Plan digunakan Amerika Serikat sebagai sarana memperluas pengaruh ideologi liberal-kapitalis dengan memberikan bantuan ekonomi kepada negara-negara Eropa Barat yang bersedia bekerja sama meningkatkan produksi, menciptakan lapangan kerja, dan memperluas perdagangan, sehingga negara penerima cenderung masuk dalam orbit kapitalisme. Molotov Plan digunakan Uni Soviet untuk membendung pengaruh liberalisme di Eropa Timur dengan bantuan ekonomi kepada negara-negara sekutunya, yang kemudian diarahkan untuk bekerja sama dalam Comicon dan menguatkan sistem ekonomi sosialis di kawasan tersebut.",
+            "explanation": "Kedua paket bantuan ini tidak hanya bersifat ekonomi, tetapi memiliki dimensi politik dan ideologis kuat karena mengikat negara penerima ke dalam jaringan kerja sama yang sejalan dengan sistem kapitalis atau sosialis sehingga mengukuhkan polarisasi blok Barat dan blok Timur.",
+            "source_text": "Hancurnya perekonomian dunia menyebabkan Amerika",
+            "keywords": [
+              "Marshall Plan",
+              "Molotov Plan",
+              "perang dingin",
+              "pengaruh ideologi"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1752,
+            "log_id": 176,
+            "question": "Jelaskan latar belakang terbentuknya Masyarakat Ekonomi Eropa (MEE) setelah Perang Dunia II.",
+            "options": [],
+            "answer": "Masyarakat Ekonomi Eropa (MEE) terbentuk karena Eropa mengalami kemiskinan dan perpecahan setelah Perang Dunia II sehingga diperlukan kerja sama ekonomi yang lebih terintegrasi. Gagasan dimulai dari keinginan menyatukan produksi batu bara dan baja melalui ECSC oleh enam negara The Six State, yang kemudian dilanjutkan oleh laporan Komite Spaak dan diwujudkan dalam Perjanjian Roma tahun 1957 yang membentuk EEC/MEE.",
+            "explanation": "Kondisi ekonomi dan politik Eropa yang rapuh mendorong negara-negara utama seperti Prancis dan Jerman Barat untuk membangun kerja sama ekonomi yang erat agar mencegah perang baru dan mempercepat pemulihan melalui integrasi pasar dan produksi.",
+            "source_text": "Sejak berakhirnya Perang Dunia II, Eropa",
+            "keywords": [
+              "Masyarakat Ekonomi Eropa",
+              "EEC",
+              "Perjanjian Roma",
+              "ECSC"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1753,
+            "log_id": 176,
+            "question": "Nilailah peran golongan cerdik pandai dalam menentukan hasil Perang Dunia II dan dampaknya terhadap perkembangan ilmu pengetahuan dan teknologi.",
+            "options": [],
+            "answer": "Golongan cerdik pandai memiliki peran sangat menentukan dalam hasil Perang Dunia II karena melalui penelitian di laboratorium mereka mampu menghasilkan senjata dan teknologi militer modern seperti radar, peluru kendali, dan bom atom yang mengubah keseimbangan kekuatan. Peran ini berdampak besar terhadap percepatan perkembangan ilmu pengetahuan dan teknologi, sebab inovasi yang awalnya digunakan untuk perang kemudian dikembangkan untuk keperluan sipil, sekaligus menunjukkan bahwa kemenangan perang tidak hanya ditentukan kekuatan militer di medan tempur tetapi juga superioritas ilmiah dan teknologis.",
+            "explanation": "PD II membuktikan bahwa ‘prajurit tanpa senjata’ di laboratorium sama pentingnya dengan pasukan di garis depan karena temuan mereka memperluas batas kemampuan manusia dan mendorong lahirnya era baru teknologi tinggi, termasuk dalam bidang nuklir dan komunikasi.",
+            "source_text": "PD II menunjukkan bahwa peperangan tidak",
+            "keywords": [
+              "golongan cerdik pandai",
+              "ilmu pengetahuan",
+              "teknologi perang",
+              "bom atom"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "7 menit"
+          },
+          {
+            "id": 1754,
+            "log_id": 176,
+            "question": "Evaluasilah pengaruh bantuan ekonomi Amerika Serikat (Marshall Plan, Truman Doctrine, Mutual Security) terhadap munculnya negara-negara industri baru di Eropa dan Asia.",
+            "options": [],
+            "answer": "Bantuan ekonomi Amerika Serikat melalui Marshall Plan, Truman Doctrine, dan Mutual Security berpengaruh besar dalam memulihkan ekonomi negara-negara Eropa dan Asia yang hancur, sehingga menciptakan kondisi yang memungkinkan industrialisasi cepat. Di Eropa, bantuan modal dan kerja sama ekonomi membantu Jerman Barat bangkit kembali sebagai negara industri kuat, sementara di Asia, dukungan ekonomi dan militer kepada negara-negara seperti Jepang, Korea Selatan, Taiwan, dan Singapura mendorong penerapan sistem ekonomi liberal dan pasar bebas yang mempercepat transformasi mereka menjadi negara industri baru.",
+            "explanation": "Bantuan-bantuan tersebut tidak hanya meredakan krisis ekonomi, tetapi juga mengarahkan orientasi pembangunan negara penerima ke model kapitalis yang mengutamakan investasi, produksi, dan perdagangan bebas, sehingga secara bertahap memunculkan pusat-pusat industri baru yang menjadi pilar blok Barat dalam persaingan global.",
+            "source_text": "Sejalan dengan upaya AS untuk mendapatkan",
+            "keywords": [
+              "Marshall Plan",
+              "Truman Doctrine",
+              "Mutual Security",
+              "negara industri baru"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "7 menit"
+          },
+          {
+            "id": 1755,
+            "log_id": 176,
+            "question": "Kembangkan argumen tentang bagaimana pembentukan MEE yang kemudian bertransformasi menjadi Uni Eropa mencerminkan respons Eropa terhadap polarisasi kekuatan Amerika Serikat dan Uni Soviet.",
+            "options": [],
+            "answer": "Pembentukan MEE yang kemudian bertransformasi menjadi Uni Eropa mencerminkan upaya negara-negara Eropa untuk membangun kekuatan kolektif sebagai penyeimbang dalam dunia yang terpolarisasi oleh Amerika Serikat dan Uni Soviet. Melalui integrasi ekonomi, pembentukan pasar bersama, dan kemudian penguatan kelembagaan politik serta moneter yang diatur dalam Perjanjian Maastrich, negara-negara Eropa tidak hanya berupaya memulihkan diri dari kehancuran perang, tetapi juga menciptakan blok regional yang mampu bertindak mandiri dalam bidang ekonomi dan politik, sehingga tidak sepenuhnya bergantung pada kedua negara adidaya tersebut.",
+            "explanation": "Integrasi Eropa melalui MEE dan Uni Eropa menunjukkan bahwa kerja sama regional yang mendalam dapat menjadi strategi menghadapi tekanan eksternal dan persaingan ideologi, sekaligus menciptakan identitas dan kekuatan baru yang setara dalam sistem internasional pasca-Perang Dingin.",
+            "source_text": "Melalui perjanjian Maastrich, ke–12 negara",
+            "keywords": [
+              "Masyarakat Ekonomi Eropa",
+              "Uni Eropa",
+              "Perjanjian Maastrich",
+              "integrasi regional"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "8 menit"
+          }
+        ]
+      },
+      {
+        "id": 177,
+        "duration": 104.22,
+        "pages": "104-108",
+        "input_tokens": 4479,
+        "output_tokens": 5211,
+        "total_tokens": 9690,
+        "question_count": 10,
+        "created_at": "2025-12-16T17:58:23.000Z",
+        "template_id": 22,
+        "template_text": "Generate exactly 10 essay questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- answer (the comprehensive ideal answer)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Jelaskan dampak revolusi industri.\",\n  \"answer\": \"Revolusi industri menyebabkan...\",\n  \"explanation\": \"Dampak utamanya adalah...\",\n  \"source_text\": \"Revolusi industri mengubah tatanan ekonomi global\",\n  \"keywords\": [\n    \"revolusi industri\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"3 menit\",\n  \"confidence\": \"90%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1756,
+            "log_id": 177,
+            "question": "Jelaskan latar belakang utama terbentuknya APEC pada akhir abad ke-20.",
+            "options": [],
+            "answer": "Latar belakang utama terbentuknya APEC adalah dinamika ekonomi politik di kawasan Asia Pasifik yang memasuki babak baru dengan semakin intensifnya hubungan perdagangan dan investasi regional, sehingga muncul kebutuhan akan wadah kerja sama ekonomi yang lebih formal. Selain itu, perubahan cepat situasi politik dan ekonomi dunia dengan munculnya kelompok-kelompok perdagangan seperti MEE dan NAFTA, serta kekhawatiran terhadap gagalnya perundingan Putaran Uruguay tentang perdagangan bebas, mendorong negara-negara di kawasan Asia Pasifik untuk membentuk APEC sebagai langkah untuk mengamankan kepentingan perdagangan mereka.",
+            "explanation": "Pertanyaan ini menuntut siswa mengingat dan menjelaskan faktor pendorong utama berdirinya APEC secara deskriptif. Sumber menyebut bahwa dinamika ekonomi politik Asia Pasifik yang semakin intens dan tidak difasilitasi kerangka formal, serta perubahan dan ketidakpastian dalam tatanan perdagangan global (kemunculan blok-blok seperti MEE dan NAFTA serta kekhawatiran kegagalan Putaran Uruguay), menjadi dorongan penting bagi negara-negara di kawasan untuk membentuk APEC sebagai wadah kerja sama ekonomi resmi.",
+            "source_text": "Dinamika ekonomi politik Asia Pasifik pada akhir",
+            "keywords": [
+              "latar belakang APEC",
+              "perdagangan bebas",
+              "MEE dan NAFTA"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1757,
+            "log_id": 177,
+            "question": "Sebutkan tujuan utama dibentuknya APEC di kawasan Asia Pasifik.",
+            "options": [],
+            "answer": "Tujuan utama dibentuknya APEC adalah untuk meningkatkan kerja sama ekonomi di kawasan Asia Pasifik, terutama di bidang perdagangan dan investasi. Melalui APEC, negara-negara anggota berupaya memajukan perdagangan dan memperluas kesempatan investasi sehingga pertumbuhan ekonomi kawasan menjadi lebih kuat dan saling menguntungkan.",
+            "explanation": "Jawaban bersumber dari pernyataan eksplisit dalam teks yang menyebut bahwa APEC dibentuk untuk meningkatkan kerja sama ekonomi di kawasan Asia Pasifik terutama di bidang perdagangan dan investasi. Tujuan ini terkait langsung dengan kebutuhan negara-negara kawasan untuk memanfaatkan dinamika ekonomi regional yang sedang tumbuh dan mengamankan kepentingan mereka dalam sistem perdagangan internasional.",
+            "source_text": "Adapun tujuan dibentuknya APEC adalah untuk",
+            "keywords": [
+              "tujuan APEC",
+              "kerja sama ekonomi",
+              "perdagangan dan investasi"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "98%",
+            "duration": "3 menit"
+          },
+          {
+            "id": 1758,
+            "log_id": 177,
+            "question": "Jelaskan klasifikasi kelompok negara anggota APEC berdasarkan kemajuan ekonomi dan industrinya.",
+            "options": [],
+            "answer": "Negara anggota APEC diklasifikasikan menjadi empat kelompok berdasarkan kemajuan ekonomi dan industrinya. Pertama, negara sangat maju yang terdiri atas Amerika Serikat dan Jepang. Kedua, negara maju yaitu Kanada, Australia, dan Selandia Baru. Ketiga, negara industri yang meliputi Korea Selatan, Singapura, Taiwan, dan Hongkong. Keempat, negara berkembang seperti Brunei Darussalam, Malaysia, Filipina, Thailand, Republik Rakyat Cina, Meksiko, Papua Nugini, Cile, dan Indonesia.",
+            "explanation": "Teks menjelaskan secara rinci bahwa dari 18 negara anggota APEC, terdapat pengelompokan ke dalam empat kategori yang didasarkan pada tingkat kemajuan ekonomi dan industrialisasi. Mengingat dan mengurutkan kategori beserta contoh negara di dalamnya menuntut kemampuan menghafal serta memaparkan kembali informasi faktual.",
+            "source_text": "Dari 18 negara anggota, diklasifikasikan menjadi",
+            "keywords": [
+              "klasifikasi anggota APEC",
+              "negara maju",
+              "negara berkembang"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1759,
+            "log_id": 177,
+            "question": "Sebutkan dan jelaskan secara singkat prinsip utama ASEAN terhadap APEC.",
+            "options": [],
+            "answer": "Prinsip utama ASEAN terhadap APEC adalah: pertama, setiap peningkatan kerja sama di kawasan Asia Pasifik harus tetap mempertahankan identitas, kepentingan, dan persatuan ASEAN. Kedua, kerja sama harus didasarkan pada persamaan, keadilan, dan keuntungan bersama. Ketiga, kerja sama tidak boleh diarahkan pada pembentukan blok perdagangan yang tertutup. Keempat, kerja sama harus ditujukan untuk memperkuat kemampuan individual dan kolektif para peserta. Kelima, pertumbuhan kerja sama dikembangkan secara bertahap dan pragmatis.",
+            "explanation": "Bagian teks yang membahas 'Prinsip ASEAN terhadap APEC' memuat lima poin prinsip yang secara eksplisit dijabarkan. Siswa diminta mengingat dan memaparkan kembali prinsip-prinsip tersebut secara singkat sehingga tetap berada pada ranah pengetahuan dan pemahaman dasar.",
+            "source_text": "Prinsip ASEAN terhadap APEC adalah sebagai",
+            "keywords": [
+              "prinsip ASEAN",
+              "sikap terhadap APEC",
+              "blok perdagangan"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "6 menit"
+          },
+          {
+            "id": 1760,
+            "log_id": 177,
+            "question": "Analisislah alasan mengapa dunia usaha di kawasan Asia Pasifik lebih dahulu merasakan kebutuhan akan organisasi kerja sama ekonomi sebelum terbentuknya APEC.",
+            "options": [],
+            "answer": "Dunia usaha di kawasan Asia Pasifik lebih dahulu merasakan kebutuhan akan organisasi kerja sama ekonomi karena merekalah yang langsung berhadapan dengan peningkatan intensitas transaksi perdagangan dan investasi lintas negara. Para pelaku bisnis menghadapi hambatan dan ketidakpastian akibat belum adanya kerangka kerja sama formal, sehingga mereka mencari wadah untuk mendorong kelancaran hubungan ekonomi regional. Pembentukan PBEC tahun 1969, yang beranggotakan pebisnis dari negara-negara Asia Pasifik dan aktif mendorong perdagangan serta investasi, menunjukkan bahwa sektor swasta mengidentifikasi kebutuhan koordinasi dan fasilitasi lebih awal daripada pemerintah. Kebutuhan ini kemudian menjadi salah satu landasan munculnya organisasi yang lebih luas dan formal seperti APEC.",
+            "explanation": "Teks menjelaskan bahwa dunia usaha lebih dulu merasakan kebutuhan akan organisasi kerja sama yang tercermin dalam pembentukan PBEC yang beranggotakan pebisnis dan berperan mendorong perdagangan dan investasi. Dengan menghubungkan fakta ini dengan logika bahwa pelaku bisnis langsung menghadapi dinamika pasar lintas batas dan hambatan kebijakan, siswa diminta melakukan analisis hubungan sebab-akibat antara pengalaman dunia usaha dan lahirnya lembaga kerja sama ekonomi regional yang lebih formal.",
+            "source_text": "Dunia usaha lebih dahulu merasakan adanya",
+            "keywords": [
+              "PBEC",
+              "dunia usaha Asia Pasifik",
+              "kerja sama ekonomi"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "8 menit"
+          },
+          {
+            "id": 1761,
+            "log_id": 177,
+            "question": "Jelaskan bagaimana peningkatan perdagangan intra-Asia dan intra-Asia Pasifik memengaruhi motivasi negara-negara untuk memformalkan kerja sama regional melalui APEC.",
+            "options": [],
+            "answer": "Peningkatan perdagangan intra-Asia dan intra-Asia Pasifik pada akhir 1980-an dan awal 1990-an memperlihatkan bahwa sebagian besar ekspor dan impor negara-negara anggota APEC terjadi di antara mereka sendiri. Data menunjukkan bahwa antara tahun 1988–1992, total ekspor meningkat dari 1.079,4 miliar dolar Amerika menjadi 1.518,0 miliar dolar Amerika, dan 66 persen di antaranya merupakan ekspor antaranggota APEC, sementara impor meningkat dari 1.221,1 miliar dolar Amerika menjadi 1.519,4 miliar dolar Amerika dengan 67,2 persen berasal dari sesama anggota. Tingginya ketergantungan perdagangan intraregional ini mendorong negara-negara di kawasan untuk memformalkan kerja sama melalui APEC agar dapat mengelola dan mengoptimalkan arus barang, jasa, dan investasi, sekaligus memperkuat posisi kolektif mereka dalam sistem perdagangan global.",
+            "explanation": "Teks memberikan data kuantitatif mengenai lonjakan ekspor dan impor antarnegara anggota APEC serta persentase tinggi perdagangan intraregional. Siswa diminta menghubungkan fakta ini dengan munculnya motivasi regionalisme, yaitu dorongan untuk membentuk kerangka formal seperti APEC guna mengatur, memfasilitasi, dan memaksimalkan manfaat dari intensitas hubungan ekonomi yang sudah terjadi.",
+            "source_text": "Peningkatan pertumbuhan perdagangan Intra-Asia dan",
+            "keywords": [
+              "perdagangan intra-Asia",
+              "motivasi regionalisme",
+              "ekspor impor APEC"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "10 menit"
+          },
+          {
+            "id": 1762,
+            "log_id": 177,
+            "question": "Analisislah mengapa APEC dapat menjadi peluang sekaligus ancaman bagi perekonomian Indonesia dalam era perdagangan bebas.",
+            "options": [],
+            "answer": "APEC menjadi peluang bagi perekonomian Indonesia karena lebih dari 70 persen pasar ekspor Indonesia berada di kawasan Asia Pasifik dan sekitar 60 persen impor Indonesia juga berasal dari negara-negara anggota APEC. Negara-negara anggota APEC menyumbang hampir 35 persen bantuan luar negeri yang diterima Indonesia, sehingga kerja sama dalam APEC dapat membuka peluang pasar yang lebih luas, meningkatkan penanaman modal, dan memperkuat posisi Indonesia dalam jaringan perdagangan regional. Namun, APEC sekaligus berpotensi menjadi ancaman jika perekonomian Indonesia tidak dipersiapkan dengan baik menghadapi arus perdagangan bebas, karena keterbukaan pasar dapat menyebabkan banjir barang impor yang mengancam produk dalam negeri yang tidak kompetitif. Tanpa peningkatan kualitas sumber daya manusia, mutu produk, dan daya saing industri nasional, Indonesia dapat tertinggal dan justru menjadi pasar bagi produk negara lain, bukan pelaku utama dalam perdagangan bebas kawasan.",
+            "explanation": "Teks menyebut bahwa sebagian besar ekspor, impor, dan bantuan luar negeri Indonesia berkaitan dengan negara-negara APEC sekaligus memperingatkan bahwa APEC bisa menjadi ancaman jika perekonomian tidak siap menghadapi arus perdagangan bebas. Pertanyaan ini menuntut siswa untuk menghubungkan data dan pernyataan tersebut sehingga dapat melihat dua sisi APEC bagi Indonesia, yaitu sebagai peluang untuk memperluas pasar dan investasi serta sebagai ancaman jika daya saing domestik lemah.",
+            "source_text": "Dari sudut kepentingan ekonomi, lebih dari",
+            "keywords": [
+              "dampak APEC bagi Indonesia",
+              "perdagangan bebas",
+              "daya saing nasional"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "12 menit"
+          },
+          {
+            "id": 1763,
+            "log_id": 177,
+            "question": "Evaluasilah langkah-langkah yang diambil pemerintah Indonesia untuk mempersiapkan diri menghadapi era perdagangan bebas dalam kerangka APEC, dan nilai apakah langkah-langkah tersebut sudah memadai.",
+            "options": [],
+            "answer": "Pemerintah Indonesia mengambil beberapa langkah untuk mempersiapkan diri menghadapi era perdagangan bebas dalam kerangka APEC, antara lain meningkatkan sumber daya manusia yang andal, meningkatkan mutu produk agar mampu menembus pasar dunia dan bersaing, menumbuhkan budaya ACI (Aku Cinta Indonesia) supaya masyarakat mencintai produksi dalam negeri, meningkatkan semangat nasionalisme agar modernisasi tidak berubah menjadi westernisasi, serta menumbuhkan semangat juang dan pantang menyerah untuk membangun bangsa. Langkah-langkah ini secara konseptual cukup komprehensif karena mencakup aspek kualitas manusia, kualitas produk, penguatan identitas nasional, dan etos kerja. Namun, dari sudut evaluatif, keberhasilan langkah tersebut sangat bergantung pada implementasi konkret seperti kebijakan pendidikan dan pelatihan, dukungan teknologi dan modal bagi industri, serta kampanye berkelanjutan untuk mengubah pola konsumsi masyarakat. Jika implementasi lemah dan tidak konsisten, langkah-langkah yang di atas kertas terlihat memadai itu bisa tidak efektif, sehingga Indonesia tetap berisiko tertinggal dalam persaingan perdagangan bebas di kawasan APEC.",
+            "explanation": "Bagian teks yang menguraikan sikap Indonesia terhadap APEC merinci langkah-langkah seperti peningkatan SDM, mutu produk, budaya ACI, nasionalisme, dan semangat juang. Pertanyaan ini mendorong siswa tidak hanya menyebutkan langkah-langkah tersebut, tetapi juga menilai kecukupan dan efektivitas potensialnya dengan mempertimbangkan perlunya implementasi kebijakan yang nyata dan berkelanjutan, sehingga berada pada ranah evaluasi.",
+            "source_text": "Sedangkan sikap Indonesia terhadap keberadaan APEC",
+            "keywords": [
+              "kebijakan Indonesia",
+              "persiapan pasar bebas",
+              "budaya ACI"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "15 menit"
+          },
+          {
+            "id": 1764,
+            "log_id": 177,
+            "question": "Bandingkan karakter kerja sama APEC dengan AFTA dan jelaskan implikasinya terhadap posisi Indonesia dalam perdagangan regional.",
+            "options": [],
+            "answer": "APEC merupakan kerja sama ekonomi regional di kawasan Asia Pasifik yang beranggotakan negara-negara dengan tingkat kemajuan ekonomi beragam, dari sangat maju hingga berkembang, dan fokus utamanya adalah memajukan perdagangan serta investasi di tingkat lintas kawasan yang luas. APEC bukan blok perdagangan tertutup dan mencakup ekonomi besar seperti Amerika Serikat, Jepang, dan RRC, sehingga orientasinya lebih global dan berpengaruh kuat terhadap tatanan perdagangan dunia. Sementara itu, AFTA adalah kawasan perdagangan bebas yang khusus melibatkan negara-negara anggota ASEAN, dengan tujuan meningkatkan perdagangan, spesialisasi, ekspor, dan investasi di lingkungan ASEAN. Keputusan di Chiang Mai tahun 1994 mempercepat pembentukan kawasan perdagangan bebas, menambah jumlah produk dalam inclusion list, dan mengatur skema tarif preferensial CEPT. Bagi Indonesia, keterlibatan dalam AFTA menempatkannya dalam skema integrasi ekonomi subkawasan yang lebih homogen dari segi tingkat pembangunan, sedangkan keterlibatan dalam APEC mendorong Indonesia berhadapan langsung dengan kekuatan ekonomi raksasa dan persaingan yang lebih tajam. Kombinasi keduanya memberikan peluang besar untuk memperluas pasar dan menarik investasi, tetapi juga menuntut strategi ganda: penguatan daya saing di dalam lingkungan ASEAN melalui AFTA sekaligus peningkatan kapasitas untuk bersaing di tingkat Asia Pasifik yang lebih luas dalam kerangka APEC.",
+            "explanation": "Teks menjelaskan karakter APEC sebagai kerja sama ekonomi regional Asia Pasifik yang tidak diarahkan menjadi blok tertutup dan bertujuan memajukan perdagangan serta investasi. Teks juga menggambarkan AFTA sebagai kawasan perdagangan bebas ASEAN dengan keputusan-keputusan spesifik mengenai percepatan pembentukan kawasan bebas, penambahan daftar produk, dan skema CEPT. Dengan membandingkan ruang lingkup, keanggotaan, dan tujuan, siswa diminta menganalisis implikasi keberadaan dua kerangka kerja sama ini terhadap posisi dan strategi perdagangan Indonesia di tingkat regional dan lintas kawasan.",
+            "source_text": "AFTA atau kawasan perdagangan bebas adalah",
+            "keywords": [
+              "APEC",
+              "AFTA",
+              "perdagangan regional Indonesia"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "18 menit"
+          },
+          {
+            "id": 1765,
+            "log_id": 177,
+            "question": "Susunlah sebuah argumen kritis apakah pembentukan berbagai kawasan perdagangan bebas seperti APEC, AFTA, dan NAFTA lebih banyak menguntungkan atau merugikan negara-negara berkembang.",
+            "options": [],
+            "answer": "Pembentukan kawasan perdagangan bebas seperti APEC, AFTA, dan NAFTA pada dasarnya memberikan peluang besar bagi negara-negara berkembang untuk memperluas pasar ekspor, menarik investasi asing, dan memperoleh akses teknologi serta modal dari negara-negara maju. Dalam kasus APEC, misalnya, tingginya porsi ekspor dan impor intraregional serta besarnya bantuan luar negeri yang berasal dari negara-negara anggota menunjukkan bahwa negara berkembang seperti Indonesia dapat memperoleh manfaat signifikan berupa peluang pasar yang lebih lebar dan arus investasi. AFTA pun diharapkan meningkatkan perdagangan, spesialisasi, dan investasi di antara negara-negara ASEAN, sehingga mendorong efisiensi dan pertumbuhan ekonomi. Namun, pada saat yang sama, kawasan perdagangan bebas dapat merugikan negara berkembang jika struktur ekonominya belum siap menghadapi persaingan terbuka. Negara berkembang berisiko menjadi pasar bagi produk murah dan berkualitas dari negara maju sehingga mengancam industri dalam negeri. Tekanan dari negara-negara Utara, seperti strategi pecah dan tindas serta pembentukan kelompok-kelompok campuran seperti Kelompok Cairns dalam GATT, juga menunjukkan bahwa dalam negosiasi global, kepentingan negara maju sering lebih dominan. Oleh karena itu, secara kritis dapat dikatakan bahwa kawasan perdagangan bebas lebih banyak menguntungkan negara berkembang jika mereka mampu mempersiapkan daya saing industri, memperkuat solidaritas dan posisi tawar kolektif, serta mengelola arus perdagangan dan investasi dengan kebijakan nasional yang melindungi kepentingan domestik. Tanpa kesiapan tersebut, keuntungan potensial dapat berubah menjadi ketergantungan dan kerentanan ekonomi.",
+            "explanation": "Teks menggambarkan potensi keuntungan kerja sama ekonomi regional berupa perluasan pasar, peningkatan ekspor dan impor, serta bantuan luar negeri, sekaligus menguraikan persoalan yang dihadapi negara-negara Selatan, seperti rendahnya solidaritas, strategi pecah dan tindas negara-negara Utara, dan contoh Kelompok Cairns dalam GATT. Pertanyaan ini mendorong siswa menyusun argumen yang menimbang kedua sisi—peluang dan risiko—bagi negara berkembang dalam rezim perdagangan bebas, sehingga berada pada tingkat penilaian kritis dan pembuatan kesimpulan argumentatif.",
+            "source_text": "Persoalan besar yang dihadapi negara-negara",
+            "keywords": [
+              "negara berkembang",
+              "kawasan perdagangan bebas",
+              "strategi negara Utara"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "20 menit"
+          }
+        ]
+      },
+      {
+        "id": 178,
+        "duration": 90.44,
+        "pages": "109-115",
+        "input_tokens": 6153,
+        "output_tokens": 3742,
+        "total_tokens": 9895,
+        "question_count": 10,
+        "created_at": "2025-12-16T18:01:49.000Z",
+        "template_id": 22,
+        "template_text": "Generate exactly 10 essay questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- answer (the comprehensive ideal answer)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Jelaskan dampak revolusi industri.\",\n  \"answer\": \"Revolusi industri menyebabkan...\",\n  \"explanation\": \"Dampak utamanya adalah...\",\n  \"source_text\": \"Revolusi industri mengubah tatanan ekonomi global\",\n  \"keywords\": [\n    \"revolusi industri\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"3 menit\",\n  \"confidence\": \"90%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1766,
+            "log_id": 178,
+            "question": "Apa yang dimaksud dengan Perang Dingin?",
+            "options": [],
+            "answer": "Perang Dingin adalah suasana hubungan internasional yang penuh ketegangan dan permusuhan tanpa perang terbuka, yang terjadi akibat konflik ideologi antara Blok Barat (liberal kapitalis) pimpinan Amerika Serikat dan Blok Timur (sosialis komunis) pimpinan Uni Soviet setelah Perang Dunia II berakhir.",
+            "explanation": "Dalam buku dijelaskan bahwa Perang Dingin merupakan suasana internasional yang penuh ketegangan dan bermusuhan akibat konflik ideologi antara Blok Barat dan Blok Timur, tetapi kedua kekuatan adidaya ini tidak pernah berhadapan langsung dalam perang terbuka.",
+            "source_text": "Perang Dingin adalah suasana internasional",
+            "keywords": [
+              "Perang Dingin",
+              "Blok Barat",
+              "Blok Timur"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "3 menit"
+          },
+          {
+            "id": 1767,
+            "log_id": 178,
+            "question": "Sebutkan dua ideologi yang saling bertentangan dalam Perang Dingin!",
+            "options": [],
+            "answer": "Dua ideologi yang saling bertentangan dalam Perang Dingin adalah ideologi liberal kapitalis yang dianut Amerika Serikat dan ideologi sosialis komunis yang dianut Uni Soviet.",
+            "explanation": "Teks menjelaskan bahwa Amerika Serikat berideologi liberal kapitalis, sedangkan Uni Soviet berideologi sosialis komunis, dan perbedaan ideologi inilah yang menjadi salah satu pemicu utama Perang Dingin setelah musuh bersama mereka, Jerman, dikalahkan.",
+            "source_text": "Amerika Serikat adalah negara yang berideologi",
+            "keywords": [
+              "liberal kapitalis",
+              "sosialis komunis",
+              "ideologi"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1768,
+            "log_id": 178,
+            "question": "Apa tujuan utama dibentuknya NATO pada tahun 1949?",
+            "options": [],
+            "answer": "Tujuan utama dibentuknya NATO pada tahun 1949 adalah membentuk persekutuan militer bersama negara-negara di kawasan Atlantik Utara untuk saling membantu jika salah satu anggota mendapat serangan, sebagai upaya menghadapi kemungkinan ancaman militer Uni Soviet dan sekutunya.",
+            "explanation": "Dalam teks disebutkan bahwa NATO dibentuk oleh Amerika Serikat dan negara-negara sekutunya dengan ketentuan bahwa serangan terhadap salah satu negara anggota dianggap sebagai serangan terhadap seluruh anggota sehingga semua anggota wajib saling memberi bantuan.",
+            "source_text": "Di kawasan Atlantik Utara, Amerika Serikat",
+            "keywords": [
+              "NATO",
+              "pakta pertahanan",
+              "Atlantik Utara"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "3 menit"
+          },
+          {
+            "id": 1769,
+            "log_id": 178,
+            "question": "Siapakah tokoh yang memimpin Long March di Cina dan dari kelompok politik mana ia berasal?",
+            "options": [],
+            "answer": "Tokoh yang memimpin Long March di Cina adalah Mao Zedong, dan ia berasal dari Partai Komunis Cina.",
+            "explanation": "Teks menjelaskan bahwa Mao Zedong sebagai pemimpin Partai Komunis Cina mengajak para pengikutnya melakukan perjalanan panjang melalui darat menuju Provinsi Shensi di Cina Utara, yang kemudian dikenal sebagai peristiwa Long March.",
+            "source_text": "Untuk maksud itu, Mao Zedong, pemimpin",
+            "keywords": [
+              "Mao Zedong",
+              "Long March",
+              "Partai Komunis Cina"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "2 menit"
+          },
+          {
+            "id": 1770,
+            "log_id": 178,
+            "question": "Jelaskan bagaimana perbedaan ideologi antara Amerika Serikat dan Uni Soviet setelah Perang Dunia II memengaruhi pembagian blok-blok kekuatan dunia.",
+            "options": [],
+            "answer": "Perbedaan ideologi antara Amerika Serikat dan Uni Soviet setelah Perang Dunia II memunculkan dua blok besar, yaitu Blok Barat yang berpaham liberal kapitalis dan dipimpin Amerika Serikat, serta Blok Timur yang berpaham sosialis komunis dan dipimpin Uni Soviet. Kedua kekuatan adidaya ini kemudian berusaha memperluas pengaruhnya dengan cara memengaruhi negara-negara lain agar bergabung ke dalam blok masing-masing, sehingga dunia seolah-olah terbagi ke dalam dua kubu yang saling berlawanan.",
+            "explanation": "Dalam teks dijelaskan bahwa setelah musuh bersama mereka, Jerman, dikalahkan, pertentangan ideologi kembali muncul dan kedua negara ini saling berusaha mengalahkan satu sama lain dengan memengaruhi negara-negara lain untuk bergabung, sehingga dunia terbagi menjadi Blok Barat dan Blok Timur.",
+            "source_text": "Akibat perbedaan ideologi, setelah musuh",
+            "keywords": [
+              "Blok Barat",
+              "Blok Timur",
+              "konflik ideologi"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1771,
+            "log_id": 178,
+            "question": "Analisislah cara Amerika Serikat dan Uni Soviet menggunakan bantuan ekonomi untuk memperluas pengaruhnya setelah Perang Dunia II.",
+            "options": [],
+            "answer": "Amerika Serikat menggunakan kekuatan ekonominya dengan memberikan paket bantuan ekonomi kepada negara-negara yang baru merdeka dan negara-negara berkembang, seperti melalui Marshall Plan bagi negara-negara Eropa Barat, dengan tujuan memperbaiki perekonomian dan mencegah berkembangnya pengaruh sosialis komunis di negara-negara tersebut. Sementara itu, Uni Soviet yang juga memiliki kekuatan ekonomi, meskipun tidak sebesar Amerika Serikat, memberikan bantuan ekonomi, tenaga ahli, dan peralatan militer kepada negara-negara yang berada atau akan berada dalam pengaruhnya, serta berusaha membentengi negara-negara tersebut agar tetap berada dalam lingkaran blok sosialis komunis.",
+            "explanation": "Teks menggambarkan bahwa kedua negara adidaya ini tampil sebagai 'imperialis muda' yang tidak lagi menjajah secara langsung, tetapi menggunakan instrumen bantuan ekonomi dan dukungan teknis-militer untuk memperluas dan mempertahankan pengaruh ideologi dan politik masing-masing di negara-negara lain.",
+            "source_text": "Amerika Serikat dengan kekuatan ekonominya berusaha",
+            "keywords": [
+              "bantuan ekonomi",
+              "Marshall Plan",
+              "imperialis muda"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "6 menit"
+          },
+          {
+            "id": 1772,
+            "log_id": 178,
+            "question": "Bagaimana hubungan antara agresi Jepang ke Cina dan menguatnya posisi kaum komunis di Cina pada masa Perang Dunia II?",
+            "options": [],
+            "answer": "Agresi Jepang ke Cina melemahkan pemerintah nasionalis yang dipimpin Chiang Kai-shek karena harus menghadapi serangan dari Jepang sekaligus konflik dengan kaum komunis. Kondisi ini memberikan peluang bagi kaum komunis di bawah Mao Zedong untuk memperluas pengaruhnya, terutama di wilayah pedesaan, dengan cara mengonsolidasikan kekuatan, merebut wilayah yang sebelumnya diduduki Jepang, dan melakukan revolusi sosial melalui pembagian tanah kepada petani, sehingga dukungan rakyat terhadap kaum komunis semakin kuat dibandingkan terhadap nasionalis.",
+            "explanation": "Teks menyebutkan bahwa peperangan yang lama melawan Jepang membuat dukungan rakyat kepada kaum nasionalis menurun, sementara kaum komunis memanfaatkan situasi ini untuk memperluas pengaruhnya dengan mengajak rakyat membantu dan memberikan tanah kepada mereka, sehingga legitimasi mereka di mata rakyat semakin menguat.",
+            "source_text": "Namun, peperangan yang lama dan menguras",
+            "keywords": [
+              "agresi Jepang",
+              "nasionalis Cina",
+              "pengaruh komunis"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "6 menit"
+          },
+          {
+            "id": 1773,
+            "log_id": 178,
+            "question": "Nilailah dampak pembentukan berbagai pakta militer seperti NATO, SEATO, ANZUS, dan Pakta Warsawa terhadap peningkatan ketegangan global pada masa Perang Dingin.",
+            "options": [],
+            "answer": "Pembentukan berbagai pakta militer seperti NATO, SEATO, ANZUS, dan Pakta Warsawa memperkuat polarisasi dunia ke dalam dua kubu yang saling berhadapan secara ideologis dan militer, sehingga meningkatkan ketegangan global pada masa Perang Dingin. Di satu sisi, NATO, SEATO, dan ANZUS memperluas jaringan pertahanan Amerika Serikat beserta sekutunya di Eropa, Asia Tenggara, dan Pasifik Selatan, sementara Pakta Warsawa dibentuk Uni Soviet untuk mengimbangi kekuatan militer Blok Barat. Struktur aliansi yang saling curiga dan siap saling membantu jika ada serangan kepada salah satu anggota membuat setiap konflik lokal berpotensi berkembang menjadi konflik yang lebih luas, sehingga suasana ketegangan dan perlombaan persenjataan semakin tajam.",
+            "explanation": "Dalam teks dijelaskan bahwa pakta-pakta ini dibentuk sebagai respons terhadap rasa saling curiga antara Amerika Serikat dan Uni Soviet, serta sebagai upaya masing-masing blok untuk memperkuat pertahanan dan pengaruh militernya. Secara analitis, kondisi ini menciptakan sistem keamanan kolektif yang justru memelihara kecurigaan dan meningkatkan risiko eskalasi konflik di berbagai kawasan.",
+            "source_text": "Berlangsungnya Perang Dingin menyebabkan Amerika",
+            "keywords": [
+              "NATO",
+              "Pakta Warsawa",
+              "ketegangan global",
+              "pakta militer"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "8 menit"
+          },
+          {
+            "id": 1774,
+            "log_id": 178,
+            "question": "Bandingkan strategi Amerika Serikat dan Uni Soviet dalam memperluas pengaruhnya ke negara-negara Asia yang baru merdeka setelah Perang Dunia II.",
+            "options": [],
+            "answer": "Amerika Serikat cenderung menggunakan strategi ekonomi dan politik dengan menawarkan bantuan ekonomi, bantuan teknis, serta mendorong penerapan sistem demokrasi liberal di negara-negara yang baru merdeka. Negara-negara Asia yang baru merdeka dipandang sebagai pasar potensial dan mitra politik yang perlu dijauhkan dari pengaruh komunisme melalui peningkatan kemakmuran dan pembangunan. Sebaliknya, Uni Soviet memadukan bantuan ekonomi, dukungan teknis, dan bantuan militer, serta memanfaatkan gerakan nasionalis dan perjuangan antiimperialisme di negara-negara tersebut untuk menumbuhkan simpati terhadap sosialisme-komunisme. Uni Soviet juga mengirim tenaga ahli dan peralatan militer guna memperkuat rezim atau kelompok yang berpihak padanya, sehingga pengaruh ideologinya semakin mengakar.",
+            "explanation": "Teks menggambarkan bahwa kedua negara adidaya ini sama-sama melihat Asia sebagai kawasan strategis dengan jumlah penduduk besar dan negara-negara yang baru merdeka. Dengan membandingkan, terlihat bahwa Amerika Serikat lebih menonjolkan bantuan ekonomi dan pemasaran hasil industri, sedangkan Uni Soviet mengombinasikan dukungan ekonomi dengan pendekatan militer dan ideologis melalui gerakan revolusioner dan perjuangan nasional.",
+            "source_text": "Wilayah Asia yang mempunyai jumlah penduduk",
+            "keywords": [
+              "Asia pasca perang",
+              "pengaruh Amerika Serikat",
+              "pengaruh Uni Soviet"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "9 menit"
+          },
+          {
+            "id": 1775,
+            "log_id": 178,
+            "question": "Susunlah argumen kritis tentang bagaimana kebijakan membagi tanah kepada petani oleh kaum komunis di Cina berkontribusi pada keberhasilan revolusi mereka.",
+            "options": [],
+            "answer": "Kebijakan membagi tanah kepada petani oleh kaum komunis di Cina berkontribusi besar pada keberhasilan revolusi karena langsung menyentuh kebutuhan mayoritas penduduk yang hidup di pedesaan dan selama ini tertindas dalam struktur kepemilikan tanah tradisional. Dengan memberikan tanah kepada petani, kaum komunis tidak hanya memperbaiki kondisi ekonomi rakyat kecil, tetapi juga membangun basis dukungan politik dan loyalitas yang kuat terhadap Partai Komunis. Kebijakan ini menjadikan petani sebagai kekuatan sosial utama yang bersedia membantu komunis dalam bentuk dukungan logistik, perekrutan prajurit, dan perlindungan di daerah pedesaan. Selain itu, langkah tersebut menjadi pembeda yang jelas dibandingkan dengan pemerintah nasionalis yang gagal mengatasi kesenjangan sosial-ekonomi, sehingga citra komunis di mata rakyat semakin positif dan legitimasi mereka sebagai kekuatan alternatif yang memperjuangkan keadilan sosial menjadi semakin kuat.",
+            "explanation": "Teks menjelaskan bahwa kaum komunis memanfaatkan melemahnya dukungan rakyat terhadap nasionalis dengan memperkuat pasukan dan mengajak rakyat menyediakan makanan serta tempat perlindungan, lalu melakukan revolusi sosial dengan membagi-bagikan tanah kepada para petani. Dari sudut pandang analitis, kebijakan agraria ini merupakan strategi politik dan sosial yang efektif karena mengubah hubungan kekuasaan di pedesaan dan menjadikan petani sebagai pendukung utama revolusi komunis.",
+            "source_text": "Akibatnya, kaum komunis kemudian melakukan revolusi",
+            "keywords": [
+              "revolusi sosial",
+              "pembagian tanah",
+              "petani Cina",
+              "revolusi komunis"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "10 menit"
+          }
+        ]
+      },
+      {
+        "id": 179,
+        "duration": 239.45,
+        "pages": "116-121",
+        "input_tokens": 5968,
+        "output_tokens": 4546,
+        "total_tokens": 10514,
+        "question_count": 10,
+        "created_at": "2025-12-16T18:07:44.000Z",
+        "template_id": 22,
+        "template_text": "Generate exactly 10 essay questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- answer (the comprehensive ideal answer)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Jelaskan dampak revolusi industri.\",\n  \"answer\": \"Revolusi industri menyebabkan...\",\n  \"explanation\": \"Dampak utamanya adalah...\",\n  \"source_text\": \"Revolusi industri mengubah tatanan ekonomi global\",\n  \"keywords\": [\n    \"revolusi industri\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"3 menit\",\n  \"confidence\": \"90%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1776,
+            "log_id": 179,
+            "question": "Jelaskan proses terbentuknya Republik Rakyat Cina setelah Perang Dunia II.",
+            "options": [],
+            "answer": "Setelah Perang Dunia II berakhir, kaum komunis di bawah pimpinan Mao Zedong berhasil menguasai wilayah Cina bagian utara dan secara bertahap mengalahkan kaum nasionalis melalui keunggulan pasukan, taktik militer yang jitu, dan keberhasilan revolusi sosial. Mereka merebut kota-kota strategis seperti Tientsin dan Beijing pada Januari 1949 sehingga pasukan nasionalis terdesak ke wilayah selatan. Pada tanggal 1 Oktober 1949, Mao Zedong kemudian memproklamasikan berdirinya Republik Rakyat Cina (RRC) dengan Beijing sebagai ibu kota, sementara Chiang Kai-shek dan pengikutnya menyingkir ke Pulau Taiwan untuk membentuk pemerintahan terpisah.",
+            "explanation": "Pertanyaan ini bersifat LOTS karena hanya menuntut siswa mengingat dan menguraikan kembali rangkaian peristiwa pokok pembentukan RRC tanpa analisis mendalam.",
+            "source_text": "Ketika Perang Dunia II berakhir, kaum",
+            "keywords": [
+              "Republik Rakyat Cina",
+              "Mao Zedong",
+              "kaum komunis",
+              "Chiang Kai-shek"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1777,
+            "log_id": 179,
+            "question": "Sebutkan tiga faktor yang membuat kekuatan Cina menjadi kekhawatiran bagi Blok Barat pada masa Perang Dingin.",
+            "options": [],
+            "answer": "Tiga faktor utama yang membuat kekuatan Cina menjadi kekhawatiran bagi Blok Barat adalah: pertama, kemampuan Cina membangun angkatan bersenjata dengan jumlah personel yang sangat besar sehingga berpotensi mengubah keseimbangan militer kawasan. Kedua, kemampuan tenaga ahli Cina yang sanggup membuat bom atom, yang menandai Cina sebagai salah satu kekuatan nuklir baru. Ketiga, keberhasilan Cina dalam menata kepemilikan tanah melalui program landreform yang memperkuat basis sosial dan politik rezim komunis di pedesaan.",
+            "explanation": "Pertanyaan ini termasuk LOTS karena hanya menuntut siswa menyebutkan kembali faktor-faktor faktual yang tercantum jelas dalam teks.",
+            "source_text": "Kemampuan Cina membangun angkatan bersenjata",
+            "keywords": [
+              "Blok Barat",
+              "bom atom Cina",
+              "landreform",
+              "angkatan bersenjata"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "3 menit"
+          },
+          {
+            "id": 1778,
+            "log_id": 179,
+            "question": "Siapakah tokoh-tokoh utama yang memimpin Korea Utara dan Korea Selatan setelah terbentuknya dua negara Korea, dan kapan masing-masing negara tersebut diproklamasikan?",
+            "options": [],
+            "answer": "Setelah Perang Dunia II dan pembagian Semenanjung Korea di garis lintang 38°, terbentuk dua negara, yaitu Republik Korea (Korea Selatan) dan Republik Demokratik Rakyat Korea (Korea Utara). Republik Korea (Korea Selatan) diproklamasikan pada 15 Agustus 1948 dengan pusat pemerintahan di Seoul dan dipimpin Presiden pertama Dr. Syngman Rhee. Sementara itu, Republik Demokratik Rakyat Korea (Korea Utara) dibentuk pada 1 Mei 1948 dan Uni Soviet mengangkat Kim Il Sung sebagai presiden negara tersebut.",
+            "explanation": "Pertanyaan ini termasuk LOTS karena meminta identifikasi tokoh dan tanggal terbentuknya dua negara Korea tanpa memerlukan analisis lebih jauh.",
+            "source_text": "Pasukan Amerika Serikat mulai tahun",
+            "keywords": [
+              "Syngman Rhee",
+              "Kim Il Sung",
+              "Korea Utara",
+              "Korea Selatan"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1779,
+            "log_id": 179,
+            "question": "Apa yang dimaksud dengan Pergerakan Kemerdekaan Samit (1 Maret) di Korea dan apa dampak utamanya bagi rakyat Korea?",
+            "options": [],
+            "answer": "Pergerakan Kemerdekaan Samit (1 Maret) di Korea adalah gerakan kemerdekaan yang dimulai pada 1 Maret 1919 ketika tiga puluh tiga tokoh Korea berkumpul di Taman Pagoda, Seoul, untuk memproklamasikan kemerdekaan dari penjajahan Jepang. Gerakan ini pada akhirnya berhasil digagalkan oleh pemerintah pendudukan Jepang, tetapi meninggalkan dampak penting berupa bangkitnya semangat kebangsaan dalam diri rakyat Korea. Semangat ini kemudian mendorong mereka melakukan perlawanan yang lebih terorganisasi, termasuk perlawanan bersenjata dan pendirian pemerintahan sementara di Shanghai.",
+            "explanation": "Pertanyaan ini LOTS karena berfokus pada pengertian singkat suatu peristiwa sejarah dan dampak langsung yang telah dijelaskan eksplisit dalam teks.",
+            "source_text": "Pada tanggal 1 Maret 1919 tiga",
+            "keywords": [
+              "Pergerakan Samit",
+              "kemerdekaan Korea",
+              "Jepang",
+              "semangat kebangsaan"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1780,
+            "log_id": 179,
+            "question": "Analisislah bagaimana perbedaan kebijakan Cina dan Uni Soviet terhadap Blok Barat menyebabkan memburuknya hubungan kedua negara pada awal 1960-an.",
+            "options": [],
+            "answer": "Memburuknya hubungan Cina dan Uni Soviet pada awal 1960-an berawal dari perbedaan sikap kedua negara terhadap Blok Barat, khususnya Amerika Serikat dan sekutunya. Uni Soviet mulai mengadopsi kebijakan hidup berdampingan secara damai dengan Blok Barat, yang berarti mengurangi konfrontasi langsung dan membuka ruang kompromi politik. Kebijakan ini dipandang Cina sebagai bentuk pengkhianatan terhadap prinsip-prinsip komunisme yang menekankan perjuangan melawan kapitalisme. Cina menganggap konfrontasi dengan Barat yang menganut demokrasi liberal sebagai sesuatu yang tidak terelakkan sehingga mengecam keras pendekatan damai Uni Soviet. Akibat perbedaan ideologis ini, Uni Soviet menghentikan pengiriman para ahli ke Cina dan menolak membantu Cina ketika berperang di perbatasan India, yang semakin memperdalam konflik dan memutus kerja sama militer-teknologis di antara keduanya.",
+            "explanation": "Pertanyaan ini termasuk MOTS karena menuntut siswa menganalisis sebab-akibat dari perbedaan kebijakan terhadap Blok Barat terhadap rusaknya hubungan Cina–Uni Soviet, bukan sekadar mengingat fakta terpisah.",
+            "source_text": "Hubungan harmonis Cina dan Uni",
+            "keywords": [
+              "Cina-Uni Soviet",
+              "Perang Dingin",
+              "hidup berdampingan damai",
+              "konfrontasi Barat"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "6 menit"
+          },
+          {
+            "id": 1781,
+            "log_id": 179,
+            "question": "Jelaskan bagaimana keterlibatan Perserikatan Bangsa-Bangsa (PBB) mempengaruhi jalannya Perang Korea.",
+            "options": [],
+            "answer": "Keterlibatan PBB sangat mempengaruhi dinamika Perang Korea karena memberikan legitimasi internasional terhadap intervensi militer di semenanjung tersebut. Setelah Korea Selatan melaporkan agresi Korea Utara ke Dewan Keamanan, PBB mengeluarkan resolusi yang menuntut Korea Utara menarik pasukan ke garis lintang 38° dan meminta negara-negara anggota memberi bantuan militer kepada Korea Selatan. Sebagai hasilnya, dibentuk pasukan PBB dari enam belas negara dengan Amerika Serikat sebagai pemimpin dan Jenderal Douglas Mac Arthur sebagai komandan. Pasukan PBB tidak hanya mampu menghentikan serangan Korea Utara tetapi juga melakukan serangan balasan hingga menduduki Pyongyang, ibu kota Korea Utara. Namun, keberhasilan ini memicu intervensi militer Cina yang memandang langkah tersebut sebagai upaya Amerika Serikat memperluas pengaruhnya, sehingga perang berlanjut hingga tercapai gencatan senjata tahun 1953 dengan tetap mempertahankan pembagian Korea.",
+            "explanation": "Pertanyaan ini termasuk MOTS karena meminta penjelasan hubungan antara tindakan PBB dan perkembangan militer Perang Korea, sehingga menuntut kemampuan menghubungkan beberapa informasi dalam teks.",
+            "source_text": "Atas agresi Korea Utara itu, Korea",
+            "keywords": [
+              "PBB",
+              "Perang Korea",
+              "Dewan Keamanan",
+              "Douglas Mac Arthur"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "7 menit"
+          },
+          {
+            "id": 1782,
+            "log_id": 179,
+            "question": "Analisislah mengapa Revolusi Kuba menimbulkan kekhawatiran besar bagi Amerika Serikat pada masa Perang Dingin.",
+            "options": [],
+            "answer": "Revolusi Kuba menimbulkan kekhawatiran besar bagi Amerika Serikat karena mengubah Kuba dari negara yang berada dalam lingkup pengaruh Amerika menjadi republik komunis pertama di belahan bumi Barat. Letak geografis Kuba yang sangat dekat dengan pantai Amerika Serikat, kurang dari 10 mil, menjadikan setiap perubahan ideologi di negara itu langsung menyentuh keamanan nasional Amerika. Setelah Fidel Castro berkuasa, ia menasionalisasi perusahaan-perusahaan asing, membatasi kepemilikan swasta, dan memperluas program sosial yang dianggap Amerika Serikat sejalan dengan prinsip komunisme. Kebijakan ini membuat Amerika menghentikan hubungan diplomatik dengan Kuba pada 1961, mendorong Kuba mencari dukungan ke Uni Soviet dan negara komunis lain. Ketika Uni Soviet kemudian berencana membangun pangkalan militer dan menempatkan rudal nuklir di Kuba, kekhawatiran Amerika Serikat memuncak karena rudal-rudal itu dapat diarahkan langsung ke wilayahnya, hampir memicu perang nuklir global.",
+            "explanation": "Pertanyaan ini MOTS karena mengharuskan siswa menghubungkan letak strategis Kuba, perubahan politik internal, dan hubungan Kuba–Uni Soviet dalam kerangka ketegangan Perang Dingin.",
+            "source_text": "Kuba adalah negara pulau yang",
+            "keywords": [
+              "Revolusi Kuba",
+              "Fidel Castro",
+              "Amerika Serikat",
+              "rudal nuklir"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "7 menit"
+          },
+          {
+            "id": 1783,
+            "log_id": 179,
+            "question": "Evaluasilah dampak Revolusi Kebudayaan yang dilancarkan Mao Zedong terhadap perkembangan politik dan sosial di Cina pada masa sesudahnya.",
+            "options": [],
+            "answer": "Revolusi Kebudayaan yang dilancarkan Mao Zedong pada 1966 bertujuan mengembalikan Cina ke jalur revolusioner dan menyingkirkan unsur-unsur yang dianggap menyimpang dari garis ideologi komunis. Namun, upaya ini berujung pada kekacauan politik, kekerasan, dan instabilitas sosial yang luas, sehingga akhirnya dinilai sebagai kegagalan dan harus dihentikan dengan menggunakan kekuatan militer. Sesudah Mao meninggal pada 1976, kelompok moderat yang berkuasa berupaya mengurangi pengultusan terhadap Mao dan melakukan koreksi terhadap ekses politik Revolusi Kebudayaan. Mereka memodernisasi Cina dengan membuka diri terhadap bantuan luar negeri dan menjalin hubungan diplomatik yang lebih luas, termasuk dengan Amerika Serikat. Dengan demikian, Revolusi Kebudayaan justru menjadi titik balik yang mendorong lahirnya kebijakan yang lebih pragmatis dan reformis setelah generasi penerus Mao berusaha menjauhi ekstremisme ideologis yang pernah menjerumuskan negara.",
+            "explanation": "Pertanyaan ini termasuk HOTS karena meminta evaluasi terhadap dampak jangka panjang Revolusi Kebudayaan, menuntut siswa menilai keberhasilan dan kegagalannya serta mengaitkannya dengan perubahan kebijakan di era pasca-Mao.",
+            "source_text": "Pada tahun 1966 Mao Zedong",
+            "keywords": [
+              "Revolusi Kebudayaan",
+              "Mao Zedong",
+              "Cina modern",
+              "kebijakan moderat"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "9 menit"
+          },
+          {
+            "id": 1784,
+            "log_id": 179,
+            "question": "Bandingkan peran Amerika Serikat dalam Perang Korea dan dalam Insiden Teluk Babi di Kuba, serta jelaskan bagaimana kedua peristiwa tersebut mencerminkan strategi global Amerika Serikat pada masa Perang Dingin.",
+            "options": [],
+            "answer": "Dalam Perang Korea, Amerika Serikat berperan sebagai pemimpin pasukan PBB yang secara resmi didelegasikan oleh Dewan Keamanan untuk mempertahankan Korea Selatan dari agresi Korea Utara. Dengan mandat internasional tersebut, Amerika Serikat memobilisasi kekuatan militer besar, mengirim pasukan dan perlengkapan perang, serta mendorong operasi balasan hingga menduduki Pyongyang. Peran ini memperlihatkan strategi terbuka Amerika Serikat untuk menahan perluasan komunisme melalui intervensi kolektif yang dilegitimasi oleh PBB. Sebaliknya, dalam Insiden Teluk Babi di Kuba, Amerika Serikat menggunakan strategi lebih tertutup dengan memanfaatkan pelarian Kuba yang dilatih CIA untuk menggulingkan Fidel Castro. Operasi ini dilakukan tanpa mandat PBB dan dengan dukungan militer tidak langsung, bahkan pada detik terakhir Presiden Kennedy menarik perlindungan langsung, sehingga operasi gagal total. Perbandingan kedua peran tersebut menunjukkan bahwa strategi global Amerika Serikat pada masa Perang Dingin menggabungkan pendekatan intervensi terbuka melalui institusi internasional dan operasi rahasia untuk mencegah berdirinya atau menguatnya rezim komunis, disesuaikan dengan konteks politik dan risiko internasional yang dihadapi.",
+            "explanation": "Pertanyaan ini termasuk HOTS karena mengharuskan siswa membandingkan dua peristiwa di kawasan berbeda, mengidentifikasi pola strategi, dan menyimpulkan karakter umum kebijakan global Amerika Serikat pada masa Perang Dingin.",
+            "source_text": "Presiden baru Amerika Serikat, John",
+            "keywords": [
+              "Perang Korea",
+              "Insiden Teluk Babi",
+              "strategi Amerika Serikat",
+              "Perang Dingin"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "10 menit"
+          },
+          {
+            "id": 1785,
+            "log_id": 179,
+            "question": "Susunlah sebuah argumen apakah keterlibatan negara-negara besar dalam konflik regional seperti Perang Korea dan Krisis Kuba lebih banyak membawa dampak stabilisasi atau justru meningkatkan risiko perang global.",
+            "options": [],
+            "answer": "Keterlibatan negara-negara besar dalam konflik regional seperti Perang Korea dan Krisis Kuba dapat dinilai ambivalen, namun banyak bukti menunjukkan bahwa keterlibatan tersebut lebih sering meningkatkan risiko perang global, meskipun pada saat tertentu mampu menciptakan keseimbangan sementara. Dalam Perang Korea, campur tangan Amerika Serikat, Uni Soviet, dan Cina mengubah perang saudara menjadi ajang konfrontasi antara blok kapitalis dan komunis, memperpanjang konflik dan memperbesar skala kehancuran, meskipun akhirnya gencatan senjata berhasil dicapai dengan mempertahankan dua Korea terpisah. Di Kuba, kehadiran Uni Soviet yang ingin menempatkan rudal nuklir dan sikap keras Amerika Serikat yang menghadang kapal-kapal Soviet menciptakan krisis yang hampir menyeret dunia ke perang nuklir. Namun demikian, ketegangan ekstrem ini mendorong kedua pihak besar untuk merumuskan mekanisme komunikasi dan pengendalian krisis yang lebih baik di kemudian hari. Argumen yang lebih kuat adalah bahwa keterlibatan negara besar cenderung mengeskalasi konflik regional menjadi ajang pertarungan pengaruh global, sehingga meningkatkan risiko perang yang lebih luas, meskipun pada akhirnya mereka juga dipaksa mencari kompromi demi mencegah kehancuran bersama.",
+            "explanation": "Pertanyaan ini termasuk HOTS karena meminta siswa menyusun argumen sendiri, menimbang contoh empiris dari beberapa konflik, dan mengevaluasi apakah keterlibatan negara besar lebih menstabilkan atau justru mengeskalasi risiko perang global.",
+            "source_text": "Kekuatan Cina juga makin mengkhawatirkan",
+            "keywords": [
+              "konflik regional",
+              "Perang Korea",
+              "Krisis Kuba",
+              "negara adidaya"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "85%",
+            "duration": "12 menit"
+          }
+        ]
+      },
+      {
+        "id": 180,
+        "duration": 200.6,
+        "pages": "122-127",
+        "input_tokens": 5766,
+        "output_tokens": 5149,
+        "total_tokens": 10915,
+        "question_count": 10,
+        "created_at": "2025-12-16T18:12:59.000Z",
+        "template_id": 22,
+        "template_text": "Generate exactly 10 essay questions from the document content.\n\nCOGNITIVE LEVEL: MIXED (STRATIFIED).\nINSTRUCTION: You must generate questions with varying difficulties as specified in the Rules section.\nCRITICAL: Pay close attention to the requested distribution (LOTS/MOTS/HOTS).\n\n\n\nFor each question, provide:\n\n- question (string)\n- answer (string)\n- explanation (string)\n- source_text (string, a unique, meaningful phrase (5-8 words) quoted exactly from the start of the source sentence. It must NOT end with conjunctions like 'dan', 'yang', 'atau'. Used for hyperlink text fragments)\n- keywords (array of strings)\n- difficulty (must be \"LOTS, MOTS, or HOTS\")\n- duration (string, estimated time)\n- confidence (string, e.g., \"95%\")\n- answer (the comprehensive ideal answer)\n\nThe result must be a single, valid JSON array of objects.\n\nExample:\n{\n  \"no\": 1,\n  \"question\": \"Jelaskan dampak revolusi industri.\",\n  \"answer\": \"Revolusi industri menyebabkan...\",\n  \"explanation\": \"Dampak utamanya adalah...\",\n  \"source_text\": \"Revolusi industri mengubah tatanan ekonomi global\",\n  \"keywords\": [\n    \"revolusi industri\"\n  ],\n  \"difficulty\": \"mots\",\n  \"duration\": \"3 menit\",\n  \"confidence\": \"90%\"\n}\n\nRules:\n\n- CRITICAL: You must generate exactly 10 questions with this SPECIFIC distribution:\n  1. Approx 40% LOTS (Questions 1-4). Focus on facts/definitions.\n  2. Approx 30% MOTS (Questions 5-7). Focus on context/analysis.\n  3. Approx 30% HOTS (Questions 8-10). Focus on evaluation/creation.\n- You MUST explicitly set the \"difficulty\" field in JSON to \"LOTS\", \"MOTS\", or \"HOTS\" corresponding to the question level.\n\n- For the 'keywords' array, add 2-4 relevant keywords based on the content.\n\n- The 'question' field MUST be direct. Do NOT use prefixes like \"According to the text\", \"Based on the document\".\n- Do NOT include citations like [1], [2].\n- Do NOT add text before/after JSON. Output JSON only.\n\n- All text content must be in Indonesia.",
+        "questions": [
+          {
+            "id": 1786,
+            "log_id": 180,
+            "question": "Sebutkan tiga keputusan penting yang dihasilkan Konferensi Jenewa tahun 1954 terkait Vietnam dan kawasan Indocina.",
+            "options": [],
+            "answer": "Tiga keputusan penting Konferensi Jenewa tahun 1954 adalah: (1) mengakui kemerdekaan negara Kampuchea, Laos, dan Vietnam; (2) menyetujui bahwa wilayah Vietnam terbagi atas Vietnam Utara dan Vietnam Selatan; dan (3) merencanakan pemilu pada bulan Juli 1956 untuk menyatukan Vietnam di bawah pengawasan Komisi Pengawas Internasional.",
+            "explanation": "Konferensi Jenewa menjadi tonggak penting karena untuk pertama kalinya kekuatan internasional secara resmi mengakui kemerdekaan tiga negara di kawasan Indocina, yaitu Kampuchea, Laos, dan Vietnam. Selain itu, konferensi ini melegalkan pembagian Vietnam menjadi dua wilayah berideologi berbeda sekaligus merancang mekanisme pemilu sebagai jalan menuju persatuan, meskipun dalam praktiknya ketentuan ini gagal dijalankan dan justru memicu konflik berkepanjangan.",
+            "source_text": "Pada tanggal 20 Juli 1954 Konferensi Jenewa",
+            "keywords": [
+              "Konferensi Jenewa",
+              "kemerdekaan Indocina",
+              "pembagian Vietnam"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "5 menit"
+          },
+          {
+            "id": 1787,
+            "log_id": 180,
+            "question": "Jelaskan pembagian wilayah protektorat yang dibentuk Prancis di Vietnam pada masa kolonial serta nama kesatuan protektorat tersebut.",
+            "options": [],
+            "answer": "Pada masa kolonial, Prancis membagi wilayah Vietnam menjadi tiga daerah protektorat, yaitu Tonkin di bagian utara, Annam di bagian tengah, dan Koncincina di bagian selatan. Pada tahun 1887, ketiga protektorat tersebut disatukan bersama protektorat Kampuchea dalam satu kesatuan protektorat yang disebut Uni Indocina.",
+            "explanation": "Pembagian wilayah oleh Prancis ke dalam beberapa protektorat menunjukkan strategi kolonial untuk mempermudah pengendalian politik dan ekonomi di Vietnam. Penyatuan protektorat-protektorat ini ke dalam Uni Indocina menegaskan bahwa Prancis tidak hanya menguasai Vietnam, tetapi juga berusaha membangun satu entitas kolonial yang lebih luas di Asia Tenggara daratan.",
+            "source_text": "Negara Eropa yang pertama mendarat",
+            "keywords": [
+              "Tonkin",
+              "Annam",
+              "Koncincina",
+              "Uni Indocina"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1788,
+            "log_id": 180,
+            "question": "Siapakah tokoh utama pemimpin Viet Minh dan bagaimana rakyat Vietnam lebih mengenalnya?",
+            "options": [],
+            "answer": "Tokoh utama pemimpin Viet Minh adalah Ho Chi Minh. Rakyat Vietnam lebih mengenalnya sebagai Bapak Nasionalisme Vietnam daripada sekadar tokoh komunis.",
+            "explanation": "Ho Chi Minh memimpin organisasi Viet Minh yang menjadi motor perjuangan kemerdekaan Vietnam dari dominasi Prancis dan Jepang. Posisinya sebagai simbol nasionalisme menjadikannya diterima luas oleh rakyat, sehingga identitasnya sebagai pemimpin nasional lebih ditekankan daripada latar belakang ideologinya sebagai komunis.",
+            "source_text": "Pemimpin organisasi Viet Minh adalah Ho",
+            "keywords": [
+              "Ho Chi Minh",
+              "Viet Minh",
+              "nasionalisme Vietnam"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "96%",
+            "duration": "3 menit"
+          },
+          {
+            "id": 1789,
+            "log_id": 180,
+            "question": "Apa yang dimaksud dengan Jalur Ho Chi Minh dalam konteks Perang Vietnam dan untuk tujuan apa jalur tersebut digunakan?",
+            "options": [],
+            "answer": "Jalur Ho Chi Minh adalah jaringan jalan yang dibuat di hutan-hutan sepanjang perbatasan Vietnam Selatan–Laos–Kampuchea. Jalur ini digunakan oleh pasukan Viet Minh dan kemudian Vietkong untuk menyusupkan pasukan dan logistik dari Vietnam Utara ke Vietnam Selatan dalam rangka mendukung perjuangan melawan Amerika Serikat dan pemerintah Vietnam Selatan.",
+            "explanation": "Jalur Ho Chi Minh menjadi prasarana vital dalam perang gerilya karena memungkinkan pergerakan pasukan dan suplai dilakukan secara tersembunyi di wilayah hutan yang sulit diawasi lawan. Upaya Amerika Serikat dan Vietnam Selatan untuk menghancurkan jalur ini melalui pemboman menunjukkan besarnya peran jalur tersebut terhadap keberlanjutan perlawanan komunis di Vietnam Selatan.",
+            "source_text": "Jalur Ho Chi Minh adalah jalan-jalan",
+            "keywords": [
+              "Jalur Ho Chi Minh",
+              "Perang Vietnam",
+              "perang gerilya"
+            ],
+            "difficulty": "LOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "95%",
+            "duration": "4 menit"
+          },
+          {
+            "id": 1790,
+            "log_id": 180,
+            "question": "Analisislah bagaimana kebijakan bantuan Amerika Serikat kepada Vietnam Selatan berkaitan dengan upaya membendung komunisme di Asia Tenggara.",
+            "options": [],
+            "answer": "Bantuan Amerika Serikat kepada Vietnam Selatan berupa paket ekonomi dan militer merupakan bagian dari strategi global membendung penyebaran komunisme di Asia Tenggara. Dengan mendukung pemerintah Vietnam Selatan yang berideologi liberal kapitalis, Amerika Serikat berharap dapat menjadikan negara ini sebagai benteng Blok Barat di kawasan tersebut. Bantuan itu ditujukan untuk memperkuat posisi Vietnam Selatan menghadapi Viet Minh dan kemudian Vietnam Utara yang didukung Uni Soviet dan Cina, sehingga bila komunisme di Vietnam berhasil dipatahkan, pengaruh liberal kapitalis dan dominasi Amerika Serikat di Asia Tenggara akan menguat dan mengurangi risiko negara-negara lain jatuh ke dalam lingkaran komunis.",
+            "explanation": "Keterlibatan Amerika Serikat di Vietnam berawal dari solidaritas terhadap Prancis sebagai sekutu, tetapi kemudian berkembang menjadi bagian dari kebijakan pembendungan komunisme setelah Perang Dunia II. Dengan menyalurkan bantuan langsung kepada pemerintah Vietnam Selatan, Amerika Serikat berupaya mempertahankan sebuah rezim yang sejalan dengan kepentingan ideologis dan ekonominya, sekaligus mengirimkan pesan bahwa kawasan Asia Tenggara merupakan wilayah yang tidak boleh didominasi Blok Timur.",
+            "source_text": "Pada tahun 1950 Amerika Serikat sebagai",
+            "keywords": [
+              "bantuan Amerika Serikat",
+              "pembendungan komunisme",
+              "Vietnam Selatan"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "94%",
+            "duration": "8 menit"
+          },
+          {
+            "id": 1791,
+            "log_id": 180,
+            "question": "Jelaskan hubungan antara pembagian Vietnam menjadi Vietnam Utara dan Vietnam Selatan dengan meningkatnya tragedi kemanusiaan di kawasan tersebut.",
+            "options": [],
+            "answer": "Pembagian Vietnam menjadi Vietnam Utara dan Vietnam Selatan berdasarkan Perjanjian Jenewa mengakibatkan pemisahan wilayah dan sekaligus pemisahan ideologi antara dua negara yang sebelumnya merupakan satu kesatuan. Vietnam Utara berideologi sosialis komunis, sedangkan Vietnam Selatan berideologi liberal kapitalis. Perbedaan ideologi yang tajam ini memicu konflik politik dan militer berkepanjangan, termasuk Perang Vietnam, yang mengakibatkan banyak pelanggaran hak asasi manusia. Pembagian tersebut memisahkan sanak saudara, memaksa migrasi massal, dan melahirkan berbagai aksi kekerasan, sehingga tragedi kemanusiaan muncul bukan hanya karena pertempuran, tetapi juga karena dampak sosial dari garis batas politik yang dipaksakan kekuatan besar.",
+            "explanation": "Perjanjian Jenewa secara formal bertujuan menyelesaikan konflik, tetapi substansinya justru melegitimasi pembagian Vietnam menjadi dua negara yang saling berseberangan ideologi. Pembelahan ini memperkuat keterlibatan dua blok adidaya yang menggunakan Vietnam sebagai ajang perebutan pengaruh, sehingga masyarakat sipil menjadi korban utama dari pertarungan politik global yang terjelma dalam perang saudara dan intervensi asing.",
+            "source_text": "Perjanjian Jenewa ternyata tidak mampu",
+            "keywords": [
+              "pembagian Vietnam",
+              "tragedi kemanusiaan",
+              "ideologi komunis",
+              "liberal kapitalis"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "9 menit"
+          },
+          {
+            "id": 1792,
+            "log_id": 180,
+            "question": "Analisislah dampak kemenangan Vietkong terhadap perubahan peta politik di Kampuchea dan peran negara-negara ASEAN dalam meresponsnya.",
+            "options": [],
+            "answer": "Kemenangan Vietkong dan bersatunya Vietnam di bawah rezim komunis memperkuat kepercayaan diri Vietnam Utara untuk memperluas pengaruhnya ke negara-negara tetangga, khususnya Laos dan Kampuchea. Vietnam berhasil menjadikan Laos sebagai negara komunis dan kemudian melakukan intervensi militer ke Kampuchea pada 7 Januari 1979, dengan bantuan kelompok lokal pro-Vietnam yang tergabung dalam Front Penyelamat Nasional. Hasilnya, Vietnam mendirikan Republik Rakyat Kampuchea di bawah pemerintahan boneka Heng Samrin. Perubahan ini menggeser peta politik kawasan karena menghadirkan satu lagi rezim komunis di Asia Tenggara yang beraliansi dengan Vietnam. Negara-negara ASEAN yang umumnya antikomunis memandang perkembangan tersebut sebagai ancaman terhadap stabilitas kawasan dan potensi perluasan komunisme. Oleh karena itu, bersama dukungan PBB, mereka memberikan pengakuan politik dan dukungan diplomatik kepada Pemerintahan Koalisi Demokrasi Kampuchea yang dibentuk oleh koalisi kelompok Sihanouk, Son San, dan Khieu Sampan sebagai upaya menandingi pemerintahan boneka pro-Vietnam. Langkah ini menunjukkan bahwa ASEAN berperan aktif sebagai blok politik yang mencoba mengimbangi pengaruh Vietnam dan mencegah dominasi komunis lebih jauh di Asia Tenggara.",
+            "explanation": "Kemenangan Vietkong di Vietnam Selatan tidak hanya berdampak domestik, tetapi juga menciptakan efek domino regional yang terlihat dari intervensi Vietnam ke Kampuchea. Terbentuknya dua pemerintahan yang saling bersaing di Kampuchea membuka ruang bagi ASEAN untuk memosisikan diri sebagai kekuatan penyeimbang, yang tercermin dalam keputusan mereka mengakui Pemerintahan Koalisi Demokrasi Kampuchea sebagai satu-satunya wakil sah di PBB.",
+            "source_text": "Setelah negara Republik Demokratik Vietnam",
+            "keywords": [
+              "kemenangan Vietkong",
+              "Republik Rakyat Kampuchea",
+              "ASEAN",
+              "Pemerintahan Koalisi Demokrasi Kampuchea"
+            ],
+            "difficulty": "MOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "93%",
+            "duration": "10 menit"
+          },
+          {
+            "id": 1793,
+            "log_id": 180,
+            "question": "Evaluasilah efektivitas teori domino tentang komunisme dengan menggunakan contoh perkembangan politik di Asia Tenggara pascakemenangan komunis di Vietnam Selatan.",
+            "options": [],
+            "answer": "Teori domino tentang komunisme menyatakan bahwa bila satu negara di suatu kawasan jatuh ke tangan komunis, maka negara-negara lain di kawasan yang sama akan menyusul jatuh. Dalam konteks Asia Tenggara pascakemenangan komunis di Vietnam Selatan, terdapat bukti yang mendukung sekaligus membatasi validitas teori ini. Dari sisi yang mendukung, kemenangan komunis di Vietnam diikuti oleh menguatnya pengaruh komunis di Laos dan intervensi Vietnam yang melahirkan Republik Rakyat Kampuchea, sehingga tiga negara Indocina berada di bawah rezim berideologi komunis atau prokomunis. Hal ini memberi kesan bahwa satu kemenangan komunis memang mendorong perubahan ideologis di negara tetangga. Namun, efektivitas teori domino menjadi terbatas ketika dilihat dari negara-negara lain di Asia Tenggara seperti Thailand, Malaysia, Singapura, Filipina, dan Indonesia yang tidak jatuh ke tangan komunis meskipun berada dalam kawasan yang sama dan menghadapi ancaman gerakan kiri. Dukungan politik dan militer negara-negara Barat, konsolidasi rezim antikomunis di berbagai negara, serta kerja sama dalam kerangka ASEAN berhasil menahan penyebaran komunisme lebih luas. Dengan demikian, teori domino memiliki relevansi parsial karena menjelaskan dinamika di Indocina, tetapi gagal menjadi penjelasan universal bagi keseluruhan perkembangan politik Asia Tenggara.",
+            "explanation": "Perkembangan di Vietnam, Laos, dan Kampuchea memperlihatkan adanya pola saling kait antarnegara yang mendukung asumsi dasar teori domino. Akan tetapi, kemampuan negara-negara ASEAN lain membangun koalisi antikomunis dan memanfaatkan dukungan internasional menunjukkan bahwa faktor domestik dan regional dapat menginterupsi rangkaian domino, sehingga penyebaran komunisme tidak berlangsung linear seperti yang diperkirakan teori tersebut.",
+            "source_text": "Kemenangan komunis di Vietnam Selatan",
+            "keywords": [
+              "teori domino",
+              "komunisme Asia Tenggara",
+              "Indocina",
+              "ASEAN antikomunis"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "13 menit"
+          },
+          {
+            "id": 1794,
+            "log_id": 180,
+            "question": "Susunlah argumen kritis tentang sejauh mana campur tangan dua negara adidaya (Amerika Serikat dan Uni Soviet) memperpanjang konflik di Vietnam dibandingkan faktor-faktor internal Vietnam sendiri.",
+            "options": [],
+            "answer": "Campur tangan dua negara adidaya, Amerika Serikat dan Uni Soviet (beserta Cina), berperan besar dalam memperpanjang konflik di Vietnam karena menjadikan negara tersebut ajang konfrontasi ideologis global. Amerika Serikat mendukung Vietnam Selatan dengan bantuan ekonomi dan militer untuk mencegah kemenangan komunis, sementara Uni Soviet dan Cina memberi dukungan persenjataan dan politik kepada Viet Minh dan kemudian Vietnam Utara. Benturan kepentingan tersebut membuat kedua belah pihak di Vietnam memiliki sumber daya yang cukup untuk melanjutkan perang dalam jangka panjang, karena kekalahan salah satu pihak akan dianggap sebagai kekalahan blok ideologis di tingkat dunia. Namun, faktor internal Vietnam juga tidak bisa diabaikan. Tradisi perlawanan terhadap kolonialisme, bangkitnya nasionalisme yang diwakili Ho Chi Minh, serta persaingan elit politik antara kelompok komunis dan nonkomunis menciptakan konteks konflik domestik yang kuat. Penolakan Ho Chi Minh terhadap keputusan Perjanjian Jenewa dan tekadnya untuk menyatukan Vietnam memperkuat intensitas perjuangan dari pihak Utara, sementara elite Vietnam Selatan berupaya mempertahankan kekuasaan dengan sokongan Barat. Dengan demikian, konflik Vietnam merupakan hasil interaksi antara struktur internal dan eksternal: faktor internal menyediakan motif dan basis sosial untuk perang, tetapi campur tangan dua negara adidaya memperbesar skala, intensitas, dan durasi konflik jauh melampaui yang mungkin terjadi jika Vietnam hanya menyelesaikan pertentangan ideologi secara domestik.",
+            "explanation": "Perang Vietnam kerap dipahami sebagai perang proksi Perang Dingin karena kedua blok besar memanfaatkan konflik internal Vietnam untuk memperluas dan mempertahankan pengaruh ideologis mereka. Dukungan material dari luar negeri menjadikan kompromi politik sulit tercapai, namun tanpa adanya pertentangan ideologi di dalam negeri dan keinginan kuat untuk menyatukan wilayah, campur tangan asing mungkin tidak akan menemukan lahan subur untuk menjelma menjadi perang panjang.",
+            "source_text": "Vietnam mempunyai sejarah dan kaitan yang",
+            "keywords": [
+              "Perang Dingin",
+              "perang proksi",
+              "campur tangan adidaya",
+              "konflik internal Vietnam"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "92%",
+            "duration": "15 menit"
+          },
+          {
+            "id": 1795,
+            "log_id": 180,
+            "question": "Buatlah suatu usulan skenario alternatif penyelesaian konflik Vietnam yang lebih dini (sebelum 1975) yang mungkin dapat mengurangi korban jiwa, dengan mempertimbangkan keputusan Konferensi Jenewa dan peran Viet Minh, Vietnam Selatan, serta negara-negara asing.",
+            "options": [],
+            "answer": "Salah satu skenario alternatif penyelesaian konflik Vietnam yang lebih dini dapat berangkat dari pelaksanaan penuh keputusan Konferensi Jenewa tentang pemilu nasional pada Juli 1956. Dalam skenario ini, semua pihak – Viet Minh di Utara, pemerintah Vietnam Selatan, dan kekuatan asing seperti Amerika Serikat, Uni Soviet, dan Cina – bersedia menghormati mekanisme pemilu yang diawasi ketat Komisi Pengawas Internasional. Langkah pertama adalah pembentukan pemerintahan sementara bersama yang terdiri dari perwakilan Vietnam Utara dan Vietnam Selatan dengan mandat terbatas mengelola transisi menuju pemilu. Pemerintahan sementara ini bertugas menjamin kebebasan kampanye dan keselamatan warga, serta mengurangi kehadiran militer asing secara bertahap di kedua wilayah. Negosiasi tambahan perlu dilakukan untuk menyepakati bahwa hasil pemilu – siapapun pemenangnya – akan disertai jaminan hak-hak minoritas politik dan keberlanjutan hubungan ekonomi dengan kedua blok, sehingga kemenangan satu ideologi tidak otomatis berarti pemutusan total hubungan dengan blok lain. Organisasi internasional dan negara-negara Asia, termasuk calon anggota ASEAN, dapat berperan sebagai penjamin (guarantor) perjanjian, misalnya dengan mengancam sanksi diplomatik jika terjadi pelanggaran. Dengan skenario ini, penyatuan Vietnam diharapkan tercapai melalui mekanisme politik, bukan perang berkepanjangan. Meskipun tidak menghilangkan seluruh ketegangan, jalur pemilu dan kompromi ideologis yang diawasi secara internasional berpotensi mengurangi eskalasi militer dan menekan jumlah korban jiwa yang sangat besar sebagaimana terjadi hingga 1975.",
+            "explanation": "Konferensi Jenewa sebenarnya telah menyediakan kerangka legal untuk menyatukan Vietnam melalui pemilu, tetapi kegagalan implementasi membuka ruang bagi eskalasi militer yang melibatkan dua blok adidaya. Dengan memaksimalkan peran lembaga internasional, meminimalkan intervensi bersenjata asing, dan menciptakan insentif politik-ekonomi bagi kedua pihak Vietnam untuk menerima hasil pemilu, ada kemungkinan konflik dapat diselesaikan lebih dini meskipun membutuhkan kompromi yang sulit antara kepentingan nasional Vietnam dan kepentingan strategis negara-negara besar.",
+            "source_text": "Sebagai realisasinya, akan diselenggarakan",
+            "keywords": [
+              "pemilu 1956",
+              "Konferensi Jenewa",
+              "penyelesaian damai",
+              "transisi politik Vietnam"
+            ],
+            "difficulty": "HOTS",
+            "type": "essay",
+            "language": "Indonesia",
+            "source": "KTSP_SLTA 12_Sejarah_2009_Sh Musthofa [OmahPustaka].pdf",
+            "confidence": "90%",
+            "duration": "18 menit"
+          }
+        ]
+      }
+    ]
+  }
+}
